@@ -43,36 +43,34 @@
 ### User Experience:
 
 ### Target Audience 
-<p>The Donegal Courts blog was inspired by the local newspaper of Donegal - the Donegal News/ Derry people, so the target audience would be of readers of that or for people who are native to Donegal that live away and want to stay up to date. In short, the Target audience is mainly Donegal Natives or people who have Donegal Ties that want to stay up to date with the court listings. </p>
+<p>The Deegagh Sea Salt E-Commerce site has a large target audience as it offers a universal product. However, primarily the users are geared towards tourists visiting Ireland who want to buy souvenirs, chefs who want to buy salt in bulk for their resturants / business, and or those that live in ireland who want to support local. </p>
 
 ### User Requirements
-<p>As I have mentioned, the blog has a very niche target audience. However, the age demographics are quite broad and because of this the blog has to be easy to use for every age group. I have taken the following approach to make sure that all User Requirements to access and use the blog has been covered:</p>
+<p>As I have mentioned, the site has a very large target audience. The age demographics are quite broad and because of this the site has to be easy to use for every age group. I have taken the following approach to make sure that all User Requirements to access and use the site has been covered:</p>
 <ul>
     <li>Have a clear understanding of the layout of the site -> clear navigation.</li>
     <li>The blog has to be formal and factual, information on the site has to be easily accessibile to the user.</li>
-    <li>The option of customizing the blog posts by the owner has to be limited it the authorisation. A random user of the blog can not have permition to comment or post on the blog.</li>
-    <li> As the topics discussed on the site contain sensitive information, I want the admin to be able to choose what comments get posted or not.
+    <li>The option of posting products has to be limited to the admin of the site to prevent scams. A random user of the site can not have permission to post products.</li>
 </ul>
 
 ### User Stories
 
 ### First time and Recurring Stories
 <ol>
-    <li>As a user of the site, I want to be able to Browse through content on the website.</li>
-    <li>As a user of the site, I want to be able to View Court News Stories.</li>
-    <li>As a user of the site, I want to be able to View Court News Stories in a List.</li>
-    <li>As a user of the site, I want to be able to open and read the court news stories.</li>
-    <li>As a user of the site, I want to be able to View comments under each post.</li>
-    <li>As an authorized user of the site, I want to be able to Post Comments. </li>
-    <li>As a user of the site, I want to be able to Register for an account.</li>
+    <li>As a user of the site, I want to be able to view the products available to buy.</li>
+    <li>As a user of the site, I would like to be able to view the products available to buy within categories.</li>
+    <li>As a user of the site, I would like to be able to view the products in their categories on the site easily.</li>
+    <li>As a site user, I would like to be able to buy a product from the site successfully and easily.</li>
+    <li>As a user of the site, I would like to be able to create an account with the possibility of keeping up to date with my order history and tracking.</li>
+    <li>As a user, I would like to be able to leave a review on a product I have ordered.</li>
+    <li>As a user of the site, I would like to view the products available to buy in a gallery as well as categorised.</li>
 </ol>
 
 ### Site's Owner Stories
 <ol>
-    <li>As an authorized owner of the site, I want to be able to Post Stories to the site.</li>
-    <li>As an authorized owner of the site, I want to be able to Create story drafts to come back to.</li>
-    <li>As an authorized owner of the site, I want to be able to Manage site content.</li>
-    <li>As an authorized owner of the site, I want to be able to Manage comments under posts.</li>
+    <li>As a site owner, I would like to display to customers if an item is in stock or not.</li>
+    <li>As a site owner, I want to employ web marketing strategies to grow the audience of my site.</li>
+    <li>As the owner of the site, I want to be able to upload products to the site using the admin section.</li>
 </ol>
 
 ## Technical Design
