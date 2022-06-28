@@ -4,13 +4,14 @@
 {% block content %}
 <body>
 <!-- Header Image -->
+<div>
 <img src="{% static 'img/salt.jpeg' %}" class="img-fluid" alt="...">
+</div>
 <!-- End of Header Image -->
-
-<!-- Products -->
+<!-- Products Section -->
   <div class="products">
     <h1 class="text-center fw-normal"> Our Products</h1>
-    <p class="text-center fw-light"> At Deegagh Sea Salt we have several viarations of Sea Salt on offer, so you will surely find something for everyone</p>
+    <p class="text-center fw-light"> At Deegagh Sea Salt we have several viarations of Sea Salt on offer, so you will surely find something for everyone!</p>
     <br/>
     <div class="container">
         <div class="card" style="width: 18rem;">
@@ -24,5 +25,36 @@
   </div>
   <br/>
 <!-- End of Products -->
+<!-- Testimonials -->
+<div class="testimonial">
+  <img>
+  <p class="text-center fw-light">"Deegagh Sea Salt is a great site to find anything you need interms of premium sea salt.<br/> With all different flavours, there is a flavour for everyone, which is amazing!"</p>
+  <p class="text-center fw-semibold">- Lisa from Ireland</p>
+</div>
+<br/>
+<hr>
+<br/>
+<!-- End of Testimonials -->
+<!-- Services, and other Information -->
+<div class="container text-center">
+  <div class="row">
+    <div class="col-sm fw-semibold">
+      <h4><i class="fa-solid fa-bag-shopping"></i></h4>
+      <p class="fw-semibold">Full List of Products</p>
+      <a href="#" class="stretched-link" style="text-decoration: none">Find Out More</a>
+    </div>
+    <div class="col-sm fw-semibold">
+      <h4><i class="fa-solid fa-phone"></i></h4>
+      <p class="fw-semibold">Contact</p>
+      <a href="#" class="stretched-link" style="text-decoration: none">Find Out More</a>
+    </div>
+    <div class="col-sm fw-semibold">
+      <h4><i class="fa-solid fa-location-dot"></i></h4>
+      <p class="fw-semibold">Where We Stock</p>
+      <a href="#" class="stretched-link" style="text-decoration: none">Find Out More</a>
+    </div>
+  </div>
+</div>
+<br/>
 </body>
 {% endblock %}
