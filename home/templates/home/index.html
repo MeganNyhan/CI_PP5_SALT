@@ -3,22 +3,26 @@
 
 {% block content %}
 <body>
+<!-- Header Image -->
+<img src="{% static 'img/salt.jpeg' %}" class="img-fluid" alt="...">
+<!-- End of Header Image -->
+
+<!-- Products -->
   <div class="products">
     <h1 class="text-center fw-normal"> Our Products</h1>
     <p class="text-center fw-light"> At Deegagh Sea Salt we have several viarations of Sea Salt on offer, so you will surely find something for everyone</p>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
+    <br/>
+    <div class="container">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title text-center">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted  text-center">Card subtitle</h6>
+            <p class="card-text  text-center">Some quick example text to build on the card title and make up the bulk of the card's content</p>
+          </div>
         </div>
       </div>
-    </div>
   </div>
+  <br/>
+<!-- End of Products -->
 </body>
 {% endblock %}
