@@ -12,3 +12,8 @@ body{
 .products{
     padding:2%;
 }
+
+/* Card */
+.card{
+    margin-left: 10px;
+}
