@@ -17,3 +17,8 @@ body{
 .card{
     margin-left: 10px;
 }
+
+/* Buttons on home page */
+.base-btn{
+    padding-right:20%;
+}
