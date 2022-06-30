@@ -63,7 +63,6 @@
     <li>As a site user, I would like to be able to buy a product from the site successfully and easily.</li>
     <li>As a user of the site, I would like to be able to create an account with the possibility of keeping up to date with my order history and tracking.</li>
     <li>As a user, I would like to be able to leave a review on a product I have ordered.</li>
-    <li>As a user of the site, I would like to view the products available to buy in a gallery as well as categorised.</li>
 </ol>
 
 ### Site's Owner Stories
@@ -123,14 +122,15 @@
 
 ### User Manual:
 <ol>
-<li>The site admin username is admin (lowercase) and the password is Frious.30.</li> 
+<li>The site admin username is admin (lowercase) and the password is Pass123!.</li> 
 
-<li>The Site is very simple in design - It includes a home section where a user can view a blog post, a members section for login and registration, and then a contact section located at the bottom of the webpage.</li>
-<li>The blog posts have a very simple design - the title, the post body, the author section with information of the author and the comments section for views to create a comment.</li>
-    <p> -- If the user is the site admin a edit post and delete post section is added.</p>
-<li>The login in section is simple as it is restricted to asking for the username and password. The registration form is also simple and easy to follow.</li>
-<li> Finally the contact Page allows the user to simply message the admin of the site to get more information or to leave a comment. The address and phone number are also on the page.</li>
-<li> The admin mainly uses the Admin section of the site to post blog posts, look at messages that were left by users of the contact form and to manage comments left in the site ie. delete abusive comments if they are left.</li>
+<li>The Site is very simple in design - It includes a home section where a user can view the products, their categories, the navbar - holding the bulk of the e-commerce functionality - and a contact section. It also holds a link to the return policy of the site and its Terms and conditions.</li>
+<li>The products are very simply laid out on the homepage in their respective categories. Once in the categories the user can scroll through the section in a list formate to view the products avaiable to buy.</li>
+    <p> -- If the user is the site admin they can edit products and delete products.</p>
+<li>The login in section is simple as it is restricted to asking for the username and password. The registration form is also simple and easy to follow. Once logged in the user can view their order history and to leave reviews.</li>
+<li> The contact Page allows the user to simply message the admin of the site to get more information or to leave a comment. The address and phone number are also on the page.</li>
+<li> The admin mainly uses the Admin section of the site to post products and their descriptions, images of the products and review any messages that have been sent via the contact from.</li>
+<li> Interms of e-commerce features, the main ones that users will be able to use is simply adding products to the shopping cart, removing the products from the cart, using stripe as a payemnt method and adding their shipping address.</li>
 </ol>
 
 <hr>
