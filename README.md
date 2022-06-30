@@ -199,76 +199,114 @@
 <hr>
 
 ## Features:
+<ol>
+<li> Clear Apperance and Style </li>
+<li> Quick and Correct fucntional search bar </li>
+<li> Easy and Simple Website Navigation </li>
+<li> Elaborated product descriptions </li>
+<li> Companies terms and conditions </li>
+<li> Payment Method </li>
+<li> Reviews and Testimonials </li>
+<li> Fully fucntional shopping cart </li>
+<li> Contact Page </li>
+<li> Return Policy Section </li>
+<li> Products list and specified product descriptions </li>
+<li> Account Functionality: login and registration </li>
+<li> Shopping Cart: List of products for sale, products in cart, remove products, continue shopping, and payment</li>
+</ol>
+</br>
 
-### Home
-<p> The home page is the main landing page that includes a bulk of the features of the site.</p>
-<ul>
-    <li>Slider: The slider adds a nice dynamic aspect to the site and helps users identify the site as legal in theme.</li>
-    <li>Blog Post List: The blog post list includes all the blog posts on the site allowing the user to browse through the posts. You can click on these posts to read the story in more depth.</li>
-    <li> Login/ Registration: The registration section allows the user to become a member of the site, leave a comment under the posts and add a bit of personalisation to the blog by adding their name to the landing page and editing their profile details.  </li>
-    <li>The logout section: Gives the users the option of signing out, this specifically removes the user from being logged into the site and the obvious change is the name removed from the site navbar.</li>
-    <li>Contact Us: Contact page with a contact form for the user to easily contact the admin of the site. It also contains the contact information ie. address and phone number. The contact page will have a pop-up when the form is submited to tell the user the form has been successfully submitted.</li>
+### Features in Detail:
+<ul>Clear Apperance and Style:
+<li> The site needs to be clean in apperance and style to help with accessibility and Navigation</li>
+<details><summary>User Stories Used: N/A</summary>
+            <img src="docs/wireframes/delete-post.png"></details>
 </ul>
- <p>User Stories covered : 1, 2, 3, 4, 7</p>
- <p>Site Owner's Stories covered: 0 </p>
-        <details><summary>Slider</summary>
-        <img src="docs/user-stories/slider.png"></details>
-        <details><summary>Blog Post List</summary>
-        <img src="docs/user-stories/blog_post_list.png"></details>
-        <details><summary>Login/ Registration (nav)</summary>
-        <img src="docs/user-stories/login:register.png"></details>
-        <details><summary>The logout section (nav)</summary>
-        <img src="docs/user-stories/logout.png"></details>
-        <details><summary>Contact Us (footer)</summary>
-        <img src="docs/user-stories/contact.png"></details>
 
-#### Blog Post
-<p> The blog post page holds the most content for users on the site. </p>
-<ul>
-    <li>Blog post: Where users can view and read the blog posts.</li>
-    <li> Back Button: Directly under the post title is a back button the user can use to look through the other blog posts.</li>
-    <li> Like: The user can like the post and the like will be counted. The user can only like the post if they are logged in with an account. </li>
-    <li> User Profile: The admin has a section under the post that displays the authors bio, urls and a link to the authors user profile on the site. The user profile is an oppurtunity for the author to add a bio about themselves that highlights their experiecnce and education. </li>
-    <li> Comment Section/ Comment Form: The comment section is an area under the blog post that allows the user of the site to add comments to the blog post to help create a public discussion on each blog post that is on the site. The users of the site, if logged in, are freely allowed to post in real-time, but if its offensive the admin can delete it in the admin section of the site.</li>
-    <li> Delete and Edit Section: If the user is a superuser of the site they will be able to delete and edit the blog post as the want using forms. </li>
+</br>
+<ul>Quick and Correct Fucntional Search Bar:
+<li> As part of the sites, e-commerce functionality, the user needs to be able to have a functional search bar in able to look through and easily find specific products that are of interest to them.</li>
+<details><summary>User Stories Used: 1, 2, 3 </summary>
+            <img src="docs/wireframes/delete-post.png"></details>
 </ul>
-    <p> User Stories covered:4, 5, 6</p>
-    <p>Site Owner's Stories covered: 4 </p>
-        <details><summary>Blog post</summary>
-        <img src="docs/user-stories/blog_post.png"></details>
-        <details><summary>Back Button</summary>
-        <img src="docs/user-stories/like.png"></details>
-        <details><summary>Like</summary>
-        <img src="docs/user-stories/like.png"></details>
-        <details><summary>User Profile</summary>
-        <img src="docs/user-stories/user_profile.png"></details>
-        <details><summary>Comment Section/ Comment Form</summary>
-        <img src="docs/user-stories/comment.png"></details>
-        <details><summary>Delete and Edit Section</summary>
-        <img src="docs/user-stories/delete:edit.png"></details>
 
-#### Admin Section
-<p> The admin section is the backend of the site that the admin can log into to create blog posts, create blog post drafts, delete posts, delete comments, and add more content to their admin user profile. </p>
-<ul>
-    <li>Users: The user section includes the superuser information for the admin of the site. </li>
-    <li>Posts: The post section is the area where the admin can create, draft and delete blog posts that will be displayed on the site. The content uploaded to thei section contains: title, snippet, image, body, author, category, and title tag.</li>
-    <li> Comments: The section where the admin can view the comments left on the blog posts and delete, manage or keep.</li>
-    <li> Profile: This is the section that stores the User information created by visitors. </li>
-    <li>Contact: This section stores the data sent by the user to the admin via the contact for. It includes the user's name, email and message.</li>
+</br>
+<ul>Easy and Simple Website Navigation:
+<li> The site needs to be clean in apperance and style to help with accessibility and Navigation. The navigation that the top of the site is fixed, and will allow the user to still see the options for navigation even when scrolling down. </li>
+<details><summary>User Stories Used: N/A</summary>
+            <img src="docs/wireframes/delete-post.png"></details>
 </ul>
-    <p> User Stories covered: 0 </p>
-    <p>Site Owner's Stories covered: 1, 2, 3, 4 </p>
-        <details><summary>Users</summary>
-        <img src="docs/user-stories/users.png"></details>
-        <details><summary>Posts</summary>
-        <img src="docs/user-stories/posts.png"></details>
-        <details><summary>Comments</summary>
-        <img src="docs/user-stories/comments.png"></details>
-        <details><summary>Profile</summary>
-        <img src="docs/user-stories/profile.png"></details>
-        <details><summary>Profile</summary>
-        <img src="docs/user-stories/admin-contact.png"></details>
-<hr>
+
+</br>
+<ul>Elaborated Product Descriptions:
+<li> The site needs to be clean in apperance and style to help with accessibility and Navigation</li>
+<details><summary>User Stories Used:1, 3 </summary>
+            <img src="docs/wireframes/delete-post.png"></details>
+</ul>
+
+</br>
+<ul>Companies Terms and Conditions:
+<li> The site provides a terms and conditions section for the users to be aware of the T's & C's before buying.</li>
+<details><summary>User Stories Used: N/A</summary>
+            <img src="docs/wireframes/delete-post.png"></details>
+</ul>
+
+</br>
+<ul>Payment Method:
+<li> The site needs to have a functional and usable payment method (Stripe) to allow the users to pay for their items easily.</li>
+<details><summary>User Stories Used: 4 </summary>
+            <img src="docs/wireframes/delete-post.png"></details>
+</ul>
+
+</br>
+<ul>Reviews and Testimonials:
+<li> As users generally rely on reviews to help decide if they should buy a product the site needs to have a testimonal and reviews section for the products.</li>
+<details><summary>User Stories Used: 6</summary>
+            <img src="docs/wireframes/delete-post.png"></details>
+</ul>
+
+</br>
+<ul>Fully Fucntional Shopping Cart:
+<li> The shoppping cart on the site, located in the navbar is equiped with a list of products in the shopping cart, remove button to take the products out of the cart and if the user is happy with their purchase the can go to the payment section and shipping information section.</li>
+<details><summary>User Stories Used: 4 </summary>
+            <img src="docs/wireframes/delete-post.png"></details>
+</ul>
+
+</br>
+<ul>Contact Page:
+<li> Contact us section of site</li>
+<details><summary>User Stories Used: </summary>
+            <img src="docs/wireframes/delete-post.png"></details>
+</ul>
+
+</br>
+<ul>Return Policy Section:
+<li> A return policiy section to allow the user to be aware of how to return a product if needed.</li>
+<details><summary>User Stories Used: </summary>
+            <img src="docs/wireframes/delete-post.png"></details>
+</ul>
+
+</br>
+<ul>Products List and Specified Product Descriptions:
+<li> The products available on the site needs to easily show the products available and their specified product description so the user knows what they are buying</li>
+<details><summary>User Stories Used: 1, 2, 3 </summary>
+            <img src="docs/wireframes/delete-post.png"></details>
+</ul>
+
+</br>
+<ul>Account Functionality: Login and Registration:
+<li> The users of the site will have a section where they can register for an account. Once registered the user can see their order history and update their profile for personalisation. The user once signed in will be able to leave a review on the products they have ordered too. Users can't leave a review unless signed in.</li>
+<details><summary>User Stories Used: 5, 6</summary>
+            <img src="docs/wireframes/delete-post.png"></details>
+</ul>
+
+</br>
+<ul>Shopping Cart: List of Products For Sale, Products in Cart, Remove Products, Continue Shopping, and Payment:
+<li> The shoppping cart on the site, located in the navbar is equiped with a list of products in the shopping cart, remove button to take the products out of the cart and if the user is happy with their purchase the can go to the payment section and shipping information section.</li>
+<details><summary>User Stories Used: 4 </summary>
+            <img src="docs/wireframes/delete-post.png"></details>
+</ul>
+<br>
 
 ## Testing:
 
