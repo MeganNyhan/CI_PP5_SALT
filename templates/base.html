@@ -54,19 +54,32 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Products</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Account
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="{% url 'home' %}">Login</a></li>
+<!-- Products Dropdown -->
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                Products
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                <li><a class="dropdown-item active" href="#">Product Type 1</a></li>
+                <li><a class="dropdown-item" href="#">Product Type 2</a></li>
+                <li><a class="dropdown-item" href="#">Product Type 3</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="{% url 'register' %}">Register</a></li>
+                <li><a class="dropdown-item" href="#">Product Type 4</a></li>
               </ul>
-            </li>
+            </div>
+<!-- End of Products Dropdown -->
+<!-- Accounts Dropdown -->      
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                Account
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                <li><a class="dropdown-item active" href="#">Register</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Login</a></li>
+              </ul>
+            </div>
+<!-- End of Accounts Dropdown -->  
             <li class="nav-item">
               <a class="nav-link">Shopping Cart</a>
             </li>
