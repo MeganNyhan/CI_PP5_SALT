@@ -639,18 +639,12 @@ With this in mind, we recommend:
 
 <p> Due to limitations in my knowledge I used youtube tutorials/ stack overflow articles to guide me with creating the blog:</p>
 <ul>
-<li> Codemy: https://www.youtube.com/playlist?list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi </li>
-<li>Django Documentation: https://docs.djangoproject.com/en/4.0/topics/email/</li>
-<li> SitePoint: https://www.sitepoint.com/django-send-email/</li>
-<li> Plainenglish: https://python.plainenglish.io/how-to-create-a-contact-page-for-your-django-website-6b97dddedb2d</li>
-<li>https://learncodeweb.com: Used for the AJAX Pop-Up: https://learncodeweb.com/web-development/how-to-create-a-custom-popup-form-with-php-and-ajax/</li>
-<li>https://docs.djangoproject.com/en/4.0/ref/contrib/messages/</li>
+<li></li>
 </ul>
 <br>
-<p> I used these videos/ articles soley as a guide I did not copy and paste.</p>
+<p> Images used on the site:.</p>
 <ul>
 <li>Photo by Moose Photos: https://www.pexels.com/photo/woman-wearing-pink-collared-half-sleeved-top-1036623/</li>
-        <li> Other images used were from donegal daily in their court posts with no clear owner.</li>
 <hr>
 <br>
 
