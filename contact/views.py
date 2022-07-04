@@ -7,7 +7,7 @@ from .models import Contact
 
 
 # Create your views here.
-def contactFrom(request):
+def contactForm(request):
     """
         Contact Form View
     """
