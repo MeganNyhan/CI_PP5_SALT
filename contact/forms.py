@@ -1,4 +1,4 @@
-from django import forms  #Imports
+from django import forms  # Imports
 
 
 class Contact(forms.Form):
