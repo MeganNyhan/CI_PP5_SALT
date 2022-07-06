@@ -49,7 +49,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'cloudinary',
     'contact',
-    'members/'
+    'members',
     'home',
 ]
 

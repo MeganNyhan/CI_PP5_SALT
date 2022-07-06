@@ -3,20 +3,22 @@
 {% block content %}
 
 <div class="container">
+    <br/><br/>
     <div class="row">
         <h1> Sign Up! </h1>
 <!-- Registration Form -->
             <div class="form-group">
                 <form id="register-form" method="POST">
-                    {{% csrf_token %}}
-                    {{% form.as_p %}}
+                    {% csrf_token %}
+                    {{ form.as_p }}
                 <br/>
             </div>
             <div class="col-sm">
-                <button class="btn btn-dark" href="#"> Sign In </button>
+                <button class="btn btn-dark" href="#"> Sign Up </button>
             </div>
 <!-- End of Form -->
             <br>
     </div>
 </div>
+<br/><br/>
 {% endblock %}

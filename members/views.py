@@ -15,7 +15,7 @@ class UserRegisterView(generic.CreateView):
         Login function
     """
     form_class = SignUpForm
-    template_name = 'register.html'
+    template_name = 'registration/register.html'
     success_url = reverse_lazy('login')
 
 
@@ -43,7 +43,7 @@ class UserEditView(generic.UpdateView):
         Edit User Function
     """
     form_class = EditProfileForm
-    template_name = 'edit-profile.html'
+    template_name = 'registration/edit-profile.html'
     success_url = reverse_lazy('home')
 
     def get_object(self):
@@ -55,7 +55,7 @@ class ShowProfilePageView(DetailView):
         Show Profile View
     """
     model = Profile
-    template_name = 'user-profile.html'
+    template_name = 'registration/user-profile.html'
 
     def get_context_data(self, *args, **kwargs):
         users = Profile.objects.all()

@@ -5,14 +5,14 @@ from django import forms
 
 class SignUpForm(UserCreationForm):
     """
-        Sign Up Form
+        Sign up form
     """
-    email = forms.EmailField(widget=forms.EmailField(attrs={
+    email = forms.EmailField(widget=forms.EmailInput(attrs={
                              'class': 'form-control'}))
-    first_name = forms.CharField(max_length=200, widget=forms.TextInput(attrs={
+    first_name = forms.CharField(max_length=100, widget=forms.TextInput(attrs={
                                  'class': 'form-control'}))
     last_name = forms.CharField(max_length=100, widget=forms.TextInput(attrs={
-                                 'class': 'form-control'}))
+                                'class': 'form-control'}))
 
     class Meta:
         model = User
@@ -24,32 +24,33 @@ class SignUpForm(UserCreationForm):
 
         self.fields['username'].widget.attrs['class'] = 'form-control'
         self.fields['password1'].widget.attrs['class'] = 'form-control'
-        self.fields['password1'].widget.attrs['class'] = 'form-control'
+        self.fields['password2'].widget.attrs['class'] = 'form-control'
 
 
 class EditProfileForm(UserChangeForm):
-    """ 
-        Edit Profile Page
     """
-    email = forms.EmailField(widget=forms.EmailField(attrs={
-                             'class': 'form-control'}))
-    first_name = forms.CharField(max_length=200, widget=forms.TextInput(attrs={
-                                 'class': 'form-control'}))
-    last_name = forms.CharField(max_length=100, widget=forms.TextInput(attrs={
-                                 'class': 'form-control'}))
-    username = forms.CharField(max_length=100, widget=forms.TextInput(attrs={
-                                 'class': 'form-control'}))
-    last_login = forms.CharField(max_length=100, widget=forms.TextInput(attrs={
-                                 'class': 'form-control'}))
-    is_superuser = forms.CharField(max_length=100, widget=forms.CheckboxInput
-                                   (attrs={'class': 'form-control'}))
-    is_active = forms.CharField(max_length=100, widget=forms.CheckboxInput
+        Edit Profile Form
+    """
+    email = forms.EmailField(widget=forms.EmailInput
+                             (attrs={'class': 'form-control'}))
+    first_name = forms.CharField(max_length=100, widget=forms.TextInput
+                                 (attrs={'class': 'form-control'}))
+    last_name = forms.CharField(max_length=100, widget=forms.TextInput
                                 (attrs={'class': 'form-control'}))
+    username = forms.CharField(max_length=100, widget=forms.TextInput
+                               (attrs={'class': 'form-control'}))
+    last_login = forms.CharField(max_length=100, widget=forms.TextInput
+                                 (attrs={'class': 'form-control'}))
+    is_superuser = forms.CharField(max_length=100, widget=forms.CheckboxInput
+                                   (attrs={'class': 'form-check'}))
+    is_active = forms.CharField(max_length=100, widget=forms.CheckboxInput
+                                (attrs={'class': 'form-check'}))
     date_joined = forms.CharField(max_length=100, widget=forms.TextInput
                                   (attrs={'class': 'form-control'}))
- 
+
     class Meta:
         model = User
         fields = ('username', 'first_name', 'last_name', 'email', 'password',
                   'last_login', 'is_active', 'is_superuser', 'date_joined')
- 
+
+

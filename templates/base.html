@@ -54,6 +54,9 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="{% url 'home' %}">News</a>
+            </li>
 <!-- Products Dropdown -->
             <div class="dropdown">
               <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
@@ -70,14 +73,25 @@
 <!-- End of Products Dropdown -->
 <!-- Accounts Dropdown -->      
             <div class="dropdown">
+              {% if user.is_authenticated %}
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                Hello, {{ user.first_name }}
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                <li><a class="dropdown-item active" href="{% url 'register' %}">Order History</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="{% url 'login' %}">Log out</a></li>
+              </ul>
+              {% else %}
               <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                 Account
               </button>
               <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
                 <li><a class="dropdown-item active" href="{% url 'register' %}">Register</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Login</a></li>
+                <li><a class="dropdown-item" href="{% url 'login' %}">Login</a></li>
               </ul>
+              {% endif %}
             </div>
 <!-- End of Accounts Dropdown -->  
             <li class="nav-item">

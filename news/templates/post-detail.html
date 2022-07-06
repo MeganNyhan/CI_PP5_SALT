@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} {{ post.title_tag }} {% enblock %}
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <h1> {{ post.title }} </h1>
+        {% if user.is_superuser %}
+        {% if user.id == post.author.id %}
+            <a class="btn btn-warning" href="{% url 'update-post' post.pk %}" aria-label="edit"> Edit </a>
+            <a class="btn btn-danger" href="{% url 'delete-post' post.pk %}" aria-label="delete"> Delete </a>
+        {% endif %}
+        {% endif %}
+        <br/>
+            <small> By: {{ post.autor.first_name }} - {{ post.post_date }}</small>
+        <br/><br/>
+<!-- Post Featured Image -->
+        <img src="{{ post.feature_image.url }}" alt="Article Featured Image">
+        <br/>
+<!-- News Posts' Body -->
+        <div class="post-body">
+            {{ post.body | safe }}
+        </div>
+        <div class="button">
+            <a class="btn btn-dark" href="{% url 'home'%}" arial-label="Home Page Link"> Back </a>
+            <br/><br/>
+        </div>
+    </div>
+</div>
+<!-- Add Author Profile Section? -->
