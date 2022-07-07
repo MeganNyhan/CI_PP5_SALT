@@ -26,4 +26,6 @@ urlpatterns = [
     path('contact', include('contact.urls')),
     path('news', include('django.contrib.auth.urls')),
     path('news', include('news.urls')),
+    path('store', include('django.contrib.auth.urls')),
+    path('store', include('store.urls')),
  ]
