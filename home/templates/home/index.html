@@ -5,53 +5,16 @@
 <body>
   <br/>
 <!-- Header Image -->
-<div class="header">
-<section class="slider_section position-relative">
-  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="slider_item-box">
-          <div class="slider_item-container">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="slider_item-detail">
-                    <div>
-                      <br/>
-                      <br/>
-                      <h1 class="fs-1">
-                        Welcome to Our Salt Shop!
-                      </h1>
-                      <br/>
-                      <p class="fs-3 fw-light">
-                        Here at Deegagh Sea Salt we aim to bring you the very best of what Irish Sea Salt have to offer,
-                        straight to your doorstep!
-                      </p>
-                      <div class="base-btn">
-                        <a class="btn btn-outline-success" href="#" role="button">Shop Now</a>
-                        <a class="btn btn-outline-secondary" href="{% url 'contact' %}" role="button">Contact Us</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="slider_img-box">
-                    <div>
-                      <img src="{% static '/img/salt.jpeg' %}" alt="" class="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>  
-</section>
+<div class="card text-dark">
+  <img src="{% static '/img/salt.jpeg' %}" class="card-img " alt="..." style="width:50%; height:auto; margin-left:40%;">
+  <div class="card-img-overlay">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <p class="card-text">Last updated 3 mins ago</p>
+  </div>
 </div>
-<br>
-<br>
+<div class="container">
+  <div class="row">
 <!-- End of Header Image -->
 <!-- Products Section -->
   <div class="products">
@@ -92,5 +55,6 @@
 <!-- Testimonials -->
 
 <!-- End of Testimonials -->
-</body>
+</div>
+</div>
 {% endblock %}

@@ -2,12 +2,6 @@ body{
     direction: ltr;
 }
 
-/* Header slider */
-.header{
-    padding-top: 5%;
-
-}
-
 /* Product Section */
 .products{
     padding:2%;
@@ -22,3 +16,4 @@ body{
 .base-btn{
     padding-right:20%;
 }
+
