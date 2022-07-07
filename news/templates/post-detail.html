@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %} {{ post.title_tag }} {% enblock %}
+{% block title %} {{ post.title_tag }} {% endblock %}
 {% block content %}
 
 <div class="container">
@@ -16,7 +16,7 @@
             <small> By: {{ post.autor.first_name }} - {{ post.post_date }}</small>
         <br/><br/>
 <!-- Post Featured Image -->
-        <img src="{{ post.feature_image.url }}" alt="Article Featured Image">
+        <img src="{{ post.featured_image.url }}" alt="Article Featured Image">
         <br/>
 <!-- News Posts' Body -->
         <div class="post-body">
@@ -29,3 +29,4 @@
     </div>
 </div>
 <!-- Add Author Profile Section? -->
+{% endblock %}
