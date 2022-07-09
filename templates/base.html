@@ -37,70 +37,70 @@
     {% block extra_js %}
     {% endblock %}
 
-    <title>Deegagh Sea Salt | Home {% block extra_title %}{% endblock %}</title>
+    <title>{% block title %}{% endblock %}</title>
   </head>
 
   <header>
     <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg text-dark" style="background-color: #e3f2fd;">
+    <nav class="navbar navbar-expand-lg text-light" style="background-color: #202A44;">
       <div class="container-fluid">
         <a class="navbar-brand" href="{% url 'home' %}"> 
-          <h3><i class="fa-solid fa-fish-fins"></i>  Deegagh Sea Salt</h3></a>
+          <h3 class="text-light"><i class="fa-solid fa-fish-fins"></i>  Deegagh Sea Salt</h3></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+              <a class="nav-link active text-light" aria-current="page" href="{% url 'home' %}">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="{% url 'news-list' %}">News</a>
+              <a class="nav-link active text-light" aria-current="page" href="{% url 'news-list' %}">News</a>
             </li>
 <!-- Products Dropdown -->
             <div class="dropdown">
-              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+              <button class="btn dropdown-toggle text-light" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                 Products
               </button>
               <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                <li><a class="dropdown-item active" href="{% url 'store' %}">All Products</a></li>
+                <li class="text-light"><a class="dropdown-item active text-light" href="{% url 'store' %}">All Products</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="{% url 'store' %}">Product Type 1</a></li>
-                <li><a class="dropdown-item" href="{% url 'store' %}">Product Type 2</a></li>
-                <li><a class="dropdown-item" href="{% url 'store' %}">Product Type 3</a></li>
+                <li><a class="dropdown-item text-light" href="{% url 'store' %}">Product Type 1</a></li>
+                <li><a class="dropdown-item text-light" href="{% url 'store' %}">Product Type 2</a></li>
+                <li><a class="dropdown-item text-light" href="{% url 'store' %}">Product Type 3</a></li>
               </ul>
             </div>
 <!-- End of Products Dropdown -->
 <!-- Accounts Dropdown -->      
             <div class="dropdown">
               {% if user.is_authenticated %}
-              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+              <button class="btn dropdown-toggle text-light" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                 Hello, {{ user.first_name }}
               </button>
               <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                <li><a class="dropdown-item active" href="{% url 'register' %}">Order History</a></li>
+                <li><a class="dropdown-item active text-light" href="{% url 'register' %}">Order History</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="{% url 'login' %}">Log out</a></li>
+                <li><a class="dropdown-item text-light" href="{% url 'login' %}">Log out</a></li>
               </ul>
               {% else %}
-              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+              <button class="btn dropdown-toggle text-light" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                 Account
               </button>
               <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                <li><a class="dropdown-item active" href="{% url 'register' %}">Register</a></li>
+                <li><a class="dropdown-item active text-light" href="{% url 'register' %}">Register</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="{% url 'login' %}">Login</a></li>
+                <li><a class="dropdown-item text-light" href="{% url 'login' %}">Login</a></li>
               </ul>
               {% endif %}
             </div>
 <!-- End of Accounts Dropdown -->  
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{% url 'cart' %}">Shopping Cart</a>
+            <a class="nav-link active text-light" aria-current="page" href="{% url 'cart' %}">Shopping Cart</a>
           </li>
           </ul>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn" type="submit">Search</button>
+            <button class="btn">Search</button>
           </form>
         </div>
       </div>
