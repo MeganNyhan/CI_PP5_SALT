@@ -29,3 +29,8 @@ body{
     margin-bottom: 10px;
     border-bottom: 1px solid #ececec;
 }
+
+/* Testimonial */
+.man{
+    border-radius: 50%;
+}
