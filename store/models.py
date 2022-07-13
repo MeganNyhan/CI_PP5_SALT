@@ -47,6 +47,7 @@ class Product(models.Model):
         return str(self.name)
 
 
+
 class OrderItem(models.Model):
     """
         OrderItem Model

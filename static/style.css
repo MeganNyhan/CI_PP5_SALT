@@ -170,3 +170,8 @@ body{
 .footer{
     background-color: #202A44;
 }
+
+/* Products */
+.thumbnail img{
+    width:50px;
+}
