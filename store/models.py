@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from cloudinary.models import CloudinaryField
 
 # Create your models here.
 
@@ -37,9 +38,10 @@ class Product(models.Model):
         Product Model
     """
     name = models.CharField(max_length=200)
+    category = models.CharField(max_length=200, null=True, blank=False)
     price = models.FloatField()
     digital = models.BooleanField(default=False, null=True, blank=True)
-    # image
+    featured_image = CloudinaryField('image', default='placeholder')
 
     def __str__(self):
         return str(self.name)
