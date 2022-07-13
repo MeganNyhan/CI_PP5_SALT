@@ -60,14 +60,16 @@
         <!-- Order Summary -->
             <h3 class="fw-light"> Order Summary </h3>
             <hr>
+            {% for item in items %}
             <div class="cart-row">
                 <div style="flex:2"> <img class="row-image" src="{% static 'img/placeholder.png' %}"></div>
-                <div style="flex:2"><strong>Product 1:</strong></div>
-                <div style="flex:1"><strong>20.00</strong></div>
-                <div style="flex:1"><strong>2</strong></div>
+                <div style="flex:2"><strong>{{item.product.name}}</strong></div>
+                <div style="flex:1"><strong>€ {{item.product.price|floatformat:2}}</strong></div>
+                <div style="flex:1"><strong>X {{item.quantity}}</strong></div>
             </div>
-            <h5> Items: 2 </h5>
-            <h5> Total: 40.00 </h5> 
+            {% endfor %}
+            <h5> Items: {{ order.get_cart_items }} </h5>
+            <h5> Total: € {{ order.get_cart_total|floatformat:2}} </h5> 
 
         </div>
     </div>
