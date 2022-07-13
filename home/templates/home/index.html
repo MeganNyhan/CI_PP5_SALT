@@ -76,7 +76,8 @@
         <h1 class="text-center fw-light text-dark"> Our Testimonials </h1>
         <p class="text-center"> Find out what our clients say about us!</p> 
         </div>
-        <div class="testimonial-content">
+        <div class="testimonial-content owl-carousel owl-loaded owl-drag">
+          <div class="owl-stage-outer">
           <div class="single-testimonial">
             <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
             <div class="client-info">
@@ -89,11 +90,12 @@
                 <h6> Ronald Row </h6>
                 <span> Dublin, Co.Dublin</span> 
               </div>
+              </div>
             </div>
           </div>
         </div>
-        <!-- Testimonial 2 -->
-        <div class="testimonial-content">
+        <div class="testimonial-content owl-carousel owl-loaded owl-drag">
+          <div class="owl-stage-outer">
           <div class="single-testimonial">
             <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
             <div class="client-info">
@@ -106,28 +108,13 @@
                 <h6> Ronald Row </h6>
                 <span> Dublin, Co.Dublin</span> 
               </div>
-            </div>
-          </div>
-        </div>
-        <!-- Testimonial 3 -->
-        <div class="testimonial-content">
-          <div class="single-testimonial">
-            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-            <div class="client-info">
-              <div class="client-pic">
-                <a href="#">
-                  <img class="testimonial-img" src="{% static '/img/man1.jpg' %}">
-                </a>
-              </div>
-              <div class="client-details">
-                <h6> Ronald Row </h6>
-                <span> Dublin, Co.Dublin</span> 
               </div>
             </div>
           </div>
         </div>
+      </div>
     </section>
-<br>
+<br><br>
 <hr>
 <!-- End of Testimonials -->
 <!-- About Us -->
@@ -145,5 +132,29 @@
 <br>
 <br>
 </div>
+<!-- Owl Carousel -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+      $('.testimonial-content').owlCarousel({
+      loop:true,
+      nav:false,
+      dots:true,
+      margin:50,
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:1
+          },
+          1000:{
+              items:2
+          }
+      }
+      })
+    });
+</script>
 </body>
 {% endblock %}
