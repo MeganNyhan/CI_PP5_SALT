@@ -2,12 +2,8 @@
 {% load static %}
 
 {% block content %}
-<body>
-  <br/>
 <!-- Header Image -->
-<div>
-<div class="card text-black" style="border:none;">
-  <img src="{% static '/img/white.jpeg' %}" class="card-img " alt="..." style="width:100%; height:800px;">
+  <img src="{% static '/img/header.jpg' %}" class="card-img responsive" alt="Website image" style="width:100%; height:800px;">
   <div class="card-img-overlay">
     <br/>
     <br/>
@@ -15,22 +11,23 @@
     <br/>
     <br/>
     <br/>
+    
   <div class="text">
-    <h1 class="fs-1 text-dark">
+    <h1 class="fs-1 text-light">
       Welcome to Our Salt Shop!
     </h1>
-    <p class="fs-3 fw-light text-dark">
+    <p class="fs-3 fw-light text-light">
       Here at Deegagh Sea Salt we aim to bring you <br> the very best of what Irish Sea Salt have to offer,
       <br> straight to your doorstep!
     </p>
-    <a class="btn btn-outline-primary" href="{% url 'store' %}" role="button">Shop</a>
-    <a class="btn btn-outline-primary" href="{% url 'contact' %}" role="button">Contact Us</a>
+    <a class="btn btn-outline-light" href="{% url 'store' %}" role="button">Shop</a>
+    <a class="btn btn-outline-light" href="{% url 'contact' %}" role="button">Contact Us</a>
   </div>
 </div>
 </div>
 </div>
 <br/><br/>
-<div class="bg">
+<body>
 <div class="container">
   <div class="row">
 <!-- End of Header Image -->
@@ -134,7 +131,16 @@
 <br/><br/><br/>
 <h1 class="text-center fw-light"> Who We Are</h1>
     <p class="text-center fw-light"> At Deegagh Sea Salt we have several viarations of Sea Salt on offer, so you will surely find something for everyone!</p>
-    <img src="{% static '/img/about-us.jpg' %}" class="d-block w-100 man" alt="About Us Family Photo">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img src="{% static '/img/about-us.jpg' %}" class="d-block w-100" alt="About Us Family Photo">
+        </div>
+        <div class="col">
+          <img src="{% static '/img/about-us2.jpg' %}" class="d-block w-100" alt="About Us Family Photo">
+        </div>
+      </div>
+    </div>
     <br>
     <p class="text-center fw-light"> At Deegagh Sea Salt we have several viarations of Sea Salt on offer, so you will surely find something for everyone!</p>
 <!-- End of About -->
