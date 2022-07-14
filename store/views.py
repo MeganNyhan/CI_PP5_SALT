@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import JsonResponse
 from .models import Customer, Product, Order, OrderItem, ShippingAddress
 
 # Create your views here.
@@ -19,7 +20,7 @@ def cart(request):
     else:
         items = []
         order = {'get_cart_total': 0, 'get_cart_items': 0}
-        
+     
     context = {'items': items, 'order': order}
     return render(request, 'cart.html', context)
 
@@ -36,3 +37,7 @@ def checkout(request):
         items = []
     context = {'items': items, 'order': order}
     return render(request, 'checkout.html', context)
+
+
+def updateItem(request):
+    return JsonResponse('Item was added', safe=False)

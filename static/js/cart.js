@@ -8,9 +8,9 @@ for (i = 0; i < updateBtns.length; i++) {
 
         console.log('USER:', user)
         if (user == 'AnonymousUser'){
-            console.log('User is not authenticated.')
+            console.log('User is not Logged In.')
         }else{
-            console.log('User is authenticated, sending data.')
+            console.log('User is Logged In, sending data.')
         }
 
 
