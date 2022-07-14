@@ -19,7 +19,7 @@ class Post(models.Model):
     snippet = models.CharField(max_length=2000, unique=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     category = models.CharField(max_length=2000, unique=True)
-    body = models.CharField(max_length=2555, unique=True)
+    body = models.TextField(max_length=2550, null=True,)
     post_date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
