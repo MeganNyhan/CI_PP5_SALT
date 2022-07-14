@@ -23,7 +23,25 @@
       <script src="https://kit.fontawesome.com/92276c4791.js" crossorigin="anonymous"></script>
     <!-- JavaScript tag -->
     <script type="text/javascript">
-    var user = '{{ request.user }}'
+      var user = '{{request.user}}'
+  
+      function getToken(name) {
+          var cookieValue = null;
+          if (document.cookie && document.cookie !== '') {
+              var cookies = document.cookie.split(';');
+              for (var i = 0; i < cookies.length; i++) {
+                  var cookie = cookies[i].trim();
+                  // Does this cookie string begin with the name we want?
+                  if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                      cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                      break;
+                  }
+              }
+          }
+          return cookieValue;
+      }
+      var csrftoken = getToken('csrftoken')
+  
     </script> 
     <!-- Bootstrap CSS -->
     {% block corecss %}
