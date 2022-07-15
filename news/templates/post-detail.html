@@ -2,9 +2,10 @@
 {% load static %}
 {% block title %} {{ post.title_tag }} {% endblock %}
 {% block content %}
-
 <div class="container">
     <div class="row">
+      <div class="col">
+        <br>
         <h1> {{ post.title }} </h1>
         {% if user.is_superuser %}
         {% if user.id == post.author.id %}
@@ -15,9 +16,6 @@
         <br/>
             <small> By: {{ post.autor.first_name }} - {{ post.post_date }}</small>
         <br/><br/>
-<!-- Post Featured Image -->
-        <img src="{{ post.featured_image.url }}" alt="Article Featured Image">
-        <br/>
 <!-- News Posts' Body -->
         <div class="post-body">
             {{ post.body | safe }}
@@ -26,6 +24,11 @@
             <a class="btn btn-dark" href="{% url 'home'%}" arial-label="Home Page Link"> Back </a>
             <br/><br/>
         </div>
+      </div>
+      <div class="col">
+        <!-- Post Featured Image -->
+        <img src="{{ post.featured_image.url }}" alt="Article Featured Image">
+      </div>
     </div>
 </div>
 <!-- Add Author Profile Section? -->
