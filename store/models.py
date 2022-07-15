@@ -3,7 +3,6 @@ from django.contrib.auth.models import User
 from django.conf import settings
 from django.shortcuts import reverse
 from cloudinary.models import CloudinaryField
-from django_countries.fields import CountryField
 
 CATEGORY_CHOICES = (
     ('P', 'Plain Sea Salt'),
@@ -61,7 +60,7 @@ class OrderItem(models.Model):
     """
         Order Item Model
     """
-    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=CASCADE)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     ordered = models.BooleanField(default=False)
     item = models.ForeignKey(Item, on_delete=models.CASCADE)
     quantity = models.IntegerField(default=1)
@@ -79,7 +78,7 @@ class Order(models.Model):
     ref_code = models.CharField(max_length=20, blank=True, null=True)
     items = models.ManyToManyField(OrderItem)
     start_date = models.DateTimeField(auto_now_add=True)
-    order_date = models.DateTimeField()
+    order_date = models.DateTimeField(null=True)
     ordered = models.BooleanField(default=False)
     shipping_address = models.ForeignKey(
         'Address', related_name='shipping_address', on_delete=models.SET_NULL,
@@ -87,8 +86,6 @@ class Order(models.Model):
     billing_address = models.ForeignKey(
         'Address', related_name='billing_address', on_delete=models.SET_NULL,
         blank=True, null=True)
-    payment = models.ForeignKey(
-        'payment', on_delete=models.SET_NULL, blank=True, null=True)
     being_delivered = models.BooleanField(default=False)
     recieved = models.BooleanField(default=False)
 
@@ -111,10 +108,12 @@ class Address(models.Model):
     street_address = models.CharField(max_length=100)
     county = models.CharField(max_length=100)
     eircode = models.CharField(max_length=100)
-    country = models.CountryField(max_length=100)
+    country = models.CharField(max_length=100)
 
     def __str__(self):
         return str(self.user.username)
 
     class Meta:
         verbose_name_plural = 'Addresses'
+
+
