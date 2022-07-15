@@ -1,7 +1,3 @@
-# Imports
+from django.shortcuts import render
 
-def all_products(request):
-    """
-        View All Products
-    """
-    products
+# Create your views here.
