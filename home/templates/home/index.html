@@ -2,35 +2,31 @@
 {% load static %}
 
 {% block content %}
-<!-- Header Image -->
-  <img src="{% static '/img/header.jpg' %}" class="card-img responsive" alt="Website image" style="width:100%; height:800px;">
-  <div class="card-img-overlay">
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    
-  <div class="text">
-    <h1 class="fs-1 text-light">
-      Welcome to Our Salt Shop!
-    </h1>
-    <p class="fs-3 fw-light text-light">
-      Here at Deegagh Sea Salt we aim to bring you <br> the very best of what Irish Sea Salt have to offer,
-      <br> straight to your doorstep!
-    </p>
-    <a class="btn btn-outline-light" href="{% url 'store' %}" role="button">Shop</a>
-    <a class="btn btn-outline-light" href="{% url 'contact' %}" role="button">Contact Us</a>
+<div>
+  <div class="card text-black" style="border:none;">
+    <img src="{% static '/img/white.jpeg' %}" class="card-img " alt="..." style="width:100%; height:800px;">
+    <div class="card-img-overlay">
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+    <div class="text">
+      <h1 class="fs-1 text-dark">
+        Welcome to Our Salt Shop!
+      </h1>
+      <p class="fs-3 fw-light text-dark">
+        Here at Deegagh Sea Salt we aim to bring you <br> the very best of what Irish Sea Salt have to offer,
+        <br> straight to your doorstep!
+      </p>
+      <a class="btn btn-outline-primary" href="{% url 'store' %}" role="button">Shop</a>
+      <a class="btn btn-outline-primary" href="{% url 'contact' %}" role="button">Contact Us</a>
+    </div>
   </div>
-</div>
-</div>
-</div>
-<br/><br/>
-<body>
-<div class="container">
-  <div class="row">
-<!-- End of Header Image -->
+  </div>
+  </div>
+  <br/><br/>
 <!-- Products Section -->
   <div class="products">
     <h1 class="text-center fw-light text-dark"> Our Products</h1>
