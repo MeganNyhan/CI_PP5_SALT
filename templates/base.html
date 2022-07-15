@@ -15,28 +15,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"/>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{% static 'style.css' %}">
-    <!-- Custome JS -->
-    <!-- <script type="text/javascript">
-      var user = '{{request.user}}'
-
-      function getToken(name) {
-      let cookieValue = null;
-      if (document.cookie && document.cookie !== '') {
-          const cookies = document.cookie.split(';');
-          for (let i = 0; i < cookies.length; i++) {
-              const cookie = cookies[i].trim();
-              // Does this cookie string begin with the name we want?
-              if (cookie.substring(0, name.length + 1) === (name + '=')) {
-                  cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-                  break;
-              }
-          }
-      }
-    return cookieValue;
-}
-const csrftoken = getToken('csrftoken');
-    </script> -->
-
     <!-- Font Awesome -->
       <link href="assets/fontawesome/all.css" rel="stylesheet">
       <script src="https://kit.fontawesome.com/92276c4791.js" crossorigin="anonymous"></script>
@@ -84,11 +62,11 @@ const csrftoken = getToken('csrftoken');
                 Products
               </button>
               <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                <li class="text-light"><a class="dropdown-item active text-light" href="{% url 'store' %}">All Products</a></li>
+                <li class="text-light"><a class="dropdown-item active text-light" href="#">All Products</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item text-light" href="{% url 'store' %}">Himalayan Salt</a></li>
-                <li><a class="dropdown-item text-light" href="{% url 'store' %}">Plain Salt</a></li>
-                <li><a class="dropdown-item text-light" href="{% url 'store' %}">Flavoured Salt</a></li>
+                <li><a class="dropdown-item text-light" href="#">Himalayan Salt</a></li>
+                <li><a class="dropdown-item text-light" href="#">Plain Salt</a></li>
+                <li><a class="dropdown-item text-light" href="#">Flavoured Salt</a></li>
               </ul>
             </div>
 <!-- End of Products Dropdown -->
@@ -116,7 +94,7 @@ const csrftoken = getToken('csrftoken');
             </div>
 <!-- End of Accounts Dropdown -->  
           <li class="nav-item">
-            <a class="nav-link active text-light" aria-current="page" href="{% url 'cart' %}">Shopping Cart</a>
+            <a class="nav-link active text-light" aria-current="page" href="#">Shopping Cart</a>
           </li>
           </ul>
           <form class="d-flex" role="search">
