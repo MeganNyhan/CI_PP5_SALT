@@ -1,102 +1,56 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.conf import settings
+from django.shortcuts import reverse
 from cloudinary.models import CloudinaryField
+
+CATEGORY_CHOICES = (
+    ('P', 'Plain Sea Salt'),
+    ('F', 'Flavoured Sea Salt'),
+    ('H', 'Himalayan Salt')
+)
 
 # Create your models here.
 
 
-class Customer(models.Model):
+class UserProfile(models.Model):
     """
-        Customer model
+        User Profile Model
     """
-    user = models.OneToOneField(User,
-                                null=True, blank=True,
-                                on_delete=models.CASCADE)
-    name = models.CharField(max_length=200, null=True)
-    email = models.CharField(max_length=250)
+    user = models.OneToOneField(
+        settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    stripe_customer_id = models.CharField(max_length=50, blank=True, null=True)
+    one_click_purchasing = models.BooleanField(default=False)
 
     def __str__(self):
-        return str(self.name)
+        return self.user.username
 
 
-class Order(models.Model):
+class Item(models.Model):
     """
-        Order Model
+        Item Model
     """
-    customer = models.ForeignKey(Customer, on_delete=models.SET_NULL,
-                                 null=True, blank=True)
-    date_ordered = models.DateTimeField(auto_now_add=True)
-    complete = models.BooleanField(default=False)
-    transaction_id = models.CharField(max_length=100, null=True)
-
-    def __str__(self):
-        return str(self.id)
-
-    @property
-    def get_cart_total(self):
-        """
-            Method for gettign total cart value
-        """
-        orderitems = self.orderitem_set.all()
-        total = sum([item.get_total for item in orderitems])
-        return total
-
-    @property
-    def get_cart_item(self):
-        """
-            Method for getting total cart value
-        """
-        orderitems = self.orderitem_set.all()
-        total = sum([item.quantity for item in orderitems])
-        return total
-
-
-
-class Product(models.Model):
-    """
-        Product Model
-    """
-    name = models.CharField(max_length=200)
-    category = models.CharField(max_length=200, null=True, blank=False)
+    title = models.CharField(max_length=100)
     price = models.FloatField()
-    digital = models.BooleanField(default=False, null=True, blank=True)
-    featured_image = CloudinaryField('image', default='placeholder')
+    category = models.CharField(choices=CATEGORY_CHOICES, max_length=2)
+    slug = models.SlugField()
+    description = models.TextField()
+    image = CloudinaryField()
 
     def __str__(self):
-        return str(self.name)
+        return str(self.title)
 
+    def get_absolute_url(self):
+        return reverse("core:product", kwargs={
+            'slug': self.slug
+        })
 
+    def get_add_to_cart_url(self):
+        return reverse("core:add-to-cart", kwargs={
+            'slug': self.slug
+        })
 
-class OrderItem(models.Model):
-    """
-        OrderItem Model
-    """
-    product = models.ForeignKey(Product, on_delete=models.SET_NULL, null=True)
-    order = models.ForeignKey(Order, on_delete=models.SET_NULL, null=True)
-    quantity = models.IntegerField(default=0, null=True, blank=True)
-    date_added = models.DateTimeField(auto_now_add=True)
-
-    @property
-    def get_total(self):
-        """
-            Get price for items multiplied by quantity
-        """
-        total = self.product.price * self.quantity
-        return total
-
-
-class ShippingAddress(models.Model):
-    """
-        Shiiping Model
-    """
-    customer = models.ForeignKey(Customer, on_delete=models.SET_NULL,
-                                 null=True)
-    order = models.ForeignKey(Order, on_delete=models.SET_NULL, null=True)
-    address = models.CharField(max_length=200, null=False)
-    city = models.CharField(max_length=200, null=False)
-    county = models.CharField(max_length=200, null=False)
-    eircode = models.CharField(max_length=200, null=False)
-    date_added = models.DateTimeField(auto_now_add=True)
-
-    def __str__(self):
-        return str(self.address)
+    def get_remove_to_cart_url(self):
+        return reverse("core:remove-to-cart", kwargs={
+            'slug': self.slug
+        })
