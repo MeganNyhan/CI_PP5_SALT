@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django.conf import settings
 from django.shortcuts import reverse
 from cloudinary.models import CloudinaryField
+from django_countries.fields import CountryField
 
 CATEGORY_CHOICES = (
     ('P', 'Plain Sea Salt'),
@@ -99,3 +100,21 @@ class Order(models.Model):
         for order_item in self.items.all():
             total += order_item.get_final_price()
         return total
+
+
+class Address(models.Model):
+    """
+        Address Model
+    """
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, 
+                             on_delete=models.CASCADE)
+    street_address = models.CharField(max_length=100)
+    county = models.CharField(max_length=100)
+    eircode = models.CharField(max_length=100)
+    country = models.CountryField(max_length=100)
+
+    def __str__(self):
+        return str(self.user.username)
+
+    class Meta:
+        verbose_name_plural = 'Addresses'
