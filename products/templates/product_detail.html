@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %} Deegagh Sea Salt | Contact {% endblock %}
+{% block content %}
+{% load static %}
+<!--Source Code: https://codepen.io/HamzaGourram/pen/XWMEvgr -->
+<!-- News Posts' Body -->
+<div class="post-body">
+        {{ post.body | safe }}
+    </div>
+    <div class="button">
+        <a class="btn btn-dark" href="{% url 'home'%}" arial-label="Home Page Link"> Back </a>
+        <br/><br/>
+    </div>
+  </div>
+  <div class="col">
+    <br>
+    <br>
+    <br>
+    <!-- Post Featured Image -->
+    <img src="{{ post.featured_image.url }}" class="d-block w-100 h-60" alt="Article Featured Image">
+  </div>
+</div>
+</div>
+{% endblock %}
