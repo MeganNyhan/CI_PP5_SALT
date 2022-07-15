@@ -6,12 +6,6 @@
   <div class="card text-black" style="border:none;">
     <img src="{% static '/img/white.jpeg' %}" class="card-img " alt="..." style="width:100%; height:800px;">
     <div class="card-img-overlay">
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
     <div class="text">
       <h1 class="fs-1 text-dark">
         Welcome to Our Salt Shop!
@@ -26,42 +20,50 @@
   </div>
   </div>
   </div>
-  <br/><br/>
-<!-- Products Section -->
-  <div class="products">
+<!-- Products Section --> 
     <h1 class="text-center fw-light text-dark"> Our Products</h1>
     <p class="text-center fw-light text-dark"> At Deegagh Sea Salt we have several viarations of Sea Salt on offer, so you will surely find something for everyone!</p>
     <br/>
 <!-- Product Card -->
-<div class="card-group">
-  <div class="card border-0">
-    <img class="card-img-top" src="{% static '/img/him-salt.jpeg' %}" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Himalayan Salt Products</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <button type="button" class="btn btn-outline-secondary text-dark">View Products</button>
+<br>
+<div class="products text-center">
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title text-center"><i class="fa-solid fa-water"></i></h5>
+          <h6 class="card-subtitle mb-2 text-center">Himalayan Salt</h6>
+          <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="{% url 'store' %}" class="card-link">Products Link</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title text-center"><i class="fa-solid fa-ship"></i></h5>
+          <h6 class="card-subtitle mb-2 text-center">Plain Salt</h6>
+          <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="{% url 'store' %}" class="card-link">Products Link</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title text-center"><i class="fa-solid fa-person-swimming"></i></h5>
+          <h6 class="card-subtitle mb-2 text-center">Flavoured Salt</h6>
+          <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="{% url 'store' %}" class="card-link">Products Link</a>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="card border-0">
-    <img class="card-img-top" src="{% static '/img/plain-salt.jpeg' %}" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Plain Salt Products</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      <button type="button" class="btn btn-outline-secondary text-dark">View Products</button>
-    </div>
-  </div>
-  <div class="card border-0">
-    <img class="card-img-top" src="{% static '/img/flav-salt.jpeg' %}" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Flavoured Salt Products</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <button type="button" class="btn btn-outline-secondary text-dark">View Products</button>
-    </div>
-  </div>
+</div>
+<br>
 </div>
 <hr>
-<br/>
-</div>
 <!-- Testimonials -->
     <section class="testimonial-area">
       <div class="container">
@@ -120,13 +122,12 @@
         </div>
       </div>
     </section>
-<br><br>
 <hr>
 <!-- End of Testimonials -->
 <!-- About Us -->
 <br/><br/><br/>
 <h1 class="text-center fw-light"> Who We Are</h1>
-    <p class="text-center fw-light"> At Deegagh Sea Salt we have several viarations of Sea Salt on offer, so you will surely find something for everyone!</p>
+    <p class="text-center fw-light"> Deegagh Sea Salt is a Granfather and Grandson company that came from our joint love of the sea and fishing.</p>
     <div class="container">
       <div class="row">
         <div class="col">
