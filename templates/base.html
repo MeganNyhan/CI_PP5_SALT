@@ -97,7 +97,7 @@
             <a class="nav-link active text-light" aria-current="page" href="#">Shopping Cart</a>
           </li>
           </ul>
-          <form class="d-flex" role="search">
+          <form class="d-flex" role="search" method="GET" action="{% url 'products' %}">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn text-light">Search</button>
           </form>
