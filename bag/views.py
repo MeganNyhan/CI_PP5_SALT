@@ -4,6 +4,6 @@ from django.shortcuts import render
 
 
 def view_bag(request):
-    """ View the shopping bag page"""
+    """ View the shopping bag contents """
 
     return render(request, 'bag.html')

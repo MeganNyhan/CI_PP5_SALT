@@ -3,12 +3,16 @@
 {% block content %}
 {% load static %}
 <!-- This is the template from Code Institute Botique Ado Project -->
+<br>
 <div class="container">
         <div class="row">
             <div class="product-container col-10">
                 <div class="row mt-1 mb-2"></div>
                 <div class="row">
-
+                    <div id="delivery-banner" class="text-center">
+                        <div class="text-dark">
+                            <h4 class="font-weight-bold"> Free delivery on orders over € {{ free_delivery_threshold }} !</h4>
+                        </div>
                     <nav class="navbar navbar-expand-lg">
                         <div class="container-fluid">
                           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,6 +27,7 @@
                           </div>
                         </div>
                       </nav>
+                      </div>
                     {% for product in products %}
                     <br>
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
