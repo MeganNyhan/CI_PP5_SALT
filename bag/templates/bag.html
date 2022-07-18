@@ -16,6 +16,8 @@
         <div class="col">
             {% if bag_items %}
                 <div class="table-responsive rounded">
+                    {{ bag_items }}
+                </div>
             {% else %}
                 <p class="lead mb-5"> Your Cart is currently empty. Browse products?</p> <a class="btn btn-outline-black" href="{% url 'products' %}">
                     <span class="icon">
@@ -27,7 +29,7 @@
                 </div>
         </div>
     </div>
-</div>
+
 
 
 {% endblock %}
