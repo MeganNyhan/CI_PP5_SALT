@@ -2,9 +2,14 @@ body{
     direction: ltr;
 }
 
+/* Header on home page */
+.header{
+    width:100%;
+}
+
 /* Product Section */
 .products{
-    padding-left:3%;
+    padding-left:8%;
     padding-bottom:10%;
 }
 
@@ -71,7 +76,7 @@ body{
 .testimonial-area{
     position: relative;
     z-index: 2;
-    padding: 50px 0;
+    padding: 50px 0 50px 50px;
 }
 
 .testimonial-area .owl-carousel{
