@@ -6,8 +6,8 @@
 <div class="container mb-2">
     <div class="row">
         <div class="col">
-            <hr>
-                <h2 class="logo-font mb-4"> Cart Contents: </h2>
+            <br>
+                <h2 class="logo-font mb-4 fw-light"> Cart Contents: </h2>
             <hr>
         </div>
     </div>
@@ -39,8 +39,33 @@
                                     <p class="my-0">{{ item.product.price }}</p>
                                 </td>
                                 <td class="py-3">
-                                    <p class="my-0">{{ item.quantity }}</p>
-                                </td>
+                                    <form class="form update-form" method="POST" action="">
+                                        {% csrf_token %}
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <button class="decrement-qty btn btn-sm btn-black rounded-0" 
+                                                        data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
+                                                    </button>
+                                                </div>
+                                                <input class="form-control form-control-sm qty_input" type="number"
+                                                    name="quantity" value="{{ item.quantity }}" min="1" max="99"
+                                                    data-item_id="{{ item.item_id }}"
+                                                    id="id_qty_{{ item.item_id }}">
+                                                <div class="input-group-append">
+                                                    <button class="increment-qty btn btn-sm btn-black rounded-0"
+                                                        data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
+                                                    </button>
+                                                </div>
+                                                {% if item.product.has_sizes %}
+                                                    <input type="hidden" name="product_size" value="{{ item.size }}">
+                                                {% endif %}
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <a class=" btn update-link text-black" style="text-decoration:none;"><small>Update</small></a>
+                                    <a class="btn remove-item text-danger float-right" id="remove_{{ item.item_id }}" data-size="{{ item.size }}" style="text-decoration:none;"><small>Remove</small></a>
+                                  </td>
                                 <td class="py-3">
                                     <p class="my-0">{{ item.product.price }}</p>
                                 </td>
@@ -89,4 +114,31 @@
 
 
 
+{% endblock %}
+
+
+{% block postloadjs %}
+{{ block.super }}
+{% include 'includes/quantity_input_script.html' %}
+
+<script type="text/javascript">
+    // Update on click
+    $('.update-link').click(function(e) {
+        var form = $(this).prev('.update-form');
+        form.submit();
+    })
+
+    // Remove on click
+    $('.remove-item').click(function(e) {
+        var csrfToken = "{{ csrf_token }}";
+        var itemId = $(this).attr('id').split('remove_')[1];
+        var url = `/bag/remove/${itemId}`;
+        var data = {'csrfmiddlewaretoken': csrfToken, 'size': size};
+
+        $.post(url, data)
+         .done(function() {
+             location.reload();
+         });
+    })
+</script>
 {% endblock %}
