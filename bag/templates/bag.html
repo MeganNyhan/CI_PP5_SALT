@@ -97,7 +97,7 @@
                                     </span>
                                     <span class="text-uppercase"> Continue Shopping </span>
                                 </a>
-                                <a href="" class="btn btn-success">
+                                <a href="{% url 'checkout' %}" class="btn btn-success">
                                     <span class="text-uppercase"> Secure Checkout</span>
                                     <span class="icon">
                                         <i class="fas fa-lock"></i>
@@ -106,6 +106,12 @@
                         </tr>
                     </table>
                 </div>
+                <p class="lead mb-5"> Checkout</p> <a class="btn btn-outline-black" href="{% url 'checkout' %}">
+                    <span class="icon">
+                        <i class="fa-solid fa-lock"></i>
+                    </span>
+                    <span class="text-uppercase"> Secure Checkout </span>
+                </a>
             {% else %}
                 <p class="lead mb-5"> Your Cart is currently empty. Browse products?</p> <a class="btn btn-outline-black" href="{% url 'products' %}">
                     <span class="icon">
@@ -113,6 +119,8 @@
                     </span>
                     <span class="text-uppercase"> Continue Shopping </span>
                 </a>
+
+                
             {% endif %}
                 </div>
         </div>
