@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %} Deegagh Sea Salt | Update Post {% enblock %}
+{% block title %} Deegagh Sea Salt | Update Post {% endblock %}
 
+{% block content %}
 <div class="container">
     <div class="row">
         {% if user.is_authenticated %}
@@ -26,4 +27,5 @@
         {% endif %}
     </div>
 </div>
+<br>
 {% endblock %}
