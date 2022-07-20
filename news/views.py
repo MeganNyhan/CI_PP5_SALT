@@ -1,7 +1,8 @@
-from django.views.generic import ListView, DetailView, UpdateView, DeleteView
+from django.views.generic import ListView, DetailView, UpdateView, DeleteView, CreateView
 from django.urls import reverse_lazy
+from django.contrib.messages.views import SuccessMessageMixin
 from .models import Post, Comment
-from .forms import EditForm
+from .forms import EditForm, CommentForm
 
 # Create your views here.
 
