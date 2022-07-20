@@ -1,6 +1,6 @@
 from django.views.generic import ListView, DetailView, UpdateView, DeleteView
 from django.urls import reverse_lazy
-from .models import Post
+from .models import Post, Comment
 from .forms import EditForm
 
 # Create your views here.
@@ -46,3 +46,18 @@ class DeletePostView(DeleteView):
     model = Post
     template_name = 'delete-post.html'
     success_url = reverse_lazy('home')
+
+
+class AddCommentView(SuccessMessageMixin, CreateView):
+    """
+        Create Add post view for creating blog posts on the site
+    """
+    model = Comment
+    form_class = CommentForm
+    template_name = 'add_comment.html'
+    success_url = reverse_lazy('base.html')
+    success_message = "%{name} Your comment was Created Successfully"
+
+    def form_valid(self, form):
+        form.instance.post_id = self.kwargs['pk']
+        return super().form_valid(form)
