@@ -1,0 +1,12 @@
+.fieldset-label{
+    position: relative;
+    right: .5rem
+}
+
+/* Payment form */
+#payment-form .form-control,
+#card-element{
+    color: black;
+    border:1px solid black
+
+}
