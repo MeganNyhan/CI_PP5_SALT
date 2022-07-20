@@ -3,22 +3,22 @@
 
 {% block content %}
 
-  <div class="card" style="border:none;">
-    <img src="{% static '/img/header.jpg' %}" class="card-img responsive" alt="..." style="width:100%">
-    <div class="card-img-overlay">
-    <div class="text">
-      <h1 class="fs-1 text-white">
-        Welcome to Our Salt Shop!
-      </h1>
-      <p class="fs-3 fw-light text-white">
-        Here at Deegagh Sea Salt we aim to bring you <br> the very best of what Irish Sea Salt have to offer,
-        <br> straight to your doorstep!
+<div class="head-container">
+  <img src="{% static 'img/header.jpg' %}" alt="Family Fishing" style="width:100%;">
+  <div class="centered text-light">
+    <h2 class="fs-1 text-right text-justify fw-bold">
+      Welcome to Our Salt Shop!
+    </h2>
+    <br/>
+      <p class="fs-3 fw-light text-light fw-bold">
+        Here at Deegagh Sea Salt we aim to bring you the very best of what Irish Sea Salt have to offer,<br>
+        straight to your doorstep!
+        <br><br>
+        <a class="btn btn-light" href="#" role="button">Shop Now</a>
+        <a class="btn btn-light" href="{% url 'contact' %}" role="button">Contact Us</a>
       </p>
-      <a class="btn btn-outline-primary" href="{% url 'products' %}" role="button">Shop</a>
-      <a class="btn btn-outline-primary" href="{% url 'contact' %}" role="button">Contact Us</a>
-    </div>
   </div>
-  </div>
+</div>
 <!-- Products Section --> 
 <br>
     <h1 class="text-center fw-light text-dark"> Our Products</h1>

@@ -3,8 +3,28 @@ body{
 }
 
 /* Header on home page */
-.header{
-    width:100%;
+/* Container holding the image and the text */
+.head-container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+.head-container > img{
+    opacity: 70px;
+}
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+/* buttons in home page */
+.home-btn btn {
+    left: 20%;
 }
 
 /* Product Section */
