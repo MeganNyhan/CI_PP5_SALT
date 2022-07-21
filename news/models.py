@@ -33,15 +33,16 @@ class Post(models.Model):
 
     
 class Comment(models.Model):
-    """
-    This comment model will allow me to post a comment under the
-    posts.
-    """
-    post = models.ForeignKey(Post, related_name="comments",
-                             on_delete=models.CASCADE)
-    name = models.CharField(max_length=255)
+    post = models.ForeignKey(Post, on_delete=models.CASCADE,
+                             related_name="comments")
+    name = models.CharField(max_length=80)
+    email = models.EmailField()
     body = models.TextField()
-    date_added = models.DateTimeField(auto_now_add=True)
+    created_on = models.DateTimeField(auto_now_add=True)
+    approved = models.BooleanField(default=False)
+
+    class Meta:
+        ordering = ["created_on"]
 
     def __str__(self):
-        return '%s - %s' % (self.post.title, self.name)
+        return f"Comment {self.body} by {self.name}"
