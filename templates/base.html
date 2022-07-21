@@ -119,11 +119,11 @@
 <body>
 <!-- Django Messages Section -->
 {% if messages %}
-<ul class="messages">
     {% for message in messages %}
-    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    <div class="alert alert-success" role="alert">
+      {{ message }}
+    </div>
     {% endfor %}
-</ul>
 {% endif %}
 
 <!-- Extra Header -->

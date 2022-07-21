@@ -16,13 +16,70 @@
 <br>
 <br>
 <div class="thank-you">
-      <a href="{% url 'news-list' %}" class="btn btn-ouline-black">
-        <span class="icon mr-2">
-            <i class="fa-solid fa-utensils fa-lg"></i>
-        </span>
-        <br>
-        <span class="fw-light">Check out how you can use your new products in our recipies section!</span>
-    </a>
+
+  <h1 class="text-center"> Thank your for your order!</h1>
+  <hr>
+
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <a href="{% url 'news-list' %}" class="btn btn-ouline-black">
+          <span class="icon mr-2">
+              <i class="fa-solid fa-utensils fa-lg"></i>
+          </span>
+          <br>
+          <span class="fw-light">Check out how you can use your new products in our recipies section!</span>
+      </a>
+      </div>
+      <br>
+      <div class="col">
+      <div class="row">
+        <div class="col-6 col-lg">
+          <div class="order-confirmation-wrapper p-2 border">
+            <!-- Order Info -->
+            <div class="row">
+              <div class="col">
+                <strong class="text-left">
+                  Order Info:
+                  </strong>
+                <hr>
+                <div class="col-12">
+                  <p class="text-muted"> Order Number: {{ order.order_number }}</p>
+                </div>
+              </div>
+            </div>
+            <!-- Order Details -->
+            <div class="row">
+              <div class="col">
+                <small class="text-muted text-left">
+                  Order Details:
+                  <div class="col-12">
+                    <p class="text-muted"> Order Date: {{ order.date }}</p>
+                  </div>
+              </div>
+            </div>
+            <!-- Delivering to: -->
+            <div class="row">
+              <div class="col">
+                <p class="text-muted text-left">
+                  Delivering to: {{ order.street_address1 }}
+                </p>
+              </div>
+            </div>
+            <!-- Billing: -->
+            <div class="row">
+              <div class="col">
+                <p class="text-muted text-left">
+                  Billing: {{ order.full_name }}
+                </pl>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
   </div>
 </div>
 <br>
