@@ -208,7 +208,5 @@ body{
 
 /* Check Out Success */
 .thank-you{
-    position: absolute;
     left: 50%;
-    transform: translate(-50%, -50%);
 }
