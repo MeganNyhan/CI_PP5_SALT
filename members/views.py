@@ -66,3 +66,10 @@ class ShowProfilePageView(DetailView):
 
         context["page_user"] = page_user
         return context
+
+
+def profile(request):
+    """ Display users profile """
+    template = 'registration/profile.html'
+    context = {}
+    return render(request, template, context)

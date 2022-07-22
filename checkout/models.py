@@ -3,6 +3,8 @@ import uuid
 from django.db import models
 from django.db.models import Sum
 from django.conf import settings
+from members.models import UserProfile
+
 
 from products.models import Product
 
@@ -10,6 +12,8 @@ from products.models import Product
 class Order(models.Model):
     """ Order Model """
     order_number = models.CharField(max_length=30, null=False, editable=False)
+    user_profile = models.ForeignKey(UserProfile, on_delete=models.SET_NULL, 
+                                     null=True, blank=True, related_name='orders')
     full_name = models.CharField(max_length=40, null=False, blank=False)
     email = models.EmailField(max_length=240, null=False, blank=False)
     phone_number = models.CharField(max_length=40, null=False, blank=False)
