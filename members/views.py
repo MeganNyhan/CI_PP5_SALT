@@ -8,6 +8,7 @@ from django.http import HttpResponse
 from django.core.mail import BadHeaderError
 from home.models import Profile
 from .forms import SignUpForm, EditProfileForm
+from .models import UserProfile
 
 
 class UserRegisterView(generic.CreateView):
@@ -70,6 +71,9 @@ class ShowProfilePageView(DetailView):
 
 def profile(request):
     """ Display users profile """
+    profile = get_object_or_404(UserProfile, user=request.user)
     template = 'registration/profile.html'
-    context = {}
+    context = {
+        'profile':profile,
+        }
     return render(request, template, context)
