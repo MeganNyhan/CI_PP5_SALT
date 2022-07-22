@@ -7,7 +7,7 @@ from django.contrib import messages
 from django.http import HttpResponse
 from django.core.mail import BadHeaderError
 from home.models import Profile
-from .forms import SignUpForm, EditProfileForm
+from .forms import SignUpForm, EditProfileForm, UserProfileForm
 from .models import UserProfile
 
 
@@ -72,8 +72,13 @@ class ShowProfilePageView(DetailView):
 def profile(request):
     """ Display users profile """
     profile = get_object_or_404(UserProfile, user=request.user)
+
+    form = UserProfileForm(instance=profile)
+    orders = profile.orders.all()
+
     template = 'registration/profile.html'
     context = {
-        'profile':profile,
+        'form': form,
+        'orders': orders,
         }
     return render(request, template, context)
