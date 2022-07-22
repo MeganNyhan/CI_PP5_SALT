@@ -1,0 +1,2 @@
+Deegagh Sea Salt Confirmation Email to say we recieved your Order. 
+Here is your Order Number {{order.order_number}}
