@@ -210,3 +210,10 @@ body{
 .thank-you{
     left: 50%;
 }
+
+
+/* Profile of User */
+.order-history{
+    max-height: 416px;
+    overflow-y: auto;
+}

@@ -9,5 +9,6 @@ urlpatterns = [
     path('<int:pk>/profile/', ShowProfilePageView.as_view(),
          name='show_profile_page'),
     path('profile/', views.profile,name='profile'),
+    path('order_history/<order_number>', views.order_history, name='order_history'),
 
 ]       

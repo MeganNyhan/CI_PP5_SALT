@@ -22,13 +22,23 @@
   <div class="container text-center">
     <div class="row">
       <div class="col">
-        <a href="{% url 'news-list' %}" class="btn btn-ouline-black">
+        {% if from_profile %}
+        <a href="{% url 'profile' %}" class="btn btn-ouline-black">
           <span class="icon mr-2">
-              <i class="fa-solid fa-utensils fa-lg"></i>
+            <i class="fa-solid fa-file-user"></i>
           </span>
-          <br>
-          <span class="fw-light">Check out how you can use your new products in our recipies section!</span>
-      </a>
+            <br>
+          <span class="fw-light">Return to Profile?</span>
+        </a>
+        {% else %}
+          <a href="{% url 'news-list' %}" class="btn btn-ouline-black">
+            <span class="icon mr-2">
+              <i class="fa-solid fa-utensils fa-lg"></i>
+            </span>
+              <br>
+            <span class="fw-light">Check out how you can use your new products in our recipies section!</span>
+          </a>
+        {% endif %}
       </div>
       <br>
       <div class="col">
