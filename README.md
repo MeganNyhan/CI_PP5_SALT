@@ -83,39 +83,60 @@
 <hr>
 
 ### Database 
-<p> My Database has four models:
+<p> My Database has eight models:
 <p> My project uses the relational databse -> PostgreSQL.</p>
 <p> The data is handeled within the application with Django. </p>
 <ul>
-<li> Profile </li>
-<li> Post </li>
 <li> Comment </li>
 <li> Contact </li>
+<li> Category </li>
+<li> Order </li>
+<li> OrderLineItem </li>
+<li> Post </li>
+<li> Product </li>
+<li> UserProfile </li>
+
 </ul>
 <ul>
-<p> Profile: </p>
-<li> The Profile model in my application creates the users profile.</li>
-<li> It is part of the django.db library. </li>
-<li> It includes the following fields: user, bio, profile_pic, website_url, facebook_url, twitter_url, instagram_url, pinterest_url.</li>
-<li> It includes a One to One field which is apart of a command to delete history of a user if the user is deleted.</li>
-<br>
-<p> Post: </p>
-<li> This post model will allow me to post onto the site, and create the required variables fields.</li>
-<li> It is used by the admin to post blog posts to the site, there for it uses a Foreign Key as an ID of the admin/ author. </li>
-<li> It includes the following fields: title, title_tag, featured_image, snippet, author, body and post_date.</li>
 <br>
 <p> Comment: </p>
-<li> This comment model will allow users to post comments under the blog post.</li>
+<li> This Comment model will allow users to post comments under the blog post.</li>
 <li> It is used by several users to post comments under the blog post, there for it uses a Foreign Key. </li>
 <li> It includes the following fields: post, name, body, date_added.</li>
 <br>
 <p> Contact: </p>
-<li> This contact model will allow me to save the contact forms that are sent to the admin of the site, and store the details in the admin section of the site so the admin can easily get back to the user trying to get in contact.</li>
+<li> This Contact model will allow me to save the contact forms that are sent to the admin of the site, and store the     details in the admin section of the site so the admin can easily get back to the user trying to get in contact.</li>
 <li> It is used by several users to contact the admin of the site, there for it uses a input fields. </li>
 <li> It includes the following fields: name, email and message.</li>
 <br>
-<p> Comment has a many to one relationship and also uses the imported User class model for username and user unigue        passwords.</p>
+<p> Category: </p>
+<li> This Category model will allow me to seperate the products into their respective categories.</li>
+<li> It includes the following fields: name, friendly_name.</li>
+<br>
+<p> Order: </p>
+<li> This Order model will allow me to create the order information and organize the information that is recorded in the back end when an order is placed.</li>
+<li> It includes the following fields: order, product, product_size, quantity, lineitem_total.</li>
+<br>
+<p> OrderLineItem: </p>
+<li> This OrderLineItem model will allow me to create the order information and organize the information that is recorded in the back end when an order is placed.</li>
+<li> It includes the following fields: name, friendly_name.</li>
+<br>
+<p> Post: </p>
+<li> This Post model will allow me to post onto the site, and create the required variables fields.</li>
+<li> It is used by the admin to post blog posts to the site, there for it uses a Foreign Key as an ID of the admin/ author. </li>
+<li> It includes the following fields: title, title_tag, featured_image, snippet, author, body and post_date.</li>
 <p> Post has a many to manny relationship and also uses the imported User class model for username  to help calculate the likes on each blog post.</p>
+<br>
+<p> Product: </p>
+<li> This Product model will allow me to supply information for each product added to the site via the admin section of the site.</li>
+<li> It includes the following fields: sku, name, description, size, price, rating, image.</li>
+<br>
+<p> UserProfile: </p>
+<li> This Userprofile model will allow users to add information to their accounts on the site.</li>
+<li> It includes the following fields: user, default_email, default_phone_number, default_street_address1, default_street_address2, default_town_or_city, default_county, default_country, default_postcode.</li>
+<p> UserProfile has a one to one relationship.</p>
+<br>
+
 <details><summary>Database Diagram</summary>
         <img src="docs/database-diagram/database.jpg"></details>
 <br/>
