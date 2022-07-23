@@ -145,10 +145,11 @@
 <ol>
 <li>The site admin username is admin (lowercase) and the password is Pass123!.</li> 
 
-<li>The Site is very simple in design - It includes a home section where a user can view the products, their categories, the navbar - holding the bulk of the e-commerce functionality - and a contact section. It also holds a link to the return policy of the site and its Terms and conditions.</li>
-<li>The products are very simply laid out on the homepage in their respective categories. Once in the categories the user can scroll through the section in a list formate to view the products avaiable to buy.</li>
-    <p> -- If the user is the site admin they can edit products and delete products.</p>
-<li>The login in section is simple as it is restricted to asking for the username and password. The registration form is also simple and easy to follow. Once logged in the user can view their order history and to leave reviews.</li>
+<li>The Site is very simple in design - It includes a home section, - that has a section in the nav bar where a user can view the products, their categories - holding the bulk of the e-commerce functionality - and a contact section. It also holds a link to the testimonials, about us and FAQs link.</li>
+<li>The products are very simply laid out on the homepage in their respective categories. Once clicked in the categories the user can scroll through the section in a list formate to view the products avaiable to buy.</li>
+    <p> -- If the user is the site admin they can edit products and delete products in the admin section.</p>
+<li>The login in section is simple as it is restricted to asking for the username and password. The registration form is also simple and easy to follow. Once logged in the user can view their order history and to update their delivery and personal information.</li>
+<li> The recipes section of the site is to allow users to view recipes they can use their newly bought products in.</li>
 <li> The contact Page allows the user to simply message the admin of the site to get more information or to leave a comment. The address and phone number are also on the page.</li>
 <li> The admin mainly uses the Admin section of the site to post products and their descriptions, images of the products and review any messages that have been sent via the contact from.</li>
 <li> Interms of e-commerce features, the main ones that users will be able to use is simply adding products to the shopping cart, removing the products from the cart, using stripe as a payemnt method and adding their shipping address.</li>
@@ -159,19 +160,34 @@
 ### Wireframes:
 
 <details><summary>Home Page</summary>
-        <img src="docs/flow-chart/wireframes/Home.png"></details>
+        <img src="docs/flow-chart/wireframes/wireframe-1.png"></details>
 
-<details><summary>About Us</summary>
-        <img src="docs/flow-chart/wireframes/About-Us.png"></details>
-
-<details><summary>Account</summary>
-        <img src="docs/flow-chart/wireframes/Account.png"></details>
-
-<details><summary>Contact Us</summary>
-        <img src="docs/flow-chart/wireframes/Contact-Us.png"></details>
+<details><summary>Recipes</summary>
+        <img src="docs/flow-chart/wireframes/wireframe-2.png"></details>
 
 <details><summary>Products</summary>
-        <img src="docs/flow-chart/wireframes/Products.png"></details>
+        <img src="docs/flow-chart/wireframes/wireframe-3.png"></details>
+
+<details><summary>Product Detail</summary>
+        <img src="docs/flow-chart/wireframes/wireframe-4.png"></details>
+
+<details><summary>Login</summary>
+        <img src="docs/flow-chart/wireframes/wireframe-5.png"></details>
+
+<details><summary>Register</summary>
+        <img src="docs/flow-chart/wireframes/wireframe-6.png"></details>
+
+<details><summary>Shopping Cart</summary>
+        <img src="docs/flow-chart/wireframes/wireframe-7.png"></details>
+
+<details><summary>Checkout</summary>
+        <img src="docs/flow-chart/wireframes/wireframe-8.png"></details>
+
+<details><summary>Checkout_Success</summary>
+        <img src="docs/flow-chart/wireframes/wireframe-9.png"></details>
+
+<details><summary>User Profile</summary>
+        <img src="docs/flow-chart/wireframes/wireframe-10.png"></details>
 
 <hr>
 
