@@ -18,6 +18,7 @@
     1. [Target Audience](#target-audience)
     2. [User Requirements](#user-requirements)
     3. [User Stories](#user-stories)
+    4. [Design Choices](#design-choices)
 3. [Technical Design](#technical-design)
     1. [Flow Chart](#flow-chart)
     2. [Database Diagram](#database)
@@ -79,11 +80,12 @@
 <li>Images and the products with their associated price for purchasing.</li>
 <li>A method to pay the products, specifically stripe.</li>
 <li>A database that accounts for all the data in the website and allows interaction of the users with the products (purchase) and their accounts.</li>
+<br>
 
 ### UX Design: Strategy:
 
 <p>To develop an e-commerce website (product) that makes purchasing of geophysical data simple and intuitive. </p>
-
+<br>
 
 ### UX Design: Structure:
 <p>The information is structured as follows:</p>
@@ -108,8 +110,29 @@
 ### UX Design: Surface:
 <p> The website is based on a contrast of different tonalities of black for the header and footer, fonts in strong black and a white for body, separating the fixed navigation menu, the body and the footer.
 </p>
+<br>
 
+## Design Choices:
+<p> The website is designed to be responsive to cover all screen sizes. </p>
+<br>
 
+<p> Colours:</p>
+<p> Colours are beased on a modern e-commerce website, so taking advantage of white and black (balck fixed navigation menu) and balck footer, contrasting with a white background for the body (where products and all other content appear). 
+</p>
+<br>
+<p> Structure:</p>
+<li>The website consists of a header with fixed navigation menu on top, a body and a footer. It is designed to navigate the e-commerce from the header and footer, having them always available.</li>
+<br>
+
+<li>The metadata in the head tag of the base HTML includes the following keywords to help search engines to find the website: .</li>
+<br>
+
+<li>The metadata also includes the following description: " ".</li>
+<br>
+
+<li>Wireframes were developed at the beginning of the project to have a first structure of the e-commerce site.</li>
+<br>
+<hr>
 
 ## Technical Design
 
@@ -737,3 +760,5 @@
 
 ## Future Features
 <p> Future Features </p>
+
+#### [Back to Index](#index)
