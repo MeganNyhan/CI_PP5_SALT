@@ -72,6 +72,45 @@
     <li>As the owner of the site, I want to be able to upload products to the site using the admin section.</li>
 </ol>
 
+### UX Design: Scope:
+<p>The Minimum Viable Product needs to include features that allow the user to know the following:</p>
+<li>Home page that acts as staring point and welcome page for the site.</li>
+<li>A main navigation menu where, along with a footer, gives access to the main parts of the website, including registration and sign-in for users. The footer includes FAQs and Contact link, and social networks.</li>
+<li>Images and the products with their associated price for purchasing.</li>
+<li>A method to pay the products, specifically stripe.</li>
+<li>A database that accounts for all the data in the website and allows interaction of the users with the products (purchase) and their accounts.</li>
+
+### UX Design: Strategy:
+
+<p>To develop an e-commerce website (product) that makes purchasing of geophysical data simple and intuitive. </p>
+
+
+### UX Design: Structure:
+<p>The information is structured as follows:</p>
+<li> Home page that acts as staring point and welcome page for the site. </li>
+<li> Navigation bar which gives you easy access through the site. </li>
+<li> A products section that views and displays the products available to buy. </li>
+<li> A product description page, giving the option to the user to buy the product or changes its quantitiy.</li>
+<li> A shopping cart that holds the information that the user wants to buy.</li>
+<li> A checkout page showing the products the user is about to buy, with the final price to pay, linking with the payment method (Stripe). </li>
+<li> Footer, showing the main structure of the website and giving access to the social networks of the e-commerce and a field for the user to contact the shop, and general FAQs and T's & C's. </li>
+<li> A profile page, including the option to show the purchase history of the user. </li>
+<li> Contact form page. </li>
+<li> Pop-up messages informing the interaction of the user with the website (purchase, sign in, sign up, errors and success messages as the main ones). </li>
+<li> Sign in, and Register Page. </li>
+</ul>
+<br>
+
+### UX Design: Skeleton:
+<p>the information and products are accessed through a fixed navigation menu on top of the pages and a footer.</p>
+<br>
+
+### UX Design: Surface:
+<p> The website is based on a contrast of different tonalities of black for the header and footer, fonts in strong black and a white for body, separating the fixed navigation menu, the body and the footer.
+</p>
+
+
+
 ## Technical Design
 
 ### Flow Chart
@@ -226,6 +265,7 @@
 <li> Quick and Correct fucntional search bar </li>
 <li> Easy and Simple Website Navigation </li>
 <li> Elaborated product descriptions </li>
+<li> Recipes section </li>
 <li> Companies terms and conditions </li>
 <li> Payment Method </li>
 <li> Reviews and Testimonials </li>
@@ -247,7 +287,7 @@
 
 </br>
 <ul>Quick and Correct Fucntional Search Bar:
-<li> As part of the sites, e-commerce functionality, the user needs to be able to have a functional search bar in able to look through and easily find specific products that are of interest to them.</li>
+<li> As part of the sites e-commerce functionality, the user needs to be able to have a functional search bar in able to look through and easily find specific products that are of interest to them.</li>
 <details><summary>User Stories Used: 1, 2, 3 </summary>
             <img src="docs/wireframes/delete-post.png"></details>
 </ul>
@@ -263,6 +303,13 @@
 <ul>Elaborated Product Descriptions:
 <li> The site needs to be clean in apperance and style to help with accessibility and Navigation</li>
 <details><summary>User Stories Used:1, 3 </summary>
+            <img src="docs/wireframes/delete-post.png"></details>
+</ul>
+
+</br>
+<ul>Recipes Section:
+<li> The recipes is a section for users to see how they can use the products that they have bought in different dishes to bake or cook.</li>
+<details><summary>User Stories Used: N/A </summary>
             <img src="docs/wireframes/delete-post.png"></details>
 </ul>
 
@@ -655,7 +702,27 @@
 <br>
 <p> Images used on the site:.</p>
 <ul>
-<li>Photo by Moose Photos: https://www.pexels.com/photo/woman-wearing-pink-collared-half-sleeved-top-1036623/</li>
+<br>
+<p> Home page </p>
+<li>Photo by Moose Photos: https://www.pexels.com/photo/woman-wearing-pink-collared-half-sleeved-top-1036623/ </li>
+<li> Photo by Olof Nyman from Pexels: https://www.pexels.com/photo/three-people-on-a-wooden-fishing-docks-988622/ </li>
+<li> Photo by Ron Lach  from Pexels: https://www.pexels.com/photo/men-standing-on-a-wooden-dock-10412532/ </li>
+<li> Photo by Ron Lach  from Pexels: https://www.pexels.com/photograndfather-and-grandson-fishing-together-from-boat-on-lake-10418946/ </li>
+<br>
+<p> Testimonials </p>
+<li> Photo by Italo Melo from Pexels: https://www.pexels.com/photo/portrait-photo-of-smiling-man-with-his-arms-crossed-standing-in-front-of-white-wall-2379004/ </li>
+<li> Photo by Justin Shaifer from Pexels: https://www.pexels.com/photo/photography-of-a-guy-wearing-green-shirt-1222271/ </li>
+<li> Photo by Andrea Piacquadio from Pexels: https://www.pexels.com/photo/woman-in-collared-shirt-774909/ </li>
+<br>
+<p> Products </p>
+<li> The Products that are shown in the products section are images that were taken from google images of the compaines products that are listed in that section</li>
+</ul>
+<br>
+<p> Text used on the site:</p>
+<ul>
+<li> The who we are section is text that came from the Achill island website for theri who we are section.</li>
+<li> The porduct descriptions are from their respective companies website too. </li>
+<li> The recipies are also taken from achill island. </li>
 <hr>
 <br>
 
@@ -666,6 +733,7 @@
 <li> I would like to thank those on the code institute slack channel for help with any issues I had.</li>
 <li> I would also like to thank Conor lawton who helped me with understanding some of the code.</li>
 </ul>
+<br>
 
 ## Future Features
-<p>In future, I would like to add a section where users could view a list of solicitors and barristers in the area that could help them if they needed legal advice.</p>
+<p> Future Features </p>
