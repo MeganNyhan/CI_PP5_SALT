@@ -62,3 +62,4 @@ class AddCommentView(SuccessMessageMixin, CreateView):
     def form_valid(self, form):
         form.instance.post_id = self.kwargs['pk']
         return super().form_valid(form)
+        success_message = "Your comment has been posted"
