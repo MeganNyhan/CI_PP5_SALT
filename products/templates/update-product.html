@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Deegagh Sea Salt | Edit Product {% endblock %}
+
+{% block content %}
+<br>
+<div class="container">
+    <div class="row">
+<!-- Start of Update post form -->
+<br>
+        <h1> Update This Product</h1>
+        <hr>
+        <br>
+        <div class="form-group">
+            <form method="POST" action="{% url 'update_product' %}">
+                {{form | crispy }}
+                {% csrf_token %}
+                {{ form.media }}
+                <br>
+                <button class="btn btn-success" href="{% url 'home' %}" aria-label="Create Product"> Create Product </button>
+                <button class="btn btn-dark" href="{% url 'home' %}" aria-label="Cancel"> Cancel</button>
+            </form>
+        </div>
+    </div>
+</div>
+<br>
+{% endblock %}
