@@ -73,28 +73,23 @@ def product_detail(request, product_id):
 @login_required
 def add_product(request):
     """ Add a product to the store """
-    if not request.user.is_superuser:
-        messages.error(request, 'Sorry, only Superusers can do this')
-        return redirect(reverse, 'home')
-
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
             product = form.save()
-            messages.success(request, 'You have successfully added a product!')
+            messages.success(request, 'Successfully added product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to add product please try again!')
+            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
     else:
         form = ProductForm()
-
-    form = ProductForm()
+        
     template = 'add-product.html'
     context = {
         'form': form,
     }
 
-        render(request, template, context)
+    return render(request, template, context)
 
 
 @login_required

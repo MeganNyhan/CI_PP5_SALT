@@ -23,7 +23,7 @@
                     <p class="mb-0">{{ product.name }}</p>
                     {% if request.user.is_superuser %}
                     <small class="ml-3">
-                        <a class="btn btn-warning" href="{% url 'update_product' product.id %}"> Edit </a>
+                        <a class="btn btn-warning" href="{% url 'edit_product' product.id %}"> Edit </a>
                         <a class="btn btn-danger" href="{% url 'delete_product' product.id %}"> Delete </a>
                     </small>
                     {% endif %}

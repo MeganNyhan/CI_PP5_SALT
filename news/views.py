@@ -1,7 +1,6 @@
 from django.views.generic import ListView, DetailView, UpdateView, DeleteView, CreateView
 from django.urls import reverse_lazy
 from django.contrib.messages.views import SuccessMessageMixin
-from django.contrib.auth.decorators import login_required
 from .models import Post, Comment
 from .forms import EditForm, CommentForm
 
@@ -31,7 +30,6 @@ class PostDetailView(DetailView):
         return context
 
 
-@login_required
 class UpdatePostView(UpdateView):
     """
         Edit post view for editing/updating the blog
@@ -42,7 +40,6 @@ class UpdatePostView(UpdateView):
     success_message = "{% name %} Your post has been successfully UPDATED"
 
 
-@login_required
 class DeletePostView(DeleteView):
     """
         Delete Posts from site
@@ -52,7 +49,6 @@ class DeletePostView(DeleteView):
     success_url = reverse_lazy('home')
 
 
-@login_required
 class AddCommentView(SuccessMessageMixin, CreateView):
     """
         Create Add post view for creating blog posts on the site

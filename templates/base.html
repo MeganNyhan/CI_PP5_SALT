@@ -72,7 +72,6 @@
                 {% if user.is_superuser %}
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item text-light" href="{% url 'add_product' %}">Add Product</a></li>
-                <li><a class="dropdown-item text-light" href="{% url 'products' %}?category=flavoured">Delete Product</a></li>
                 {% endif %}
               </ul>
             </div>
