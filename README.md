@@ -104,7 +104,7 @@
 <br>
 
 ### UX Design: Skeleton:
-<p>the information and products are accessed through a fixed navigation menu on top of the pages and a footer.</p>
+<p>The information and products are accessed through a fixed navigation menu on top of the pages and a footer. The body holds the information specified by the title selected in the nav bar.</p>
 <br>
 
 ### UX Design: Surface:
