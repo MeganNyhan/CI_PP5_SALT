@@ -161,12 +161,12 @@
 </ul>
 <ul>
 <br>
-<p> Comment: </p>
+<p> Comment (custom model): </p>
 <li> This Comment model will allow users to post comments under the blog post.</li>
 <li> It is used by several users to post comments under the blog post, there for it uses a Foreign Key. </li>
 <li> It includes the following fields: post, name, body, date_added.</li>
 <br>
-<p> Contact: </p>
+<p> Contact (custom model): </p>
 <li> This Contact model will allow me to save the contact forms that are sent to the admin of the site, and store the     details in the admin section of the site so the admin can easily get back to the user trying to get in contact.</li>
 <li> It is used by several users to contact the admin of the site, there for it uses a input fields. </li>
 <li> It includes the following fields: name, email and message.</li>
@@ -183,7 +183,7 @@
 <li> This OrderLineItem model will allow me to create the order information and organize the information that is recorded in the back end when an order is placed.</li>
 <li> It includes the following fields: name, friendly_name.</li>
 <br>
-<p> Post: </p>
+<p> Post (custom model): </p>
 <li> This Post model will allow me to post onto the site, and create the required variables fields.</li>
 <li> It is used by the admin to post blog posts to the site, there for it uses a Foreign Key as an ID of the admin/ author. </li>
 <li> It includes the following fields: title, title_tag, featured_image, snippet, author, body and post_date.</li>
