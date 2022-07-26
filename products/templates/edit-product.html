@@ -12,7 +12,7 @@
         <hr>
         <br>
         <div class="form-group">
-            <form method="POST" action="{% url 'update_product' %}">
+            <form method="POST" action="{% url 'edit_product' product.id %}">
                 {{form | crispy }}
                 {% csrf_token %}
                 {{ form.media }}
