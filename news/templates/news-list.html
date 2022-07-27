@@ -4,21 +4,29 @@
 <!-- Boostrap Cards -->
 {% block content %}
 <br>
-{% for post in post_list %}
-<div class="card-group">
-  <div class="card">
-    <img class="w-100" src="{{ post.featured_image.url }}" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">{{ post.title }}</h5>
-      <p class="card-text">{{post.snippet}}</p>
+<div class="container">
+  <div class="row">
+         {% for post in post_list %}
+    <br/>
+     <div class="card mb-3" style="max-width: 100%; border-color: white;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="{{ post.featured_image.url }}" class="card-img w-70" alt="Articles Featured Image">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body bg-white">
+            <br/><br/>
+            <a href="{% url 'post-detail' post.pk %}" class="post-link" >
+            <h1 class="card-title"><strong>{{ post.title }}</strong></h1>
+            <p class="card-text text-black">{{post.snippet}}</p></a>
+            <p class="card-text text-black"><small><strong>{{ post.author }}</strong> | {{ post.post_date}}</small></p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="card-footer">
-      <a href="{% url 'post-detail' post.pk %}" class="post-link" > Read The Post Here</a>
-    </div>
+    <hr>
+    {% endfor %}
   </div>
 </div>
-<br>
-    {% endfor %}
-<br>
 <!-- End of Boostrap Card -->
 {% endblock %}

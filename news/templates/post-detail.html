@@ -14,14 +14,14 @@
         {% endif %}
         {% endif %}
         <br/>
-            <small> By: {{ post.autor.first_name }} - {{ post.post_date }}</small>
+            <small> By: <strong>{{ post.author }}</strong> - {{ post.post_date }}</small>
         <br/><br/>
 <!-- News Posts' Body -->
         <div class="post-body">
             {{ post.body | safe }}
         </div>
         <div class="button">
-            <a class="btn btn-dark" href="{% url 'home'%}" arial-label="Home Page Link"> Back </a>
+            <a class="btn btn-dark" href="{% url 'news-list' %}" arial-label="Home Page Link"> Back </a>
             <br/><br/>
         </div>
       </div>

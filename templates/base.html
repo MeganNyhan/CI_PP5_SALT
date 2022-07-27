@@ -125,15 +125,10 @@
 <!-- Django Messages Section -->
 {% if messages %}
         {% for message in messages %}
-            {% if message.tags == 'success'%}
-                <script type=text/javascript>toastr.{{ message.tags }}('{{ message }}')</script>
-            {% elif message.tags == 'info' %}
-                <script type=text/javascript>toastr.{{ message.tags }}('{{ message }}')</script>
-            {% elif message.tags == 'warning' %}
-                <script type=text/javascript>toastr.{{ message.tags }}('{{ message }}')</script>
-            {% elif message.tags == 'error' %}
-                <script type=text/javascript>toastr.{{ message.tags }}('{{ message }}')</script>
-            {% endif %}
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+          <strong>{{message}}
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
         {% endfor %}
     {% endif %}
 
@@ -184,10 +179,23 @@ Footer Copied from MDBootstrap (link in readme) -->
         <!--Grid row-->
       </div>
       <!-- Grid container -->
-  <!-- Copyright -->
-  <div class="text-center p-3">
-    © 2022 Copyright:
-    <a class="text-white" href="/">DeegaghSeaSalt.com</a>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <div class="text-center p-3">
+            <!-- Social Media -->
+            Social Media Goes Here
+            <a class="text-white" href="/">DeegaghSeaSalt.com</a>
+          </div>
+        </div>
+        <!-- Copyright -->
+        <div class="col">
+          <div class="text-center p-3">
+            © 2022 Copyright:
+            <a class="text-white" href="/">DeegaghSeaSalt.com</a>
+          </div>
+        </div>
+      </div>
   </div>
   <!-- Copyright -->
 </footer>
