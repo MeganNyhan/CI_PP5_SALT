@@ -2,7 +2,7 @@
     Imports
 """
 from django import forms
-from .models import Post, Comment
+from .models import Post
 
 class EditForm(forms.ModelForm):
     """
@@ -22,16 +22,3 @@ class EditForm(forms.ModelForm):
                                              
         }
 
-
-class CommentForm(forms.ModelForm):
-    """
-        This is the Comment Form for the news storys
-    """
-    class Meta:
-        model = Comment
-        fields = ('name', 'body')
-    # Widget section
-        widgets = {
-            'name': forms.TextInput(attrs={'class': 'form-control'}),
-            'body': forms.Textarea(attrs={'class': 'form-control'})
-        }
