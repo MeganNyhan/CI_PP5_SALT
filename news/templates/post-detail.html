@@ -34,33 +34,4 @@
       </div>
     </div>
 </div>
-<!-- Comments section --->
-<div class="container text-center">
-  <div class="row">
-      <br/><br/>
-        <div class ="container" >
-            <div class="row">
-            <h2> Comments...</h2>
-            <br/><br/>
-            {% if not post.comments.all %}
-                There are no comments yet. <a href="{% url 'add-comment' post.pk %}" aria-label="add comment link">Add One</a>
-            {% else %}
-            <a href="{% url 'add-comment' post.pk %}" aria-label="add comment link">Add Comment</a>
-            <br/>
-                {% for comment in post.comments.all %}
-            <br/>
-                <strong>
-                {{ comment.name }} | {{ comment.date_added }}
-                </strong>
-                <div class="comment-body">
-                    {{ comment.body }}
-                </div>
-                    <br><br/>
-                {% endfor %}
-            {% endif %}
-            <br/><br/>
-            </div>
-        </div>
-    </div>
-</div>
 {% endblock %}
