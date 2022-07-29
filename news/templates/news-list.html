@@ -11,15 +11,15 @@
      <div class="card mb-3" style="max-width: 100%; border-color: white;">
       <div class="row no-gutters">
         <div class="col-md-4">
-          <img src="{{ post.featured_image.url }}" class="card-img w-70" alt="Articles Featured Image">
+          <img src="{{ post.featured_image.url }}" class="card-img w-70" style="text-decoration: none;" alt="Articles Featured Image">
         </div>
         <div class="col-md-8">
           <div class="card-body bg-white">
             <br/><br/>
-            <a href="{% url 'post-detail' post.pk %}" class="post-link" >
+            <a href="{% url 'post-detail' post.pk %}" class="post-link" style="text-decoration: none; color: black;">
             <h1 class="card-title"><strong>{{ post.title }}</strong></h1>
             <p class="card-text text-black">{{post.snippet}}</p></a>
-            <p class="card-text text-black"><small><strong>{{ post.author }}</strong> | {{ post.post_date}}</small></p>
+            <p class="card-text text-black"><small><strong>{{ post.author.first_name }}</strong> | {{ post.post_date}}</small></p>
           </div>
         </div>
       </div>

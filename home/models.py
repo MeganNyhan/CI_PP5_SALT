@@ -13,6 +13,7 @@ from django import forms
 # This tuple will keep track of drafted posts and published posts
 STATUS = ((0, "Draft"), (1, "Published"))
 
+
 class Profile(models.Model):
     """ 
         Creates User Profile Model

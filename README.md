@@ -736,6 +736,10 @@
 <li> Photo by Italo Melo from Pexels: https://www.pexels.com/photo/portrait-photo-of-smiling-man-with-his-arms-crossed-standing-in-front-of-white-wall-2379004/ </li>
 <li> Photo by Justin Shaifer from Pexels: https://www.pexels.com/photo/photography-of-a-guy-wearing-green-shirt-1222271/ </li>
 <li> Photo by Andrea Piacquadio from Pexels: https://www.pexels.com/photo/woman-in-collared-shirt-774909/ </li>
+<li> Photo by Elizabeth Lizzie: https://www.pexels.com/photo/dill-pickles-in-a-bowl-and-crackers-on-a-white-surface-11622727/</li>
+<li> Photo by Kyle Killam: https://www.pexels.com/photo/round-grilled-food-106972/</li>
+<li> Photo by Ron Lach : https://www.pexels.com/photo/grandfather-and-grandson-going-fishing-10407169/</li>
+<li> Photo by Ron Lach : https://www.pexels.com/photo/grandfather-and-grandson-walking-home-10397935/ </li>
 <br>
 <p> Products </p>
 <li> The Products that are shown in the products section are images that were taken from google images of the compaines products that are listed in that section</li>
