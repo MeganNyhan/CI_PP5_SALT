@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from .models import Review
 
 
@@ -11,12 +11,10 @@ def reviews(request):
     return render(request, 'review-item.html')
 
 
-def review_list(request):
-    latest_review_list = Review.objects.order_by('created_at')
-    context = {'latest_review_list': latest_review_list}
-    return render(request, 'review_list.html', context)
+def ProductReview(request):
+    if request.method == 'POST' and request.user.is_authenticated:
+        rating = request.POST.get('rating', '')
+        content = request.POST.get('content', '')
+        review = ProductReview.objects.create(product=product, user=request.user, rating=rating, content=content)
 
-
-def review_detail(request, review_id):
-    review = get_object_or_404(Review, pk=review_id)
-    return render(request, 'review_details.html', {'review': review})
+        return redirect('product_detail',  product_id=product_id)
