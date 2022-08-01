@@ -80,15 +80,16 @@
             <div class="container">
                 <div class="row">
                     <h2 class="fw-light"> Leave a Review:</h2>
-                    <div class="card-bod">
                         {% if user.is_authenticated %}
                         <p>Posting as: {{ user.first_name }}</p> 
                         <div class="row">
                         <form method="POST" style="margin-top: 1.3em;">
-                            {{ review_fom | crispy }}
+                            {{ review_form | crispy }}
                             {% csrf_token %}
+                            <br>
                             <button type="submit" class="btn btn-success btn-lg"> Submit </button>
                         </form>
+                        <br>
                         </div>
                         {% endif %}
                     </div>
