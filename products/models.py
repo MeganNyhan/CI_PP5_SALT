@@ -1,5 +1,6 @@
 from django.db import models
 from cloudinary.models import CloudinaryField
+from news.models import Post
 
 # Create your models here.
 
@@ -27,9 +28,27 @@ class Product(models.Model):
     description = models.TextField()
     size = models.CharField(max_length=254, null=True, blank=True)
     price = models.DecimalField(max_digits=6, decimal_places=2)
-    rating = models.DecimalField(max_digits=6, decimal_places=2, null=True, 
+    rating = models.DecimalField(max_digits=6, decimal_places=2, null=True,
                                  blank=True)
     image = CloudinaryField('image', default='placeholder')
 
     def __str__(self):
         return str(self.name)
+
+
+class Review(models.Model):
+    """ Review Custom Model """
+    post = models.ForeignKey(Post, on_delete=models.CASCADE,
+                             related_name="reviews")
+    name = models.CharField(max_length=80)
+    body = models.TextField()
+    created_on = models.DateTimeField(auto_now_add=True)
+    rating = models.DecimalField(max_digits=6, decimal_places=2, null=True,
+                                 blank=True)
+
+    class Meta:
+        """ Ordering """
+        ordering = ["created_on"]
+
+    def __str__(self):
+        return f"Review {self.body} by {self.name}"

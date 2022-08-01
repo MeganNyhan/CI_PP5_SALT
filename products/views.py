@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from .models import Product, Category
-from .forms import ProductForm
+from .forms import ProductForm, ReviewForm
 
 
 # Create your views here.
@@ -65,6 +65,7 @@ def product_detail(request, product_id):
 
     context = {
         'product': product,
+        'review_form': ReviewForm()
     }
 
     return render(request, 'product_detail.html', context)
