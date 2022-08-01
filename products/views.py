@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
-from .models import Product, Category
+from .models import Product, Category, Review
 from .forms import ProductForm, ReviewForm
 
 
@@ -67,6 +67,31 @@ def product_detail(request, product_id):
         'product': product,
         'review_form': ReviewForm()
     }
+
+    def post(self, request, slug, *args, **kwargs):
+        queryset = Review.objects.filter(status=1)
+        product = get_object_or_404(queryset, slug=slug)
+        reviews = product.reviews.filter(name=True).order_by('created_on')
+
+        review_form = ReviewForm(data=request.POST)
+        if review_form.is_valid():
+            review_form.instance.email = request.user.email
+            review_form.instance.name = request.user.username
+            review = review_form.save(commit=False)
+            review.post = post
+            review.save()
+        else:
+            review_form = ReviewForm()
+
+        return render(
+            request,
+            "post_detail.html",
+            {
+                "product": product,
+                "reviews": reviews,
+                "review_form": ReviewForm()
+            }
+        )
 
     return render(request, 'product_detail.html', context)
 
