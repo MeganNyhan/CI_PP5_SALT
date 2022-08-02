@@ -13,4 +13,6 @@ def gallery(request):
 
 def addPhoto(request):
     """ A view to return the index page """
-    return render(request, 'add-photo.html')
+    categories = Description.objects.all()
+    context = {'categories': categories}
+    return render(request, 'add-photo.html', context)
