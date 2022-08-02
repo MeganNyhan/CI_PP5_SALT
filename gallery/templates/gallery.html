@@ -7,24 +7,28 @@
 <section>
     <h1 class="fw-light"> View Our Product Gallery</h1>
     <hr>
-    <div class="container text-center">
+    <div class="container text-left">
         <div class="row">
-          <div class="col">
-            <div class="card" style="width: 18rem;">
-                <ul class="list-group list-group-flush">
-                    {% if user.is_superuser %}
-                    <a href="{% url 'add-photo' %}" class="list-group-item">Add A Photo
+          <div class="col-4">
+              <div class="card" style="width: 18rem;">
+                {% if user.is_superuser %}
+                <div class="card-header">
+                    <a href="{% url 'add-photo' %}" class="list-group-item card-header">Add A Photo
                     </a>
-                    {% endif %}
-                  <li class="list-group-item">All Products</li>
-                  <li class="list-group-item">Categories</li>
+                </div>
+                {% endif %}
+                <ul class="list-group list-group-flush">
+                    {% for category in categories %}
+                  <a href="{% url 'gallery' %}?category={{category.name}}" class="list-group-item">
+                    {{category.name}}
+                </a>
+                  {% endfor %}
                 </ul>
               </div>
           </div>
-          <div class="col">
-            <a href="{% url 'products' %}">
-                <img src="..." class="img-fluid" alt="...">
-            </a>
+          <div class="col-8">
+            <h1> photos
+            </h1>
           </div>
         </div>
     </div>
