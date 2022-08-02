@@ -4,11 +4,6 @@
 {% load static %}
 <br>
 <div class="container">
-    <div class="row">
-    {% if user.is_superuser %}
-        <a class="btn btn-warning" href="{% url 'add-item' %}"> Add Item to Gallery </a>
-    </div>
-    {% endif %}
 <section>
     <h1 class="fw-light"> View Our Product Gallery</h1>
     <hr>
@@ -18,7 +13,8 @@
             <div class="card" style="width: 18rem;">
                 <ul class="list-group list-group-flush">
                     {% if user.is_superuser %}
-                  <li class="list-group-item">Add A Photo</li>
+                    <a href="{% url 'add-photo' %}" class="list-group-item">Add A Photo
+                    </a>
                     {% endif %}
                   <li class="list-group-item">All Products</li>
                   <li class="list-group-item">Categories</li>
