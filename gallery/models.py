@@ -1,4 +1,5 @@
 from django.db import models
+from cloudinary.models import CloudinaryField
 
 # Create your models here.
 
@@ -15,6 +16,6 @@ def upload_gallery_image(instance, filename):
 
 
 class Image(models.Model):
-    image = models.ImageField(upload_to=upload_gallery_image)
+    image = CloudinaryField()
     item = models.ForeignKey(Item, on_delete=models.CASCADE,
                              related_name="images")
