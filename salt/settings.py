@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'gallery',
+    'imagekit',
 
     # Other
 

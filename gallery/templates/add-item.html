@@ -13,9 +13,10 @@
                 {% csrf_token %}
 
                 {{ item_form | crispy }}
-                
+                <br>
                 {{ formset.management_form }}
                 {% for form in formset %}
+                <br>
                 {{ form | crispy }}
                 {% endfor %}
                 <br>
