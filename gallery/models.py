@@ -14,10 +14,7 @@ class Description(models.Model):
 
 class Photo(models.Model):
     """Photo model"""
-    category = models.ForeignKey(
-        Description, on_delete=models.SET_NULL, null=True, blank=True)
     image = CloudinaryField(null=False, blank=False)
-    information = models.TextField()
 
     def __str__(self):
-        return str(self.information)
+        return str(self.image)

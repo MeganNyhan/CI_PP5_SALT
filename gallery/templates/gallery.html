@@ -13,23 +13,22 @@
               <div class="card" style="width: 18rem;">
                 {% if user.is_superuser %}
                 <div class="card-header">
-                    <a href="{% url 'add-photo' %}" class="list-group-item card-header">Add A Photo
+                    <a href="{% url 'add-photo' %}" class="list-group-item card-header"><strong>Add A Photo</strong>
                     </a>
                 </div>
                 {% endif %}
                 <ul class="list-group list-group-flush">
-                    {% for category in categories %}
-                  <a href="{% url 'gallery' %}?category={{category.name}}" class="list-group-item">
-                    {{category.name}}
+                   <a href="{% url 'products' %}" style="text-decoration:none; color:black;">View Products</a> 
                 </a>
-                  {% endfor %}
                 </ul>
               </div>
           </div>
           <div class="col-8">
-            <h1> photos
-            </h1>
+            {% for photo in photos %}
+            <div>
+               <a href="{% url 'products' %}"><img src="{{photo.image.url}}" class="img-fluid w-50" alt="products-images"></a>
           </div>
+          {% endfor %}
         </div>
     </div>
 </section>
