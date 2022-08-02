@@ -9,24 +9,20 @@
     <hr>
     <div class="container text-left">
         <div class="row">
-          <div class="col-4">
-              <div class="card" style="width: 18rem;">
-                {% if user.is_superuser %}
-                <div class="card-header">
-                    <a href="{% url 'add-photo' %}" class="list-group-item card-header"><strong>Add A Photo</strong>
-                    </a>
-                </div>
-                {% endif %}
+          <div class="col-2">
                 <ul class="list-group list-group-flush">
-                   <a href="{% url 'products' %}" style="text-decoration:none; color:black;">View Products</a> 
+                   <a class="btn btn-black" href="{% url 'products' %}" style="text-decoration:none; color:black;">View Products</a> 
                 </a>
                 </ul>
-              </div>
           </div>
-          <div class="col-8">
+          <div class="col-4">
             {% for photo in photos %}
+            <a href="{% url 'products' %}">
+              <div class="card" style="width: 18rem;">
+              <img src="{{photo.image.url}}" class="card-img-top" alt="...">
+              </a>
+            </div>
             <div>
-               <a href="{% url 'products' %}"><img src="{{photo.image.url}}" class="img-fluid w-50" alt="products-images"></a>
           </div>
           {% endfor %}
         </div>
