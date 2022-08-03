@@ -9,19 +9,20 @@
     <hr>
     <div class="container text-left">
         <div class="row">
-          <div class="col-2">
-                <ul class="list-group list-group-flush">
-                   <a class="btn btn-black" href="{% url 'products' %}" style="text-decoration:none; color:black;">View Products</a> 
-                   {% for category in categories %}
-                   <a class="btn btn-black" href="{% url 'gallery' %}?category={{category.name}}" style="text-decoration:none; color:black;">{{category.name}}</a> 
-                   {% endfor %}
-                </a>
-                </ul>
-          </div>
           <div class="col-4">
+            <div class="card" style="width: 18rem;">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a class="btn btn-black" href="{% url 'products' %}" style="text-decoration:none; color:black;">View Products</a> </li>
+                {% for category in categories %}
+                <li class="list-group-item"><a class="btn btn-black" href="{% url 'gallery' %}?category={{category.name}}" style="text-decoration:none; color:black;">{{category.name}}</a> </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+          <div class="col-8">
             {% for photo in photos %}
             <a href="{% url 'products' %}">
-              <div class="card" style="width: 18rem;">
+              <div class="card" style="width: 18rem; border-color: white;">
               <img src="{{photo.image.url}}" class="card-img-top" alt="...">
               </a>
             </div>
