@@ -30,3 +30,8 @@ class Profile(models.Model):
     def __str__(self):
         return str(self.user)
 
+
+class Introduction(models.Model):
+    """ Changes the text in the home page header """
+    head = models.CharField(max_length=300, null=True, blank=True)
+    body = models.TextField(max_length=2550, null=True, blank=True)

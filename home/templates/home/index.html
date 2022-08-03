@@ -6,15 +6,16 @@
 <div class="head-container">
   <img src="{% static 'img/header.jpg' %}" alt="Family Fishing" style="width:100%;">
   <div class="centered text-light">
+    {% for bodies in bodies %}
     <h2 class="fs-1 text-right text-justify fw-bold">
-      Welcome to Our Salt Shop!
+      {{bodies.head}}
     </h2>
     <br/>
       <p class="fs-3 fw-light text-light fw-bold">
-        Here at Deegagh Sea Salt we aim to bring you the very best of what Irish Sea Salt have to offer,<br>
-        straight to your doorstep!
+        {{bodies.body}}
         <br><br>
-        <a class="btn btn-light" href="#" role="button">Shop Now</a>
+        {% endfor %}
+        <a class="btn btn-light" href="{% url 'products' %}" role="button">Shop Now</a>
         <a class="btn btn-light" href="{% url 'contact' %}" role="button">Contact Us</a>
       </p>
   </div>
@@ -68,7 +69,7 @@
       <div class="container">
         <div class="sec-title">
         <h1 class="text-center fw-light text-dark"> Our Testimonials </h1>
-        <p class="text-center"> Find out what our clients say about us! Swipe across to read.</p> 
+        <p class="text-center"> Find out what our clients say about us!</p> 
         </div>
         <div class="testimonial-content owl-carousel owl-loaded owl-drag">
           <div class="single-testimonial">

@@ -149,22 +149,19 @@
 <p> My project uses the relational databse -> PostgreSQL.</p>
 <p> The data is handeled within the application with Django. </p>
 <ul>
-<li> Comment </li>
 <li> Contact </li>
 <li> Category </li>
+<li><strong> Description (custom)</strong> </li>
 <li> Order </li>
 <li> OrderLineItem </li>
+<li> <strong>Photo (custom)</strong> </li>
 <li> Post </li>
 <li> Product </li>
+<li> <strong>Review (custom) </strong></li>
 <li> UserProfile </li>
 
 </ul>
 <ul>
-<br>
-<p> Comment (custom model): </p>
-<li> This Comment model will allow users to post comments under the blog post.</li>
-<li> It is used by several users to post comments under the blog post, there for it uses a Foreign Key. </li>
-<li> It includes the following fields: post, name, body, date_added.</li>
 <br>
 <p> Contact (custom model): </p>
 <li> This Contact model will allow me to save the contact forms that are sent to the admin of the site, and store the     details in the admin section of the site so the admin can easily get back to the user trying to get in contact.</li>
@@ -192,6 +189,11 @@
 <p> Product: </p>
 <li> This Product model will allow me to supply information for each product added to the site via the admin section of the site.</li>
 <li> It includes the following fields: sku, name, description, size, price, rating, image.</li>
+<br>
+<p> Review (custom model): </p>
+<li> This Comment model will allow users to post comments under the blog post.</li>
+<li> It is used by several users to post comments under the blog post, there for it uses a Foreign Key. </li>
+<li> It includes the following fields: post, name, body, date_added.</li>
 <br>
 <p> UserProfile: </p>
 <li> This Userprofile model will allow users to add information to their accounts on the site.</li>
