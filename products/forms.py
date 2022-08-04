@@ -1,5 +1,5 @@
 from django import forms
-from .models import Product, Category, Review
+from .models import Product, Category
 
 
 class ProductForm(forms.ModelForm):
@@ -18,7 +18,7 @@ class ProductForm(forms.ModelForm):
             field.widget.attrs['class'] = 'border-black '
 
 
-class ReviewForm(forms.ModelForm):
+"""class ReviewForm(forms.ModelForm):
     class Meta:
         model = Review
-        fields = ('body',)
+        fields = ('body',)"""

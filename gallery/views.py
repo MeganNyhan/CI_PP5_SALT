@@ -1,6 +1,5 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 from .models import Description, Photo
-# Create your views here.
 
 
 def gallery(request):

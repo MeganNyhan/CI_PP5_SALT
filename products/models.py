@@ -36,9 +36,9 @@ class Product(models.Model):
         return str(self.name)
 
 
-class Review(models.Model):
-    """ Review Custom Model """
-    post = models.ForeignKey(Post, on_delete=models.CASCADE,
+"""class Review(models.Model):
+   # Review Custom Model 
+    post = models.ForeignKey(Product, on_delete=models.CASCADE,
                              related_name="reviews")
     name = models.CharField(max_length=80)
     body = models.TextField()
@@ -47,8 +47,8 @@ class Review(models.Model):
                                  blank=True)
 
     class Meta:
-        """ Ordering """
+        # Ordering
         ordering = ["created_on"]
 
     def __str__(self):
-        return f"Review {self.body} by {self.name}"
+        return f"Review {self.body} by {self.name}"""

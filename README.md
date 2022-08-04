@@ -151,19 +151,20 @@
 <ul>
 <li> Contact </li>
 <li> Category </li>
-<li><strong> Description (custom)</strong> </li>
+<li><strong> Description (custom)</strong></li>
+<li><strong>Introduction (custom)</strong></li>
 <li> Order </li>
 <li> OrderLineItem </li>
-<li> <strong>Photo (custom)</strong> </li>
+<li><strong>Photo (custom)</strong></li>
 <li> Post </li>
 <li> Product </li>
-<li> <strong>Review (custom) </strong></li>
+<li><strong>Review (custom)</strong></li>
 <li> UserProfile </li>
 
 </ul>
 <ul>
 <br>
-<p> Contact (custom model): </p>
+<p> Contact: </p>
 <li> This Contact model will allow me to save the contact forms that are sent to the admin of the site, and store the     details in the admin section of the site so the admin can easily get back to the user trying to get in contact.</li>
 <li> It is used by several users to contact the admin of the site, there for it uses a input fields. </li>
 <li> It includes the following fields: name, email and message.</li>
@@ -171,6 +172,14 @@
 <p> Category: </p>
 <li> This Category model will allow me to seperate the products into their respective categories.</li>
 <li> It includes the following fields: name, friendly_name.</li>
+<br>
+<p> Description (custom model): </p>
+<li> This allowed me to add a category to the photos shown in the gallery in the site.</li>
+<li> It includes the following fields: name</li>
+<br>
+<p> Introduction (custom model): </p>
+<li> This gives the admin of the site the opition of changing the Introduction of the site in the main header of the index page.</li>
+<li> It includes the following fields: Head, Body</li>
 <br>
 <p> Order: </p>
 <li> This Order model will allow me to create the order information and organize the information that is recorded in the back end when an order is placed.</li>
@@ -180,7 +189,11 @@
 <li> This OrderLineItem model will allow me to create the order information and organize the information that is recorded in the back end when an order is placed.</li>
 <li> It includes the following fields: name, friendly_name.</li>
 <br>
-<p> Post (custom model): </p>
+<p> Photo (custom model): </p>
+<li> This allows the admin to add photos to the gallery section of the site and to also section the salt into categorys.</li>
+<li> It includes the following fields: image, category.</li>
+<br>
+<p> Post: </p>
 <li> This Post model will allow me to post onto the site, and create the required variables fields.</li>
 <li> It is used by the admin to post blog posts to the site, there for it uses a Foreign Key as an ID of the admin/ author. </li>
 <li> It includes the following fields: title, title_tag, featured_image, snippet, author, body and post_date.</li>
