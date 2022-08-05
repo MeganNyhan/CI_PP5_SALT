@@ -35,11 +35,12 @@
     5. [Accessibility](#accessibility)
     6. [Performance](#performance)
     7. [Testing user stories](#testing-user-stories)
-7. [Bugs](#Bugs)
-8. [Deployment](#deployment)
-9. [Credits](#credits)
-10. [Acknowledgements](#acknowledgements)
-11. [Future Features](#future-features)
+7. [Marketing Strategy](#marketing-strategy)
+8. [Bugs](#Bugs)
+9. [Deployment](#deployment)
+10. [Credits](#credits)
+11. [Acknowledgements](#acknowledgements)
+12. [Future Features](#future-features)
 
 ### User Experience:
 
@@ -563,6 +564,87 @@
 <details><summary>Update Post</summary>
 <img src="docs/performance/edit-performance.png"></details>
 <hr>
+
+### Testing User Stories
+
+<hr> 
+### SEO Analysis
+
+The search engine optimization is focused on Google search engine as it is the most popular search engine amongst users of the internet and persumably my target audience.
+
+SEO, which stands for search engine optimization is defined as, "Search engine optimization is the process of improving the quality and quantity of website traffic to a website or a web page from search engines. SEO targets unpaid traffic rather than direct traffic or paid traffic."- Wikepedia
+
+The aim is to have your site at the top of the search results that refers to the type of site you own.For example I have a e-commerce site selling Donegal Sea Salt, I would aim to have that category show my site at the top of the search results list in google. You do this through using short tail - short tail keywords 1 or 2 words in length, then long tail keywordswhich are more words.
+
+
+(August 5th, 2022)
+(Quality Factor:
+No e-commerce/No service provider = ;
+No e-commerce/service provider after first page= ;
+No e-commerce/service provider in first page = ;
+E-commerce after first page = 
+E-commerce in first page = )
+Just to have an idea and assign a quantification to the selection, the "Volume" is multiplied by the "Quality Factor" (and divided by 1000000 to have smaller figures).
+
+| Keywords | Volume (from Google.com) | Content, general description (searching in Google.com) | "Quality Factor" | Volume x "Quality Factor" / 1000000 |
+| ---- | ---- | ---- | ---- | ---- |
+| Keywords                      | Volume (from Google.com)  | Content, general description (searching in Google.com)                                           | "Quality Factor"     |   Volume x "Quality Factor" / 1000000 |
+|              |               | 
+
+
+<br>
+<details>
+    <summary>SEO Analysis</summary>
+
+[SEO Analysis]() 
+</details>
+<br>
+
+<details>
+    <summary>SEO Analysis)</summary>
+
+[SEO Analysis]() 
+</details>
+<br>
+The words that produce the highest volume of searchers are:
+
+Those with a "quality factor" of 5 (where an e-commerce appears in the first page of a Google search, since we are interested in promoting an e-commerce) are the following ones:
+.
+
+After analysing "Deegagh Sea Salt" with wordtracker.com, it can be seen that it produces a high volume and good competition comparison. Therefore "Deegagh Sea Salt" is also included as keyword.
+
+Finally, we include the sitemap.xml (in the root folder) to increase the chances of a higher rank in search engines and help them on finding relevant content, and a robots.txt that discourages spiders from navigating to sections of the site.
+
+sitemap.xml: created using XML-Sitemaps.com
+robots.txt: tested with https://support.google.com/webmasters/answer/6062598?hl=en
+
+<details>
+    <summary>wordtracker.com analysis for "Deegagh Sea Salt" keyword</summary>
+
+[Deegagh Sea Salt Analysis with wordtracker]() 
+</details>
+
+<details>
+    <summary>wordtracker.com analysis for "Deegagh Sea Salt" keyword</summary>
+
+![DEM Analysis with wordtracker]() 
+</details>
+<br>
+
+### Organic Growth with Social Media (Facebook)
+
+Like a lot of e-commerce platforms
+
+<details>
+    <summary>Deegagh Sea Salt Facebook Page</summary>
+
+[Deegagh Sea Salt Facebook Page]() 
+</details>
+
+<br>
+<hr>
+
+<br>
 
 ### Testing User Stories
 
