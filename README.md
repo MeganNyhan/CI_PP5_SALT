@@ -797,6 +797,9 @@ The fully deployed program, accessible by anyone, is found here, whose URL is ht
 <li> Wait for the app to build and then click the rview button.</li>
 <li>  Crease Amazon Web Services account (if needed) and S3 bucket. Assign the bucket a name (e.g., your_app_name), with "ACLs enabled" Crease Amazon Web Services account (if needed) and S3 bucket. Assign the bucket a name (e.g., your_app_name), with "ACLs enabled", and "Block off public access" disables.</li>
 </ul>
+
+<details><summary>Pushing to Github Screenshot</summary>
+<img src="docs/github/github.png"></details>
 <br>
 
 ### Deploying to Heroku (Manual CLI)
