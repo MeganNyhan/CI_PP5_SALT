@@ -150,7 +150,7 @@ DATABASES = {
 
 ALLOWED_HOSTS = ['*',
                  '0.0.0.0',
-                 'deegagh-salt.herokuapp.com/',
+                 'deegagh-salt.herokuapp.com',
                  'localhost']
 
 # Password validation
