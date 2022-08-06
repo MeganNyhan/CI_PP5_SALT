@@ -577,19 +577,31 @@ SEO, which stands for search engine optimization is defined as, "Search engine o
 The aim is to have your site at the top of the search results that refers to the type of site you own.For example I have a e-commerce site selling Donegal Sea Salt, I would aim to have that category show my site at the top of the search results list in google. You do this through using short tail - short tail keywords 1 or 2 words in length, then long tail keywordswhich are more words.
 
 
-(August 5th, 2022)
-(Quality Factor:
-No e-commerce/No service provider = ;
-No e-commerce/service provider after first page= ;
-No e-commerce/service provider in first page = ;
-E-commerce after first page = 
-E-commerce in first page = )
-Just to have an idea and assign a quantification to the selection, the "Volume" is multiplied by the "Quality Factor" (and divided by 1000000 to have smaller figures).
+(Info from August 5th, 2022)
 
-| Keywords | Volume (from Google.com) | Content, general description (searching in Google.com) | "Quality Factor" | Volume x "Quality Factor" / 1000000 |
+| Keywords | Results  (from Google.com) | Content, general description (searching in Google.com) | "Quality"||
 | ---- | ---- | ---- | ---- | ---- |
-| Keywords                      | Volume (from Google.com)  | Content, general description (searching in Google.com)                                           | "Quality Factor"     |   Volume x "Quality Factor" / 1000000 |
-|              |               | 
+| Keywords                      | Results (from Google.com)  | Content, general description (searching in Google.com)                                           | "Quality" ||
+| Sea Salt | 749,000,000 | First results are for E-Commerce sites | Competitive and used alot|
+| Salt | 4,600,000,000 | This word brings up mostly results for pages that are about salt, eg. recipes and NHS articles| Too broad|
+| Organic Salt | 456,000,000 | First results are for wikepedia pages and salt information sites | To Vague|
+| Irish Food |  73,500,000 | Mostly recipes are shown here | Not E-commerce specific enough |
+| Irish Souveniers| 6,080,000 | This search shows you were to get souviners local to you | Not food specific |
+| Gifts | 7,380,000,000 | Gift ideas sites come up here | Too broad|
+| Donegal Gifts | 1,920,000 | Shows you were to get gifts from Donegal | Not food specific enough |
+| Home-Grown | 2,330,000,000  | Shows the definition of the word and the clubs you can join | Too broad |
+| Local |  2,330,000,000 | Shows the definitions of the words| Too broad|
+| Organic Donegal Sea Salt | 932,000 | Shows E-commerce sites right away | Good results for e-commerce sites|
+| Locally Made Sea Salt | 92,600,000 | Shows E-commerce sites right away | geared more towards international sales|
+| Deegagh Sea Salt | 407,000 | Looks like more names of Aurthors show instead of sea salt products | Too specific |
+| Family Run Business |  2,780,000,000 | The definition is the first to come up with no mention of a business until the third page | Too broad| 
+| Irish Sea Salt | 21,600,000 | E-commerce sites are the first to come up | Achill Island a competitor is first on list - but I think it would work - Good |
+| Artisan Salt | 32,200,000 | Artisan Salt company are the first result here | Maybe too specific again|
+| Home Grown Sea Salt | 93,600,000 | Fistly populated but how to make sea salt sites | The third result is a company making sea salt so i think this is hopeful|
+| Plain Salt| 268,000,000 | Information on the differnece between table salt and plain salt| Not specific to ecommerce enough|
+| Flavoured Salt | 29,500,000 | Information on the different flaboured salt| Not specific to ecommerce enough|
+| Himalayan Salt | 25,800,000 | Benefits in Himalyan sea salt | No specific to ecommerce enough|
+| Organic Sea Salt | 68,800,000 | Shops like tesco come up first | I think this is a good one
 
 
 <br>
