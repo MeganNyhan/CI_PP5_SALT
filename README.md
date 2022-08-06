@@ -770,6 +770,15 @@ Like a lot of e-commerce platforms I have used social media and email marketing 
 
 ### Deploying to Heroku (Automatic)
 
+<p>
+The website was fully written in Gitpod and regularly deployed to GigHub Pages (in a main branch) and to the Heroku Platform (to handle backend languages). After first deployment, several updates have been carried out before the final version. Any updates made to the project is saved in Gitpod, by using the "push" command for every commit (change) in the ongoing development. Amazon Web Services S3 is also implemented to contain the static files.
+
+The project repository can be forked from GitHub here (https://github.com/csc7/PP5_CI_SALT), please check for the "Fork" button, top-right of the page, to achieve this task.
+
+The fully deployed program, accessible by anyone, is found here, whose URL is https://deegagh-salt.herokuapp.com/ . Its repository is found here, whose URL is https://github.com/csc7/PP5_CI_SALT.
+</p>
+
+<p> Follow these steps to deploy the content of this project: </p>
 <ul> 
 <li> Use pip3 freeze > requirements.txt in terminal to save libraries that need to be installed on Heroku as well.</li>
 <li> Create Procfile and add web: gunicorn blog.wsgi.</li>
@@ -786,6 +795,7 @@ Like a lot of e-commerce platforms I have used social media and email marketing 
 <li> Search for a repository and connect to it.</li>
 <li> Click the button enable automatic deploys and the button deploy branch.</li>
 <li> Wait for the app to build and then click the rview button.</li>
+<li>  Crease Amazon Web Services account (if needed) and S3 bucket. Assign the bucket a name (e.g., your_app_name), with "ACLs enabled" Crease Amazon Web Services account (if needed) and S3 bucket. Assign the bucket a name (e.g., your_app_name), with "ACLs enabled", and "Block off public access" disables.</li>
 </ul>
 <br>
 
@@ -799,6 +809,9 @@ Like a lot of e-commerce platforms I have used social media and email marketing 
 <li> git push origin main </li>
 <li> git push heroku main </li>
 </ul>
+
+<details><summary>Heroku Deployment Screenshot</summary>
+<img src="docs/flow-chart/heroku/heroku-deploy.png"></details>
 
 ### Forking a Repository
 

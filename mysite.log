@@ -12167,3 +12167,14 @@ django.core.exceptions.ImproperlyConfigured: In order to use cloudinary storage,
 [06/Aug/2022 17:03:50] WARNING [django.server:161] "GET /static/img/family2.jpg HTTP/1.1" 404 179
 [06/Aug/2022 17:03:50] WARNING [django.request:224] Not Found: /static/img/family3.jpg
 [06/Aug/2022 17:03:50] WARNING [django.server:161] "GET /static/img/family3.jpg HTTP/1.1" 404 179
+[06/Aug/2022 17:05:09] INFO [django.server:161] "GET /faqs/ HTTP/1.1" 200 12640
+[06/Aug/2022 17:05:09] WARNING [django.request:224] Not Found: /faqs/assets/fontawesome/all.css
+[06/Aug/2022 17:05:09] WARNING [django.request:224] Not Found: /static/style.css
+[06/Aug/2022 17:05:09] WARNING [django.server:161] "GET /faqs/assets/fontawesome/all.css HTTP/1.1" 404 179
+[06/Aug/2022 17:05:09] WARNING [django.server:161] "GET /static/style.css HTTP/1.1" 404 179
+[06/Aug/2022 17:05:09] WARNING [django.request:224] Not Found: /static/js/cart.js
+[06/Aug/2022 17:05:09] WARNING [django.server:161] "GET /static/js/cart.js HTTP/1.1" 404 179
+[06/Aug/2022 17:05:09] WARNING [django.request:224] Not Found: /static/img/family2.jpg
+[06/Aug/2022 17:05:09] WARNING [django.server:161] "GET /static/img/family2.jpg HTTP/1.1" 404 179
+[06/Aug/2022 17:05:09] WARNING [django.request:224] Not Found: /static/img/family3.jpg
+[06/Aug/2022 17:05:09] WARNING [django.server:161] "GET /static/img/family3.jpg HTTP/1.1" 404 179
