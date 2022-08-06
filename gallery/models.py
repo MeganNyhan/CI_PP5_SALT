@@ -1,7 +1,6 @@
 
 """Imports"""
 from django.db import models
-from cloudinary.models import CloudinaryField
 
 
 class Description(models.Model):
