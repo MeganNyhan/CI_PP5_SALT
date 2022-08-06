@@ -148,8 +148,7 @@ DATABASES = {
     'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
 }
 
-ALLOWED_HOSTS = ['*',
-                 '0.0.0.0',
+ALLOWED_HOSTS = [
                  'deegagh-salt.herokuapp.com',
                  'localhost']
 
