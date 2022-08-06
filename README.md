@@ -613,7 +613,7 @@ Those with a "quality factor" of 5 (where an e-commerce appears in the first pag
 
 After analysing "Deegagh Sea Salt" with wordtracker.com, it can be seen that it produces a high volume and good competition comparison. Therefore "Deegagh Sea Salt" is also included as keyword.
 
-Finally, we include the sitemap.xml (in the root folder) to increase the chances of a higher rank in search engines and help them on finding relevant content, and a robots.txt that discourages spiders from navigating to sections of the site.
+Finally, I included the sitemap.xml (in the root folder) to increase the chances of a higher rank in search engines and help them on finding relevant content, and a robots.txt that discourages spiders from navigating to sections of the site.
 
 sitemap.xml: created using XML-Sitemaps.com
 robots.txt: tested with https://support.google.com/webmasters/answer/6062598?hl=en
@@ -627,13 +627,14 @@ robots.txt: tested with https://support.google.com/webmasters/answer/6062598?hl=
 <details>
     <summary>wordtracker.com analysis for "Deegagh Sea Salt" keyword</summary>
 
-![DEM Analysis with wordtracker]() 
+[Deegagh Sea Salt Analysis with wordtracker]() 
 </details>
 <br>
 
 ### Organic Growth with Social Media (Facebook)
 
-Like a lot of e-commerce platforms
+Like a lot of e-commerce platforms I have used social media and email marketing to market to my target audience. As I am not paying for adds on these sites, I relied on organic traction for my page, posts.
+<a href="https://www.facebook.com/profile.php?id=100084226000011" target="_blank"> Deegagh Sea Salt Facbook Page </a>
 
 <details>
     <summary>Deegagh Sea Salt Facebook Page</summary>
