@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /members/
+Disallow: /bag/
+Disallow: /checkout/
+Sitemap:
