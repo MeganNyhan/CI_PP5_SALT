@@ -15,7 +15,7 @@ class Post(models.Model):
     """
     title = models.CharField(max_length=2000, unique=True)
     title_tag = models.CharField(max_length=200, unique=True)
-    featured_image = CloudinaryField('image', default='placeholder')
+    featured_image = models.ImageField('image', default='placeholder')
     snippet = models.CharField(max_length=2000, unique=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     category = models.CharField(max_length=2000, unique=True)

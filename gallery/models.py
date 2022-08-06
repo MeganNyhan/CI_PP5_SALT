@@ -14,7 +14,9 @@ class Description(models.Model):
 
 class Photo(models.Model):
     """Photo model"""
-    image = CloudinaryField(null=False, blank=False)
+
+    image_url = models.URLField(max_length=1024, null=True, blank=True)
+    image = models.ImageField(null=False, blank=False)
     category = models.ForeignKey(
         Description, on_delete=models.SET_NULL, null=True, blank=True)
 

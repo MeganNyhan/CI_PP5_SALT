@@ -20,7 +20,7 @@ class Profile(models.Model):
     """
     user = models.OneToOneField(User, null=True, on_delete=models.CASCADE)
     bio = models.TextField()
-    profile_pic = CloudinaryField('image', default='placeholder')
+    profile_pic = models.ImageField('image', default='placeholder')
     website_url = models.CharField(max_length=255, null=True, blank=True)
     facebook_url = models.CharField(max_length=255, null=True, blank=True)
     twitter_url = models.CharField(max_length=255, null=True, blank=True)
