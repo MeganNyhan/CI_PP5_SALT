@@ -31,11 +31,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    '*',
-    'https://deegagh-salt.herokuapp.com/',
+    'deegagh-salt.herokuapp.com',
     'localhost'
-    '0.0.0.0',
-    '.herokuapp.com',
 ]
 
 
