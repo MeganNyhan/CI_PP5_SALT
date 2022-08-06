@@ -1,0 +1,253 @@
+body{
+    direction: ltr;
+}
+
+/* Header on home page */
+/* Container holding the image and the text */
+.head-container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+.head-container > img{
+    opacity: 70px;
+}
+  
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+/* buttons in home page */
+.home-btn btn {
+    left: 20%;
+}
+
+/* Product Section */
+.products{
+    padding-left:8%;
+    padding-bottom:3%;
+}
+
+/* Card */
+.card{
+    margin-left: 10px;
+}
+
+/* Buttons on home page */
+.base-btn{
+    padding-right:20%;
+}
+
+.text {
+    padding-top: 20%;
+    padding-left:20px;
+}
+
+/* Cart */
+.cart-row{
+    display:flex;
+    align-items: flex-stretch;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ececec;
+}
+
+.row-image{
+    width:100px;
+}
+
+.quantity{
+    display: inline-block;
+    font-weight: 700;
+    padding-right: 10px;
+}
+
+.chg-quantity{
+    width: 12px;
+    cursor: pointer;
+    display: block;
+    margin-top: 5px;
+    transition: .1s;
+}
+
+.hidden{
+    display: none !important;
+}
+
+.form-field{
+    width: 250px;
+    display: inline-block;
+    padding: 5px;
+}
+
+/* Testimonial */
+.testimonial-area {
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.testimonial-area{
+    position: relative;
+    z-index: 2;
+    padding: 50px 0 50px 50px;
+}
+
+.testimonial-area .owl-carousel{
+    overflow: hidden;
+    padding: 0 20px;
+    margin: 0 -40px;
+    padding-right: 40px;
+}
+
+.testimonial-area .sec-title{
+    position: relative;
+    margin-bottom: 50px;
+    padding-bottom: 15px;
+}
+
+.testimonial-area .sec-title:after{
+    content: '';
+    position: absolute;
+    left: 0 ;
+    bottom: 0 ;
+    width: 100px ;
+    height: 3px;
+    margin-left: 46%;
+    background: black;
+}
+
+
+.testimonial-area .sec-title h2{ 
+    font-size:60px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: black
+}
+
+.testimonial-area .sec-title p{
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.testimonial-img{
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+.owl-carousel .owl-stage-outer{
+    padding: 30px 50px;
+    margin-left: -35px;
+    width: calc(100% + 100px);
+}
+
+.client-info{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-align: left;
+    padding-bottom: 50px;
+}
+
+.client-info .client-details h6{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.client-info .client-details span{
+    display: inline-block;
+    font-size: 14px;
+}
+
+.client-info .client-pic{
+    padding-right:20px;
+}
+
+.client-info .client-pic img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.owl-dots button{
+    background-color: black !important;
+    width: 15px;
+    height: 15px;
+    border-radius: 26px;
+    margin: 0 5px;
+    transition: 0.3s
+}
+
+.owl-dots{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.owl-dots button.active{
+    width: 30px;
+}
+
+/* Footer */
+.footer{
+    background-color: #202A44;
+}
+
+/* Products */
+
+
+/* About Section */
+#family img{
+    height: 100px;
+}
+
+/* Check Out Success */
+.thank-you{
+    left: 50%;
+}
+
+
+/* Profile of User */
+.order-history{
+    max-height: 416px;
+    overflow-y: auto;
+}
+
+/* Messages */
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
+/** Gallery **/
+.photo_gallery{
+    display:flex;
+}
+
+.photo_gallery a {
+    display: inline-block;
+    height: 300px;
+}
+
+.photo_gallery img {
+    object-position: center;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
