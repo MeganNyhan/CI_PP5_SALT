@@ -5,7 +5,7 @@ from news.models import Post
 
 
 class PostAdmin(admin.ModelAdmin):
-    list_display = ('head', 'body')
+    list_display = ['body']
 
 
 admin.site.register(Post, PostAdmin)
