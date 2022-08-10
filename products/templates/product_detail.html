@@ -71,7 +71,9 @@
                                     </span>
                                     <span class="text-uppercase"> Continue Shopping </span>
                                 </a>
+                                {% if product.instock %}
                                 <input type="submit" class="btn btn-success fw-light" value="Add to Bag">
+                                {% endif %}
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </div>
