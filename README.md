@@ -1,7 +1,7 @@
 # Deegagh Sea Salt
  
 <img src="docs/mock-up/mock-up.png" alt="Mockup of my site across multiple devices">
-<a href="https://donegal-courts.herokuapp.com/" alt="link to Deegagh Sea Salt" target="_blank" rel="noopener">Link to The Deegagh Sea Salt</a>
+<a href="https://deegagh-salt.herokuapp.com/" alt="link to Deegagh Sea Salt" target="_blank" rel="noopener">Link to The Deegagh Sea Salt</a>
 
 <p> In order to view this project correctly in github, please add the following into the terminal: "pip3 install -r requirements.txt"</p>
 

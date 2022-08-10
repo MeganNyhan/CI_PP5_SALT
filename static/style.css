@@ -267,3 +267,10 @@ body{
     border-radius: 50%;
     color: white;
   }
+
+  /* Media Query */
+  @media only screen and (max-width: 600px) {
+    .header {
+      font-size: 12px;
+    }
+  }
