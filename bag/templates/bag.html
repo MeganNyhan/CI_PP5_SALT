@@ -2,19 +2,17 @@
 {% load static %}
 {% block title %} Deegagh Sea Salt | Shopping Cart {% endblock %}
 {% load bag_tools %}
-
-
 {% block content %}
     <div class="overlay"></div>
     <div class="container mb-2">
         <div class="row">
             <div class="col">
                 <br>
+<!-- Shopping cart section -->
                 <h2 class="logo-font mb-4">Shopping Cart</h2>
                 <hr>
             </div>
         </div>
-
         <div class="row">
             <div class="col">
                 {% if bag_items %}
@@ -29,9 +27,9 @@
                                     <th scope="col">Subtotal</th>
                                 </tr>
                             </thead>
-
                             {% for item in bag_items %}
                                 <tr>
+<!-- Items in shopping cart -->
                                     <td class="p-3 w-25">
                                         <img class="img-fluid rounded" src="{{ item.product.image.url }}">
                                     </td>
@@ -83,6 +81,7 @@
                                 </tr>
                             {% endfor %}
                             <tr>
+<!-- Shopping cart total -->
                                 <td colspan="5" class="pt-5 text-right">
                                     <h6><strong>Bag Total: €{{ total|floatformat:2 }}</strong></h6>
                                     <h6>Delivery: €{{ delivery|floatformat:2 }}</h6>
@@ -113,6 +112,7 @@
                         </table>
                     </div>
                 {% else %}
+<!-- Message for if the bag is empty -->
                     <p class="lead mb-5">Your bag is empty.</p>
                     <a href="{% url 'products' %}" class="btn btn-outline-black btn-lg">
                         <span class="icon">
@@ -129,7 +129,7 @@
 {% block postloadjs %}
 {{ block.super }}
 {% include 'includes/quantity_input_script.html' %}
-
+<!-- Java script for on click update and remove buttons -->
 <script type="text/javascript">
     // Update quantity on click
     $('.update-link').click(function(e) {

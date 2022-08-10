@@ -1,14 +1,11 @@
 {% extends "base.html" %}
 {% load static %}
 {% block title %} Deegagh Sea Salt | Checkout Success! {% endblock %}
-
 {% block extra_css %}
     <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
 {% endblock %}
 <!-- Success message here -->
-
 {% block content %}
-
 <br>
 <br>
 <br>
@@ -16,6 +13,7 @@
 <br>
 <br>
 <br>
+<!-- Thank you message for the successful checkout -->
 <div class="thank-you">
   <h1 class="text-center"> Thank your for your order!</h1>
   <hr>
@@ -36,6 +34,7 @@
               <i class="fa-solid fa-utensils fa-lg"></i>
             </span>
               <br>
+<!-- Link to view recipes with products used in them -->
             <span class="fw-light">Check out how you can use your new products in our recipies section!</span>
           </a>
         {% endif %}
@@ -45,7 +44,7 @@
       <div class="row">
         <div class="col-6 col-lg">
           <div class="order-confirmation-wrapper p-2 border">
-            <!-- Order Info -->
+<!-- Order Info -->
             <div class="row">
               <div class="col">
                 <strong class="text-left">
@@ -57,7 +56,7 @@
                 </div>
               </div>
             </div>
-            <!-- Order Details -->
+<!-- Order Details -->
             <div class="row">
               <div class="col">
                 <small class="text-muted text-left">
@@ -67,7 +66,7 @@
                   </div>
               </div>
             </div>
-            <!-- Delivering to: -->
+<!-- Delivering to: -->
             <div class="row">
               <div class="col">
                 <p class="text-muted text-left">
@@ -75,7 +74,7 @@
                 </p>
               </div>
             </div>
-            <!-- Billing: -->
+<!-- Billing: -->
             <div class="row">
               <div class="col">
                 <p class="text-muted text-left">
