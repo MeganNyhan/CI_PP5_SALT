@@ -612,24 +612,10 @@ The aim is to have your site at the top of the search results that refers to the
 
 <br>
 <details>
-    <summary>SEO Analysis</summary>
-
-[SEO Analysis]() 
+    <summary>SEO Site Checkup</summary>
+    <img src="docs/seo/seo-site-checkup.png">
 </details>
 <br>
-
-<details>
-    <summary>SEO Analysis)</summary>
-
-[SEO Analysis]() 
-</details>
-<br>
-The words that produce the highest volume of searchers are:
-
-Those with a "quality factor" of 5 (where an e-commerce appears in the first page of a Google search, since we are interested in promoting an e-commerce) are the following ones:
-.
-
-After analysing "Deegagh Sea Salt" with wordtracker.com, it can be seen that it produces a high volume and good competition comparison. Therefore "Deegagh Sea Salt" is also included as keyword.
 
 Finally, I included the sitemap.xml (in the root folder) to increase the chances of a higher rank in search engines and help them on finding relevant content, and a robots.txt that discourages spiders from navigating to sections of the site.
 
@@ -656,8 +642,6 @@ Like a lot of e-commerce platforms I have used social media and email marketing 
 
 <details>
     <summary>Deegagh Sea Salt Facebook Page</summary>
-
-[Deegagh Sea Salt Facebook Page]() 
 </details>
 
 <br>
