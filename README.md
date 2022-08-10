@@ -659,7 +659,7 @@ Like a lot of e-commerce platforms I have used social media and email marketing 
     2."As a user of the site, I would like to be able to view the products available to buy within categories."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-|Home section of blog post site| The user can scroll through the content uploaded by the site admin and read the court news stories| The user can browse through the content on the site| Works as expected|
+|Gallery Section orders products within the categories so selected category is on the top| The user can scroll through the products that are then split into certain categorys| The user can browse through products available to buy within categories on the site| Works as expected|
 
 <details><summary>User Testing 2</summary>
 <img src="docs/test-user-stories/content.png">

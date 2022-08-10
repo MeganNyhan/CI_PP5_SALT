@@ -44,7 +44,12 @@
                                 </a>
                                 {% endif %}
                                 <div class="card-body pb-0">
-                                    <p class="mb-0">{{ product.name }} | {{ product.instock }}</p>
+                                    <p class="mb-0">{{ product.name }} | 
+                                        {% if product.instock %}
+                                            Instock
+                                        {% else %}
+                                        Out of Stock
+                                    </p>
                                 </div>
                                 <div class="card-footer bg-white pt-0 border-0 text-left">
                                     <div class="row">
