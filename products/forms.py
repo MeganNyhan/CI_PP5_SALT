@@ -18,7 +18,7 @@ class ProductForm(forms.ModelForm):
             field.widget.attrs['class'] = 'border-black '
 
 
-"""class ReviewForm(forms.ModelForm):
+class ReviewForm(forms.ModelForm):
     class Meta:
         model = Review
-        fields = ('body',)"""
+        fields = ('body',)

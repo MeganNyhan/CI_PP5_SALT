@@ -1,5 +1,5 @@
 from django.db import models
-from news.models import Post
+from .models import Review
 
 # Create your models here.
 
@@ -37,8 +37,8 @@ class Product(models.Model):
         return str(self.name)
 
 
-"""class Review(models.Model):
-   # Review Custom Model 
+class Review(models.Model):
+    # Review Custom Model
     post = models.ForeignKey(Product, on_delete=models.CASCADE,
                              related_name="reviews")
     name = models.CharField(max_length=80)
@@ -52,4 +52,4 @@ class Product(models.Model):
         ordering = ["created_on"]
 
     def __str__(self):
-        return f"Review {self.body} by {self.name}"""
+        return f"Review {self.body} by {self.name}"
