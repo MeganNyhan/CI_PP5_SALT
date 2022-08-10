@@ -71,11 +71,8 @@
               </button>
               <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
                 <li class="text-light"><a class="dropdown-item active text-light" href="{% url 'products' %}">All Products</a></li>
-                <li><a class="dropdown-item text-light" href="{% url 'gallery' %}">Gallery</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item text-light" href="{% url 'products' %}?category={{category.name}}">Himalayan Salt</a></li>
-                <li><a class="dropdown-item text-light" href="{% url 'products' %}?category=plain">Plain Salt</a></li>
-                <li><a class="dropdown-item text-light" href="{% url 'products' %}?category=flavoured">Flavoured Salt</a></li>
+                <li><a class="dropdown-item text-light" href="{% url 'gallery' %}">Product Gallery</a></li>
                 <!-- Add product and delete product -->
                 {% if user.is_superuser %}
                 <li><hr class="dropdown-divider"></li>
@@ -148,8 +145,7 @@
     {% block content %}
     {% endblock %}
 
-<!-- Footer 
-Footer Copied from MDBootstrap (link in readme) --> 
+<!-- Footer | Footer Copied from MDBootstrap (link in readme) --> 
 <footer class="bg-dark text-center text-white">
   <!-- Grid container -->
   <div class="container p-4">
@@ -162,7 +158,6 @@ Footer Copied from MDBootstrap (link in readme) -->
           <!--Grid column-->
           <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
             <h5 class="text-uppercase text-light fa-lg"><i class="fa-solid fa-envelope"></i></h5>
-    
             <p>
               We are always looking for more products to have on our site! Contact us today for more information on
               how to get in touch! <br>
@@ -171,7 +166,6 @@ Footer Copied from MDBootstrap (link in readme) -->
             </p>
           </div>
           <!--Grid column-->
-    
           <!--Grid column-->
           <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
             <h5 class="text-uppercase text-light"><i class="fa-solid fa-question"></i></h5>
@@ -223,10 +217,6 @@ Footer Copied from MDBootstrap (link in readme) -->
     </div>
   </div>
 </div>
-
-
-
-<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <!--End mc_embed_signup-->
       </div>
   </div>
@@ -236,9 +226,8 @@ Footer Copied from MDBootstrap (link in readme) -->
 <script type="text/javascript" src="{% static 'js/cart.js' %}"></script>
 <!-- JavaScript Section -->
 {% block postloadjs %}
-<!-- <script type="text/javascript">
-  $('.toast').toast('show');
-</script> -->
+<!-- Mail Chimp Javascript -->
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 {% endblock %}
   </body>
 </html>
