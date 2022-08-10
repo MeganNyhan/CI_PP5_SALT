@@ -21,9 +21,10 @@
     4. [Design Choices](#design-choices)
 3. [Technical Design](#technical-design)
     1. [Flow Chart](#flow-chart)
-    2. [Database Diagram](#database)
-    3. [User Manual](#user-manual)
-    4. [Wireframes](#wireframes)
+    2. [Business Model](#business-model)
+    3. [Database Diagram](#database)
+    4. [User Manual](#user-manual)
+    5. [Wireframes](#wireframes)
 4. [Technology](#technology)
     1. [Develpoment Languages Used & 3rd Party Libraries:](#develpoment-languages-used)
 5. [Features](#features)
@@ -144,6 +145,10 @@
 <details><summary>Admin Flow Chart</summary>
         <img src="docs/flow-chart/user-flowchart.png"></details>
 <hr>
+
+### Business Model:
+
+<p>The e-commerce business model surrounding the site is designed in such a way that a "user" (who is uniquely identified by an ID) can buy "products" (that are also uniquely identified by an ID and SKU) by requesting an "order" (that is uniquely identified by an ID and individual order number). Then, as an order can have numerous products, and simultaneously a product can be requested by numerous orders, an "order-line-item" is created to uniquely tie a specific product to a specific order. This "order-line-item" divides the many-to-many relation between "order" and "product" in two one-to-many relations ("order-order-line-item" and "order-line-item-product"). "Product reviews" can be added (related) to each product. One-to-many communication is open between the "user" and the business through the contact form that the admin of the site can access through the admin panel.</p>
 
 ### Database 
 <p> My Database has eight models:
