@@ -875,5 +875,6 @@ The fully deployed program, accessible by anyone, is found here, whose URL is ht
 
 ## Future Features
 <p> Future Features </p>
+<p> If I had more time I would of liked to add a wishlist feature to the site and have the reviews link to products that were previously ordered by the user. I would have a review option in a newsletter I would send to the user after a week of them having my products.</p>
 
 #### [Back to Index](#index)
