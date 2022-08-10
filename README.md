@@ -649,7 +649,7 @@ Like a lot of e-commerce platforms I have used social media and email marketing 
     1."As a user of the site, I want to be able to view the products available to buy."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-|Home section of blog post site| The user can scroll through the content uploaded by the site admin| The user can browse through the content on the site| Works as expected|
+|Products Section in site allows users to view products on sale| The user can scroll through the products uploaded by the site admin either via the admin panel or using the add-products form| The user can browse through the products on the site| Works as expected|
 
 <details><summary>User Testing 1</summary>
 <img src="docs/test-user-stories/content.png">

@@ -23,7 +23,8 @@
 "description": "Our Achill Island Smoked Sea Salt is hot-smoked with beech and oak and will bring the taste of a BBQ grill and Achill Island to some of your favourite dishes.",
 "price": 4.50, 
 "category": 2, 
-"rating": 3 }},
+"rating": 3 ,
+"image":"achill-island-smoked-sea-salt.png" }},
 
 {"pk": 4, "model": "products.product", 
 "fields": {"sku": "pp5001340158", 
@@ -41,7 +42,7 @@
 "price": 13.99, 
 "category": 2, 
 "rating": 4,
-"image": "orsay-sea-salt.jpeg" }},
+"image": "orsay-sea-salt.jpg" }},
 
 {"pk": 6, "model": "products.product", 
 "fields": {"sku": "pp5001340160", 
