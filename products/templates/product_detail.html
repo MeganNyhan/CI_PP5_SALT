@@ -42,7 +42,7 @@
                     {% if product.instock %}
                     <input type="submit" class="btn btn-success fw-light" value="Add to Bag">
                     {% else %}
-                    <p class="text-muted">Sorry, this product is currently out of stock</p>
+                    <p class="text-muted">Sorry, this product is currently <strong>out of stock</strong></p>
                     {% endif %}
                     <!-- Add to bag form -->
                     <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
