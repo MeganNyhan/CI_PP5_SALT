@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 {% load static %}
-
+{% block title %} Deegagh Sea Salt | Home {% endblock %}
 {% block content %}
-
+<!-- Header -->
 <div class="head-container">
   <img src="{% static 'img/header.jpg' %}" alt="Family Fishing" style="width:100%;">
   <div class="centered text-light header">
@@ -15,6 +15,7 @@
         {{bodies.body}}
         <br><br>
         {% endfor %}
+        <!-- Header Buttons -->
         <a class="btn btn-light" href="{% url 'products' %}" role="button">Shop Now</a>
         <a class="btn btn-light" href="{% url 'contact' %}" role="button">Contact Us</a>
       </p>
@@ -22,6 +23,9 @@
 </div>
 <section>
 <!-- Products Section --> 
+<br>
+<br>
+<br>
 <br>
     <h1 class="text-center fw-light text-dark"> Our Products</h1>
     <p class="text-center fw-light text-dark"> At Deegagh Sea Salt we have several viarations of Sea Salt on offer, so you will surely find something for everyone!</p>
@@ -34,6 +38,7 @@
     <div class="col">
       <div style="width: 18rem;">
         <div class="card-body">
+          <!-- Himalayan Salt -->
           <h5 class="card-title text-center"><i class="fa-solid fa-water"></i></h5>
           <h6 class="card-subtitle mb-2 text-center">Himalayan Salt</h6>
           <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -44,6 +49,7 @@
     <div class="col">
       <div style="width: 18rem;">
         <div class="card-body">
+          <!-- Plain Salt -->
           <h5 class="card-title text-center"><i class="fa-solid fa-ship"></i></h5>
           <h6 class="card-subtitle mb-2 text-center">Plain Salt</h6>
           <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -54,6 +60,7 @@
     <div class="col">
       <div style="width: 18rem;">
         <div class="card-body">
+          <!-- Flavoured Salt -->
           <h5 class="card-title text-center"><i class="fa-solid fa-person-swimming"></i></h5>
           <h6 class="card-subtitle mb-2 text-center">Flavoured Salt</h6>
           <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -105,6 +112,7 @@
               </div>
               </div>
           </div>
+          <!-- Third Testimonial -->
           <div class="single-testimonial">
             <p> “Best sea salt on the market. Deegagh sea salt have such an extensive selection that it is so easy to find a flavour or type that my whole family love!<br/>
               <br/>Reccommend for everyone to try them out!” </p>
@@ -143,9 +151,7 @@
     <br>
     <div class="container">
     <p class="text-justify fw-light"> Founded in 2020, Deegagh Sea Salt is a family business, which was inspired by the long-forgotten tradition of salt production in the Mulroy Bay. In the time-honoured style, we began producing sea salt in our family kitchen. During lockdown we were able to find more companies around Ireland with similar interests that wanted us to stock their products. Helping us garner the sea salt empire we have now.<br>
-
       <br>Through a combination of sustainable traditional and modern techniques we create a great tasting, pure and natural Irish Sea Salt, which is organically hand harvested in small batches using a polytunnel drying system.<br>
-      
       <br>From humble beginnings in our family fishing trips, we have seen our sea salt garner worldwide favour by professional chefs, home cooks and food lovers who appreciate the taste and quality of hand harvested sea salt and that extra dimension it can bring to cooking. 
     </div>
 <!-- End of About -->
@@ -153,7 +159,7 @@
 </div>
 </div>
 <br>
-<!-- Owl Carousel -->
+<!-- Owl Carousel Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" ></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
 <script type="text/javascript">

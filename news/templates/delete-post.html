@@ -1,7 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block title %} Deegagh Sea Salt | Delete Post {% endblock %}
-
 {% block content %}
 <br>
 <br>
@@ -23,6 +22,7 @@
             </form>
         </div>
 <!-- End of form -->
+<!-- If user is not the supreruser they can't delete posts -->
         {% else %}
             <p> You are not allowed to delete this post. </p>
         {% endif %}

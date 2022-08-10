@@ -8,6 +8,7 @@
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
                 <div class="image-container my-5">
+                    <!-- Product Image -->
                     {% if product.image %}
                         <a href="{{ product.image.url }}" target="_blank">
                             <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -21,6 +22,7 @@
             </div>
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="product-details-container mb-5 mt-md-5">
+                    <!-- Product Name -->
                     <p class="mb-0">{{ product.name }}</p>
                     {% if request.user.is_superuser %}
                     <small class="ml-3">
@@ -36,7 +38,7 @@
                         <small class="text-muted">No Rating</small>
                     {% endif %}
                     <p class="mt-3">{{ product.description }}</p>
-
+                    <!-- Add to bag form -->
                     <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-row">
@@ -74,11 +76,13 @@
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </div>
                     </form>
+                    <!-- End of Add to bag form -->
                 </div>
             </div>
             <hr>
             <div class="container">
                 <div class="row">
+                    <!-- Leave a review form  -->
                     <h2 class="fw-light"> Leave a Review:</h2>
                         {% if user.is_authenticated %}
                         <p>Posting as: {{ user.first_name }}</p> 
@@ -100,7 +104,7 @@
     </div>
     <br>
 {% endblock %}
-
+<!-- Javascript -->
 {% block postloadjs %}
 {{ block.super }}
 {% include 'includes/quantity_input_script.html' %}

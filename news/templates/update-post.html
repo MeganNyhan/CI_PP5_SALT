@@ -1,7 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block title %} Deegagh Sea Salt | Update Post {% endblock %}
-
 {% block content %}
 <div class="container">
     <div class="row">
@@ -20,6 +19,7 @@
         </div>
 <!-- End of form -->
         {% else %}
+        <!-- If user is not a superuser they can't edit the post -->
             <p> You are not allowed to edit this post. </p>
         {% endif %}
         {% else %}

@@ -7,6 +7,7 @@
       <div class="col">
         <br>
         <h1> {{ post.title }} </h1>
+        <!-- If user is super user they can update or delete posts -->
         {% if user.is_superuser %}
         {% if user.id == post.author.id %}
             <a class="btn btn-warning" href="{% url 'update-post' post.pk %}" aria-label="edit"> Edit </a>
