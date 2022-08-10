@@ -615,6 +615,8 @@ The aim is to have your site at the top of the search results that refers to the
     <summary>SEO Site Checkup</summary>
     <img src="docs/seo/seo-site-checkup.png">
 </details>
+
+Also I looked at other sites like Wordstream to look at what other sites recommened: https://tools.wordstream.com/fkt?website=https%3A%2F%2Fdeegagh-salt.herokuapp.com%2F
 <br>
 
 Finally, I included the sitemap.xml (in the root folder) to increase the chances of a higher rank in search engines and help them on finding relevant content, and a robots.txt that discourages spiders from navigating to sections of the site.
@@ -623,15 +625,8 @@ sitemap.xml: created using XML-Sitemaps.com
 robots.txt: tested with https://support.google.com/webmasters/answer/6062598?hl=en
 
 <details>
-    <summary>wordtracker.com analysis for "Deegagh Sea Salt" keyword</summary>
-
-[Deegagh Sea Salt Analysis with wordtracker]() 
-</details>
-
-<details>
-    <summary>wordtracker.com analysis for "Deegagh Sea Salt" keyword</summary>
-
-[Deegagh Sea Salt Analysis with wordtracker]() 
+    <summary>wordtracker.com analysis for "Irish Sea Salt" keyword</summary>
+        <img src="docs/seo/wordtracker.png">
 </details>
 <br>
 
