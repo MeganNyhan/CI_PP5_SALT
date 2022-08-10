@@ -670,7 +670,7 @@ Like a lot of e-commerce platforms I have used social media and email marketing 
     3."As a user of the site, I would like to be able to view the products in their categories on the site easily."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-|Home section of blog post site| The user can scroll through the content uploaded by the site admin. The blog posts are shown in a list formate| The user can browse through the content on the site| Works as expected|
+|Gallery Section orders products within the categories so selected category is on the top| The user can scroll through the products that are then split into certain categorys| The user can browse through products available to buy within categories on the site| Works as expected|
 <details><summary>User Testing 3</summary>
 <img src="docs/test-user-stories/view_stories.png"></details>
 <hr>
@@ -678,7 +678,7 @@ Like a lot of e-commerce platforms I have used social media and email marketing 
     4."As a site user, I would like to be able to buy a product from the site successfully and easily."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-|Detailed blog post section of the site| The user can read the blog post stories once they have navigated into a story the want to read.| The user can read the post on the site| Works as expected|
+|User selectes the product they want to buy, they add it to their cart. Then they continue to a secure checout - input their details and successfully buy their chosen products| User adds product to cart then travels through the secure checkout, inputing their information and buying their items| The user can successfully add products to their cart and then buy them| Works as expected|
 
 <details><summary>User Testing 4</summary>
 <img src="docs/test-user-stories/read_post.png"></details>
@@ -687,7 +687,7 @@ Like a lot of e-commerce platforms I have used social media and email marketing 
     5."As a user of the site, I would like to be able to create an account with the possibility of keeping up to date with my order history and tracking."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-|Comments section under blog post| The user can read comments left by other users that have visited the site| The user can read the comments for posts on the site| Works as expected|
+|In the user profile section their is a list called order history where the user can view their order history| The user can view the items that were ordered by them before | The user can find all information around their previous orders| Works as expected|
 
 <details><summary>User Testing 5</summary>
 <img src="docs/test-user-stories/view_comment.png"></details>
@@ -697,7 +697,7 @@ Like a lot of e-commerce platforms I have used social media and email marketing 
     6."As a user, I would like to be able to leave a review on a product I have ordered."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-|Comments section under blog post| The user can create and post comments under the blog posts| The user can create the comments for posts on the site| Works as expected|
+|Review section under the products they relate to| The user can reviews and post reviews under the products| User is able to review the products they have bought or tried | Works as expected|
 
 <details><summary>User Testing 6</summary>
 <img src="docs/test-user-stories/post_comment.png"></details>
@@ -705,7 +705,7 @@ Like a lot of e-commerce platforms I have used social media and email marketing 
    7."As a user of the site, I would like to view the products available to buy in a gallery as well as categorised."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-|Register Section in Nav Bar| The user can create an account with the site| The user can create their account and leave comments if wanted | Works as expected|
+|Gallery Section under product drop down| The user can view images that relate to the products that are available to sell on the site| The user gets to view the porducts available to them | Works as expected|
 
 <details><summary>User Testing 7</summary>
 <img src="docs/test-user-stories/register.png"></details>
@@ -716,7 +716,7 @@ Like a lot of e-commerce platforms I have used social media and email marketing 
     1."As a site owner, I would like to display to customers if an item is in stock or not."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-|Django admin section| The admin can create blog post to be displayed in the site| The admin can create a blog post in their admin section to be displayed on the site | Works as expected|
+|Instock or out of stock notice displayed beside products| Out of stock and instock - the admin uses the checkbox to say if the product is instock or not| The products have an instock out of stock title beside them | Works as expected|
 
 <details><summary>User Testing 8</summary>
 <img src="docs/test-user-stories/post_admin.png"></details>
@@ -725,7 +725,7 @@ Like a lot of e-commerce platforms I have used social media and email marketing 
     2."As a site owner, I want to employ web marketing strategies to grow the audience of my site."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-|Django admin section| The admin can create blog post to be displayed in the site. If the user doesn't want to post the blog post right away they can save it as a draft and come back to it| The admin can create a blog post in their admin section and save it as a draft | Works as expected|
+|Facebook and email marketing| A facebook page and email newsletter has been created to offer marketing strategies to promote the site| More traffic will travel to the site as recognition increases | Works as expected|
 
 <details><summary>User Testing 9</summary>
 <img src="docs/test-user-stories/post_admin.png">
@@ -735,7 +735,7 @@ Like a lot of e-commerce platforms I have used social media and email marketing 
     3."As the owner of the site, I want to be able to upload products to the site using the admin section."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
-|Django admin section| The admin can create a blog post, delete a blog post, post comments and delete comments on posts to be displayed in the site.| The admin can create a blog post, delete a blog post, post comments and delete comments in their admin section | Works as expected|
+|Admin section of backend where the owner can upload products to the site| The admin can create a product, edit a product, delete products to be displayed in the site.| The admin can create a product, delete a product, edit products in their admin section | Works as expected |
 
 <details><summary>User Testing 10</summary>
 <img src="docs/test-user-stories/admin-control.png">
