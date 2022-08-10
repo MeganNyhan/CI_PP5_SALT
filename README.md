@@ -568,6 +568,7 @@
 ### Testing User Stories
 
 <hr> 
+
 ### SEO Analysis
 
 The search engine optimization is focused on Google search engine as it is the most popular search engine amongst users of the internet and persumably my target audience.
