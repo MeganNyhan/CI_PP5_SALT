@@ -243,34 +243,46 @@
 ### Wireframes:
 
 <details><summary>Home Page</summary>
-        <img src="docs/flow-chart/wireframes/wireframe-1.png"></details>
+        <img src="docs/wireframes/wireframe-1.png"></details>
 
 <details><summary>Recipes</summary>
-        <img src="docs/flow-chart/wireframes/wireframe-2.png"></details>
+        <img src="docs/wireframes/wireframe-2.png"></details>
 
 <details><summary>Products</summary>
-        <img src="docs/flow-chart/wireframes/wireframe-3.png"></details>
+        <img src="docs/wireframes/wireframe-3.png"></details>
 
 <details><summary>Product Detail</summary>
-        <img src="docs/flow-chart/wireframes/wireframe-4.png"></details>
+        <img src="docs/wireframes/wireframe-4.png"></details>
 
 <details><summary>Login</summary>
-        <img src="docs/flow-chart/wireframes/wireframe-5.png"></details>
+        <img src="docs/wireframes/wireframe-5.png"></details>
 
 <details><summary>Register</summary>
-        <img src="docs/flow-chart/wireframes/wireframe-6.png"></details>
+        <img src="docs/wireframes/wireframe-6.png"></details>
 
 <details><summary>Shopping Cart</summary>
-        <img src="docs/flow-chart/wireframes/wireframe-7.png"></details>
+        <img src="docs/wireframes/wireframe-7.png"></details>
 
 <details><summary>Checkout</summary>
-        <img src="docs/flow-chart/wireframes/wireframe-8.png"></details>
+        <img src="docs/wireframes/wireframe-8.png"></details>
 
 <details><summary>Checkout_Success</summary>
-        <img src="docs/flow-chart/wireframes/wireframe-9.png"></details>
+        <img src="docs/wireframes/wireframe-9.png"></details>
 
 <details><summary>User Profile</summary>
-        <img src="docs/flow-chart/wireframes/wireframe-10.png"></details>
+        <img src="docs/wireframes/wireframe-10.png"></details>
+
+<details><summary>Add Product</summary>
+        <img src="docs/wireframes/wireframe-11.png"></details>
+
+<details><summary>Edit Product</summary>
+        <img src="docs/wireframes/wireframe-12.png"></details>
+
+<details><summary>Faq's</summary>
+        <img src="docs/wireframes/wireframe-13.png"></details>
+
+<details><summary>Gallery</summary>
+        <img src="docs/wireframes/wireframe-14.png"></details>
 
 <hr>
 
