@@ -338,98 +338,108 @@
 <ul>Clear Apperance and Style:
 <li> The site needs to be clean in apperance and style to help with accessibility and Navigation</li>
 <details><summary>User Stories Used: N/A</summary>
-            <img src="docs/wireframes/delete-post.png"></details>
+            <img src="docs/wireframes/wireframe-1.png"></details>
 </ul>
 
 </br>
 <ul>Quick and Correct Fucntional Search Bar:
 <li> As part of the sites e-commerce functionality, the user needs to be able to have a functional search bar in able to look through and easily find specific products that are of interest to them.</li>
 <details><summary>User Stories Used: 1, 2, 3 </summary>
-            <img src="docs/wireframes/delete-post.png"></details>
+            <img src="docs/wireframes/wireframe-1.png"></details>
 </ul>
 
 </br>
 <ul>Easy and Simple Website Navigation:
 <li> The site needs to be clean in apperance and style to help with accessibility and Navigation. The navigation that the top of the site is fixed, and will allow the user to still see the options for navigation even when scrolling down. </li>
 <details><summary>User Stories Used: N/A</summary>
-            <img src="docs/wireframes/delete-post.png"></details>
+            <img src="docs/wireframes/wireframe-1.png"></details>
 </ul>
 
 </br>
 <ul>Elaborated Product Descriptions:
 <li> The site needs to be clean in apperance and style to help with accessibility and Navigation</li>
 <details><summary>User Stories Used:1, 3 </summary>
-            <img src="docs/wireframes/delete-post.png"></details>
+            <img src="docs/wireframes/wireframe-4.png"></details>
 </ul>
 
 </br>
 <ul>Recipes Section:
 <li> The recipes is a section for users to see how they can use the products that they have bought in different dishes to bake or cook.</li>
 <details><summary>User Stories Used: N/A </summary>
-            <img src="docs/wireframes/delete-post.png"></details>
+            <img src="docs/wireframes/wireframe-2.png"></details>
 </ul>
 
 </br>
 <ul>Companies Terms and Conditions:
 <li> The site provides a terms and conditions section for the users to be aware of the T's & C's before buying.</li>
 <details><summary>User Stories Used: N/A</summary>
-            <img src="docs/wireframes/delete-post.png"></details>
+            <img src="docs/wireframes/wireframe-13.png"></details>
 </ul>
 
 </br>
 <ul>Payment Method:
 <li> The site needs to have a functional and usable payment method (Stripe) to allow the users to pay for their items easily.</li>
 <details><summary>User Stories Used: 4 </summary>
-            <img src="docs/wireframes/delete-post.png"></details>
+            <img src="docs/features/stripe.png"></details>
 </ul>
 
 </br>
 <ul>Reviews and Testimonials:
 <li> As users generally rely on reviews to help decide if they should buy a product the site needs to have a testimonal and reviews section for the products.</li>
 <details><summary>User Stories Used: 6</summary>
-            <img src="docs/wireframes/delete-post.png"></details>
+            <img src="docs/features/reviews.png"></details>
 </ul>
 
 </br>
 <ul>Fully Fucntional Shopping Cart:
 <li> The shoppping cart on the site, located in the navbar is equiped with a list of products in the shopping cart, remove button to take the products out of the cart and if the user is happy with their purchase the can go to the payment section and shipping information section.</li>
 <details><summary>User Stories Used: 4 </summary>
-            <img src="docs/wireframes/delete-post.png"></details>
+            <img src="docs/features/shopping-cart.png"></details>
 </ul>
 
 </br>
 <ul>Contact Page:
 <li> Contact us section of site</li>
 <details><summary>User Stories Used: </summary>
-            <img src="docs/wireframes/delete-post.png"></details>
+            <img src="docs/features/contact.png"></details>
 </ul>
 
 </br>
 <ul>Return Policy Section:
 <li> A return policiy section to allow the user to be aware of how to return a product if needed.</li>
 <details><summary>User Stories Used: </summary>
-            <img src="docs/wireframes/delete-post.png"></details>
+            <img src="docs/wireframes/wireframe-13.png"></details>
 </ul>
 
 </br>
 <ul>Products List and Specified Product Descriptions:
 <li> The products available on the site needs to easily show the products available and their specified product description so the user knows what they are buying</li>
 <details><summary>User Stories Used: 1, 2, 3 </summary>
-            <img src="docs/wireframes/delete-post.png"></details>
+            <img src="docs/features/recipe-list.png"></details>
+<details><summary>User Stories Used: 1, 2, 3 </summary>
+            <img src="docs/features/recipes.png"></details>
 </ul>
 
 </br>
 <ul>Account Functionality: Login and Registration:
 <li> The users of the site will have a section where they can register for an account. Once registered the user can see their order history and update their profile for personalisation. The user once signed in will be able to leave a review on the products they have ordered too. Users can't leave a review unless signed in.</li>
 <details><summary>User Stories Used: 5, 6</summary>
-            <img src="docs/wireframes/delete-post.png"></details>
+            <img src="docs/features/login.png"></details>
+<details><summary>User Stories Used: 5, 6</summary>
+            <img src="docs/features/REGISTER.png"></details>
 </ul>
 
 </br>
 <ul>Shopping Cart: List of Products For Sale, Products in Cart, Remove Products, Continue Shopping, and Payment:
 <li> The shoppping cart on the site, located in the navbar is equiped with a list of products in the shopping cart, remove button to take the products out of the cart and if the user is happy with their purchase the can go to the payment section and shipping information section.</li>
 <details><summary>User Stories Used: 4 </summary>
-            <img src="docs/wireframes/delete-post.png"></details>
+            <img src="docs/features/products-list.png"></details>
+<details><summary>User Stories Used: 4 </summary>
+            <img src="docs/features/checkout-2.png"></details>
+<details><summary>User Stories Used: 4 </summary>
+            <img src="docs/features/remove-list.png"></details>
+<details><summary>User Stories Used: 4 </summary>
+            <img src="docs/features/stripe.png"></details>
 </ul>
 <br>
 
