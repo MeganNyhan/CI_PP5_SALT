@@ -22,18 +22,3 @@ class ReviewForm(forms.ModelForm):
     class Meta:
         model = Review
         fields = ('body',)
-
-# Review Form 
-
-class ReviewForm(forms.ModelForm):
-    """
-        This is the Review Form for the Products
-    """
-    class Meta:
-        model = Review
-        fields = ('name', 'body')
-    # Widget section
-        widgets = {
-            'name': forms.TextInput(attrs={'class': 'form-control'}),
-            'body': forms.Textarea(attrs={'class': 'form-control'})
-        }

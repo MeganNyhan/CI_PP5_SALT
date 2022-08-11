@@ -52,4 +52,3 @@ class Review(models.Model):
 
     def __str__(self):
         return f"Review {self.body} by {self.name}"
-
