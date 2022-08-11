@@ -570,8 +570,6 @@
 <img src="docs/performance/edit-performance.png"></details>
 <hr>
 
-### Testing User Stories
-
 <hr> 
 
 ### SEO Analysis
@@ -652,7 +650,7 @@ Like a lot of e-commerce platforms I have used social media and email marketing 
 |Products Section in site allows users to view products on sale| The user can scroll through the products uploaded by the site admin either via the admin panel or using the add-products form| The user can browse through the products on the site| Works as expected|
 
 <details><summary>User Testing 1</summary>
-<img src="docs/test-user-stories/content.png">
+<img src="docs/user-test/products.png">
 </details>
 <hr>
 
@@ -792,7 +790,7 @@ The fully deployed program, accessible by anyone, is found here, whose URL is ht
 <p> In Gitpod terminal; </p>
 <li>enter in 'heroku login -i'</li>
 <li> Then enter 'heroku apps</li>
-<li> Set the heroku remote > enter into the terminal 'heroku git:remote -a 'your app name'</li>
+<li> Set the heroku remote > enter into the terminal heroku git:remote -a 'your app name'</li>
 <li> git add . and git commit -m </li>
 <li> git push origin main </li>
 <li> git push heroku main </li>

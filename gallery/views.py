@@ -1,5 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import Description, Photo
+# Create your views here.
 
 
 def gallery(request):
@@ -13,6 +14,5 @@ def gallery(request):
 def addPhoto(request):
     """ A view to return the index page """
     categories = Description.objects.all()
-    photos = Photo.objects.all()
-    context = {'categories': categories, 'photos': photos}
+    context = {'categories': categories}
     return render(request, 'add-photo.html', context)
