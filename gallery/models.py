@@ -12,7 +12,11 @@ class Description(models.Model):
 
 class Photo(models.Model):
     """Photo model"""
+
+    image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=False, blank=False)
+    category = models.ForeignKey(
+        Description, on_delete=models.SET_NULL, null=True, blank=True)
 
     def __str__(self):
         return str(self.image)
