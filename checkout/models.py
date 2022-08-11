@@ -4,9 +4,10 @@ from django.db import models
 from django.db.models import Sum
 from django.conf import settings
 from members.models import UserProfile
-
-
 from products.models import Product
+
+
+# Order Model
 
 
 class Order(models.Model):
@@ -61,6 +62,8 @@ class Order(models.Model):
 
     def __str__(self):
         return self.order_number
+
+# OrderLineItem Model
 
 
 class OrderLineItem(models.Model):

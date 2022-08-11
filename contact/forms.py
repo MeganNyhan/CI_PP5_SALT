@@ -1,5 +1,7 @@
 from django import forms  # Imports
 
+# Contact Form 
+
 
 class Contact(forms.Form):
     """

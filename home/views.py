@@ -3,12 +3,17 @@ from .models import Introduction
 
 # Create your views here.
 
+# index views
+
 
 def index(request):
     """ A view to return the index page """
     bodies = Introduction.objects.all()
     context = {'bodies': bodies}
     return render(request, 'home/index.html', context)
+
+
+# faq views
 
 
 def faqs(request):

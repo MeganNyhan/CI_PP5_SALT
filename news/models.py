@@ -6,6 +6,8 @@ from django.urls import reverse
 # This tuple will keep track of drafted posts and published posts
 STATUS = ((0, "Draft"), (1, "Published"))
 
+# post models for recipes section
+
 
 class Post(models.Model):
     """

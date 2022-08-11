@@ -7,6 +7,9 @@ from .forms import EditForm
 # Create your views here.
 
 
+# recipe list view
+
+
 class NewsView(ListView):
     """
         Displays news stories in a list
@@ -15,6 +18,9 @@ class NewsView(ListView):
     template_name = 'news-list.html'
     ordering = ['post_date']
     paginate_by = 6
+
+
+# post detail view for recipes
 
 
 class PostDetailView(DetailView):
@@ -30,6 +36,9 @@ class PostDetailView(DetailView):
         return context
 
 
+# update post view
+
+
 class UpdatePostView(UpdateView):
     """
         Edit post view for editing/updating the blog
@@ -38,6 +47,9 @@ class UpdatePostView(UpdateView):
     form_class = EditForm
     template_name = 'update-post.html'
     success_message = "{% name %} Your post has been successfully UPDATED"
+
+
+# delete post view
 
 
 class DeletePostView(DeleteView):

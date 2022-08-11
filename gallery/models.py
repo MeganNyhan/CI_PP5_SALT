@@ -1,6 +1,8 @@
 """Imports"""
 from django.db import models
 
+# Description Model
+
 
 class Description(models.Model):
     """Description model"""
@@ -8,6 +10,9 @@ class Description(models.Model):
 
     def __str__(self):
         return str(self.name)
+
+
+# Photo Model
 
 
 class Photo(models.Model):

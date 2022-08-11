@@ -14,6 +14,8 @@ from .models import OrderLineItem, Order
 
 # Create your views here.
 
+# Checkout Views
+
 
 def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
@@ -96,6 +98,8 @@ def checkout(request):
             }
 
         return render(request, template, context)
+
+# Checkout Success View
 
 
 def checkout_success(request, order_number):

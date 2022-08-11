@@ -4,6 +4,10 @@
 from django import forms
 from .models import Post
 
+
+# edit form
+
+
 class EditForm(forms.ModelForm):
     """
         This is the EDIT form

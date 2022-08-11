@@ -9,6 +9,9 @@ from .forms import ProductForm, ReviewForm
 # Create your views here.
 
 
+# all products view
+
+
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
 
@@ -96,6 +99,9 @@ def product_detail(request, product_id):
     return render(request, 'product_detail.html', context)
 
 
+# add products view
+
+
 @login_required
 def add_product(request):
     """ Add a product to the store """
@@ -116,6 +122,9 @@ def add_product(request):
     }
 
     return render(request, template, context)
+
+
+# edit products view
 
 
 @login_required
@@ -146,6 +155,9 @@ def edit_product(request, product_id):
     }
 
     return render(request, template, context)
+
+
+# delete products view
 
 
 @login_required

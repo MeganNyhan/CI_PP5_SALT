@@ -5,11 +5,15 @@ from products.models import Product
 
 # Create your views here.
 
+# View Bag View 
+
 
 def view_bag(request):
     """ A view that renders the bag contents page """
 
     return render(request, 'bag.html')
+
+# Add to Bag View
 
 
 def add_to_bag(request, item_id):
@@ -40,6 +44,8 @@ def add_to_bag(request, item_id):
     request.session['bag'] = bag
     return redirect(redirect_url)
 
+# Adjust Bag View 
+
 
 def adjust_bag(request, item_id):
     """Adjust the quantity of the specified product to the specified amount"""
@@ -65,6 +71,8 @@ def adjust_bag(request, item_id):
 
     request.session['bag'] = bag
     return redirect(reverse('view_bag'))
+
+# Remove from Bag View 
 
 
 def remove_from_bag(request, item_id):

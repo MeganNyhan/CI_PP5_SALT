@@ -3,6 +3,10 @@ from django.contrib.auth.models import User
 from django import forms
 from .models import UserProfile
 
+
+# Sign up form
+
+
 class SignUpForm(UserCreationForm):
     """
         Sign up form
@@ -25,6 +29,9 @@ class SignUpForm(UserCreationForm):
         self.fields['username'].widget.attrs['class'] = 'form-control'
         self.fields['password1'].widget.attrs['class'] = 'form-control'
         self.fields['password2'].widget.attrs['class'] = 'form-control'
+
+
+# edit profile form
 
 
 class EditProfileForm(UserChangeForm):
@@ -52,6 +59,10 @@ class EditProfileForm(UserChangeForm):
         model = User
         fields = ('username', 'first_name', 'last_name', 'email', 'password',
                   'last_login', 'is_active', 'is_superuser', 'date_joined')
+
+
+
+# user profile form
 
 
 class UserProfileForm(forms.ModelForm):

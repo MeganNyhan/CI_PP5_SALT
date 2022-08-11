@@ -3,6 +3,8 @@ from django.db import models
 # Create your models here.
 
 
+# category model for products
+
 class Category(models.Model):
 
     class Meta:
@@ -17,6 +19,8 @@ class Category(models.Model):
     def get_friendly_name(self):
         return self.friendly_name
 
+
+# product model for products
 
 class Product(models.Model):
     category = models.ForeignKey('Category', null=True, blank=True,
@@ -35,6 +39,8 @@ class Product(models.Model):
     def __str__(self):
         return str(self.name)
 
+
+# review model for products
 
 class Review(models.Model):
     # Review Custom Model

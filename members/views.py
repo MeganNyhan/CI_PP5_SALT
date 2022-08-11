@@ -12,6 +12,9 @@ from .models import UserProfile
 from checkout.models import Order
 
 
+# user registration view
+
+
 class UserRegisterView(generic.CreateView):
     """
         Login function
@@ -19,6 +22,9 @@ class UserRegisterView(generic.CreateView):
     form_class = SignUpForm
     template_name = 'registration/register.html'
     success_url = reverse_lazy('login')
+
+
+# registration view
 
 
 def register(request):
@@ -40,6 +46,9 @@ def register(request):
     return render(request, 'base.html', {'form': form})
 
 
+# user edit view
+
+
 class UserEditView(generic.UpdateView):
     """ 
         Edit User Function
@@ -50,6 +59,9 @@ class UserEditView(generic.UpdateView):
 
     def get_object(self):
         return self.request.user
+
+
+# show profile page view
 
     
 class ShowProfilePageView(DetailView):
@@ -68,6 +80,9 @@ class ShowProfilePageView(DetailView):
 
         context["page_user"] = page_user
         return context
+
+
+# profile view
 
 
 def profile(request):
@@ -94,6 +109,9 @@ def profile(request):
     }
 
     return render(request, template, context)
+
+
+# order history view
 
 
 def order_history(request, order_number):

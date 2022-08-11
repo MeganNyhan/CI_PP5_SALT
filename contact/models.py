@@ -4,6 +4,8 @@ Imports
 
 from django.db import models
 
+# Contact Model
+
 
 class Contact(models.Model):
     """

@@ -6,6 +6,9 @@ from django.dispatch import receiver
 # Create your models here.
 
 
+# user profile model
+
+
 class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     default_email = models.EmailField(max_length=240, null=True, blank=True)
@@ -18,7 +21,10 @@ class UserProfile(models.Model):
     default_postcode = models.CharField(max_length=40, null=True,  blank=True)
 
     def __str__(self):
-        return self.user.username
+        return str(self.user)
+
+
+# create or update user profile model
 
 
 @receiver(post_save, sender=User)
