@@ -792,9 +792,9 @@ Like a lot of e-commerce platforms I have used social media and email marketing 
 ## Bugs:
 
 | **Bug** | **Fix** |
-<p> Bugs </p>
+|-------------|------------|
+| I noticed when looking at the site in Heroku, the admin is always signed in. And I am unable to sign myself out via the admin panel| The only way around this was to sign out via the admin panel|
 
-| I noticed when looking at the site in Heroku, the admin is always signed in (see photo below). And I am unable to sign myself out via the admin panel| The only way around this was to sign out via the admin panel|
 <details><summary>Contact Form Validation</summary>
 <img src="docs/validation/form-validation.png"></details>
 </ul>
