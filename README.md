@@ -64,7 +64,7 @@
     <li>As a user of the site, I would like to be able to view the products available to buy within categories.</li>
     <li>As a user of the site, I would like to be able to view the products in their categories on the site easily.</li>
     <li>As a site user, I would like to be able to buy a product from the site successfully and easily.</li>
-    <li>As a user of the site, I would like to be able to create an account with the possibility of keeping up to date with my order history and tracking.</li>
+    <li>As a user of the site, I would like to be able to create an account with the possibility of keeping up to date with my order history.</li>
     <li>As a user, I would like to be able to leave a review on a product I have ordered.</li>
 </ol>
 
@@ -679,16 +679,19 @@ Like a lot of e-commerce platforms I have used social media and email marketing 
 |User selectes the product they want to buy, they add it to their cart. Then they continue to a secure checout - input their details and successfully buy their chosen products| User adds product to cart then travels through the secure checkout, inputing their information and buying their items| The user can successfully add products to their cart and then buy them| Works as expected|
 
 <details><summary>User Testing 4</summary>
-<img src="docs/test-user-stories/read_post.png"></details>
+<img src="docs/user-test/buy-product-1.png"></details>
+<img src="docs/user-test/buy-product-2.png"></details>
+<img src="docs/user-test/buy-product-3.png"></details>
 <hr>
 
-    5."As a user of the site, I would like to be able to create an account with the possibility of keeping up to date with my order history and tracking."
+    5."As a user of the site, I would like to be able to create an account with the possibility of keeping up to date with my order history."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 |In the user profile section their is a list called order history where the user can view their order history| The user can view the items that were ordered by them before | The user can find all information around their previous orders| Works as expected|
 
 <details><summary>User Testing 5</summary>
-<img src="docs/test-user-stories/view_comment.png"></details>
+<img src="docs/user-test/account-1.png"></details>
+<img src="docs/user-test/account-2.png"></details>
 
 <hr>
 

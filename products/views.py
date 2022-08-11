@@ -1,9 +1,12 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.views.generic import CreateView
+from django.urls import reverse_lazy
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from .models import Product, Category, Review
 from .forms import ProductForm, ReviewForm
+
 
 
 # Create your views here.
@@ -158,3 +161,19 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product Deleted Successfully!')
     return redirect(reverse('products'))
+
+
+# Review View
+
+class add_review(CreateView):
+    """
+        Create Add post view for creating blog posts on the site
+    """
+    model = Review
+    form_class = ReviewForm
+    template_name = 'add-review.html'
+    success_url = reverse_lazy('base.html')
+
+    def form_valid(self, form):
+        form.instance.post_id = self.kwargs['id']
+        return super().form_valid(form)
