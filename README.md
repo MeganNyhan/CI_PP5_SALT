@@ -720,7 +720,7 @@ Like a lot of e-commerce platforms I have used social media and email marketing 
 |Instock or out of stock notice displayed beside products| Out of stock and instock - the admin uses the checkbox to say if the product is instock or not| The products have an instock out of stock title beside them | Works as expected|
 
 <details><summary>User Testing 8</summary>
-<img src="docs/test-user-stories/post_admin.png"></details>
+<img src="docs/user-test/instock-out-of-stock.png"></details>
 <hr>
 
     2."As a site owner, I want to employ web marketing strategies to grow the audience of my site."
@@ -739,7 +739,8 @@ Like a lot of e-commerce platforms I have used social media and email marketing 
 |Admin section of backend where the owner can upload products to the site| The admin can create a product, edit a product, delete products to be displayed in the site.| The admin can create a product, delete a product, edit products in their admin section | Works as expected |
 
 <details><summary>User Testing 10</summary>
-<img src="docs/test-user-stories/admin-control.png">
+<img src="docs/user-test/admin-product-1.png">
+<img src="docs/user-test/admin-product-2.png">
 </details>
 <hr>
 
