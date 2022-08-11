@@ -681,9 +681,14 @@ Like a lot of e-commerce platforms I have used social media and email marketing 
 |-------------|------------|---------------------|-------------------|
 |Gallery Section orders products within the categories so selected category is on the top| The user can scroll through the products that are then split into certain categorys| The user can browse through products available to buy within categories on the site| Works as expected|
 
+
+
 <details><summary>User Testing 2</summary>
 <img src="docs/test-user-stories/content.png">
-<img src="docs/test-user-stories/read_post">
+</details>
+
+<details><summary>User Testing 2</summary>
+<img src="docs/test-user-stories/read_post.png">
 </details>
 <hr>
 
@@ -691,8 +696,10 @@ Like a lot of e-commerce platforms I have used social media and email marketing 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 |Gallery Section orders products within the categories so selected category is on the top| The user can scroll through the products that are then split into certain categorys| The user can browse through products available to buy within categories on the site| Works as expected|
+
 <details><summary>User Testing 3</summary>
-<img src="docs/test-user-stories/view_stories.png"></details>
+<img src="docs/test-user-stories/view_stories.png">
+</details>
 <hr>
 
     4."As a site user, I would like to be able to buy a product from the site successfully and easily."
@@ -701,9 +708,16 @@ Like a lot of e-commerce platforms I have used social media and email marketing 
 |User selectes the product they want to buy, they add it to their cart. Then they continue to a secure checout - input their details and successfully buy their chosen products| User adds product to cart then travels through the secure checkout, inputing their information and buying their items| The user can successfully add products to their cart and then buy them| Works as expected|
 
 <details><summary>User Testing 4</summary>
-<img src="docs/user-test/buy-product-1.png"></details>
-<img src="docs/user-test/buy-product-2.png"></details>
-<img src="docs/user-test/buy-product-3.png"></details>
+<img src="docs/user-test/buy-product-1.png">
+</details>
+
+<details><summary>User Testing 4</summary>
+<img src="docs/user-test/buy-product-2.png">
+</details>
+
+<details><summary>User Testing 4</summary>
+<img src="docs/user-test/buy-product-3.png">
+</details>
 <hr>
 
     5."As a user of the site, I would like to be able to create an account with the possibility of keeping up to date with my order history."
@@ -711,19 +725,25 @@ Like a lot of e-commerce platforms I have used social media and email marketing 
 |-------------|------------|---------------------|-------------------|
 |In the user profile section their is a list called order history where the user can view their order history| The user can view the items that were ordered by them before | The user can find all information around their previous orders| Works as expected|
 
-<details><summary>User Testing 5</summary>
-<img src="docs/user-test/account-1.png"></details>
-<img src="docs/user-test/account-2.png"></details>
 
-<hr>
+<details><summary>User Testing 5</summary>
+<img src="docs/user-test/account-1.png">
+</details>
+
+<details><summary>User Testing 5</summary>
+<img src="docs/user-test/account-2.png">
+</details>
+
 
     6."As a user, I would like to be able to leave a review on a product I have ordered."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
 |Review section under the products they relate to| The user can reviews and post reviews under the products| User is able to review the products they have bought or tried | Works as expected|
 
+
 <details><summary>User Testing 6</summary>
-<img src="docs/test-user-stories/post_comment.png"></details>
+<img src="docs/test-user-stories/post_comment.png">
+</details>
 
    7."As a user of the site, I would like to view the products available to buy in a gallery as well as categorised."
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
@@ -731,8 +751,8 @@ Like a lot of e-commerce platforms I have used social media and email marketing 
 |Gallery Section under product drop down| The user can view images that relate to the products that are available to sell on the site| The user gets to view the porducts available to them | Works as expected|
 
 <details><summary>User Testing 7</summary>
-<img src="docs/test-user-stories/register.png"></details>
-
+<img src="docs/test-user-stories/register.png">
+</details>
 
 ### Testing Site Owner's Stories
 
@@ -762,6 +782,9 @@ Like a lot of e-commerce platforms I have used social media and email marketing 
 
 <details><summary>User Testing 10</summary>
 <img src="docs/user-test/admin-product-1.png">
+</details>
+
+<details><summary>User Testing 10</summary>
 <img src="docs/user-test/admin-product-2.png">
 </details>
 <hr>
@@ -770,6 +793,8 @@ Like a lot of e-commerce platforms I have used social media and email marketing 
 
 | **Bug** | **Fix** |
 <p> Bugs </p>
+
+| I noticed when looking at the site in Heroku, the admin is always signed in (see photo below). And I am unable to sign myself out via the admin panel| The only way around this was to sign out via the admin panel|
 <details><summary>Contact Form Validation</summary>
 <img src="docs/validation/form-validation.png"></details>
 </ul>
@@ -899,6 +924,6 @@ The fully deployed program, accessible by anyone, is found here, whose URL is ht
 
 ## Future Features
 <p> Future Features </p>
-<p> If I had more time I would of liked to add a wishlist feature to the site and have the reviews link to products that were previously ordered by the user. I would have a review option in a newsletter I would send to the user after a week of them having my products.</p>
+<p> If I had more time I would of liked to add a wishlist feature to the site and have the reviews link to products that were previously ordered by the user. I would have a review option in a newsletter I would send to the user after a week of them having my products. Also I think a way to track the order during shipment would be good also.</p>
 
 #### [Back to Index](#index)
