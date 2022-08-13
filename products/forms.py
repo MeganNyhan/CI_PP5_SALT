@@ -1,5 +1,5 @@
 from django import forms
-from .models import Product, Category, ProductComment
+from .models import Product, Category, Review
 
 # product form
 
@@ -23,15 +23,7 @@ class ProductForm(forms.ModelForm):
 # review form
 
 
-# To add a comment feature:
-# copied and modified from
-# https://djangocentral.com/creating-comments-system-with-django/,
-# Abhijeet Pal, Author and Editor in Chief @djangocentral,
-# on August 13th, 2022.
-class ProductCommentForm(forms.ModelForm):
-    """
-    Class for the product comment form
-    """
+class ReviewForm(forms.ModelForm):
     class Meta:
-        model = ProductComment
-        fields = ('body', 'rating')
+        model = Review
+        fields = ('name', 'body', 'rating', )

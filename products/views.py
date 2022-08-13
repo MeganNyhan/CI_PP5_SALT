@@ -2,8 +2,8 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
-from .models import Product, Category, ProductComment
-from .forms import ProductForm, ProductCommentForm
+from .models import Product, Category, Review
+from .forms import ProductForm, ReviewForm
 
 
 # Create your views here.
@@ -65,23 +65,24 @@ def product_detail(request, product_id):
     """ A view to show products in more detail """
 
     product = get_object_or_404(Product, pk=product_id)
-
-    comments = ProductComment.objects.filter(product=product,
-                                             active=True)
-
-    if (request.user.is_authenticated):
-        if(ProductComment.objects.filter(product=product, user=request.user,
-                                         active=True) or request.user is None):
-            user_has_commented = True
-
-            comment_form = ProductCommentForm(request.POST)
+    review_form = ReviewForm()
+    reviews = product.reviews.all().order_by('created_on')
+    review_form = ReviewForm(data=request.POST)
+    if review_form.is_valid():
+        review = review_form.save(commit=False)
+        review.product = product
+        review.save()
+    else:
+        review_form = ReviewForm()
 
     context = {
         'product': product,
-        'comments': comments,
-        'comment_form': comment_form,
-        'user_has_commented': user_has_commented,
+        'review_form': review_form,
+        'reviews': reviews
     }
+
+    return render(request, 'product_detail.html', context)
+
 
     def post(self, request, slug, *args, **kwargs):
         queryset = Review.objects.filter(status=1)

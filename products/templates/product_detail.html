@@ -95,16 +95,51 @@
                 </div>
             </div>
             <hr>
-            <div class="container">
+            <div class="container text-left">
                 <div class="row">
+                  <div class="col">
                     <!-- Leave a review form  -->
+                    <h2 class="fw-light">
+                        Reviews:
+                    </h2>
+                    <hr>
+                    {% for review in reviews %}
+                    <div class="notification" style="padding: 10px;">
+                        {{ user.first_name }} | <span class=" text-muted font-weight-normal">
+                            {{ review.created_on }}
+                          </span>
+                      
+                      <br>  <i class="text-muted">"{{ review.body | linebreaks }}" </i>
+                    </div>
+                    <p class="font-weight-bold">
+                        Rating: {{ review.rating }} / 5.00
+                      </p>
+                    <hr>
+                    {% endfor %}
+                  </div>
+                  <div class="col">
                     <h2 class="fw-light"> Leave a Review:</h2>
+                    {% if user.is_authenticated %} 
+                        <div class="row">
+                        <form method="POST" style="margin-top: 1.3em;">
+                            {{ review_form | crispy }}
+                            {% csrf_token %}
+                            <br>
+                            <button type="submit" class="btn btn-success btn-lg"> Submit </button>
+                        </form>
+                        <br>
+                        </div>
+                        {% else %}
+                    <p> To leave a review you must be logged in:
+                        <a href="{% url 'login' %}"> Login in</a>
+                    </p>
+                    {% endif %}
                     </div>
-                    </div>
+                  </div>
                 </div>
             </div>
+            </div>
         </div>
-    </div>
     <br>
 {% endblock %}
 <!-- Javascript -->
