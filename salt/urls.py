@@ -30,5 +30,5 @@ urlpatterns = [
     path('bag/', include('bag.urls')),
     path('checkout/', include('checkout.urls')),
     path('gallery/', include('gallery.urls')),
- ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT),
+ ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 HANDLER404 = "django_404_project.views.page_not_found_view"
