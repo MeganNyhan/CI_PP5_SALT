@@ -1,4 +1,5 @@
 from django.db import models
+from members.models import UserProfile
 
 # Create your models here.
 
@@ -40,21 +41,33 @@ class Product(models.Model):
         return str(self.name)
 
 
-# review model for products
+# Product review model for products
 
-class Review(models.Model):
+class ProductComment(models.Model):
     # Review Custom Model
-    post = models.ForeignKey(Product, on_delete=models.CASCADE,
-                             related_name="reviews")
-    name = models.CharField(max_length=80)
-    body = models.TextField()
-    created_on = models.DateTimeField(auto_now_add=True)
+    # To add a comment feature:
+    # copied and modified
+    # from https://djangocentral.com/creating-comments-system-with-django/,
+    # Abhijeet Pal, Author and Editor in Chief @djangocentral,
+    # on August 14th, 2022.
+
+    """
+    Django Product Comment Model
+    """
+    class Meta:
+        ordering = ['created_on']
+
+    # To limit field content to specific values,
+    # https://docs.djangoproject.com/en/4.0/ref/models/fields/,
+    # accessed on August 14th, 2022.
+
+    user = models.ForeignKey(UserProfile, null=True, on_delete=models.SET_NULL)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE)
     rating = models.DecimalField(max_digits=6, decimal_places=2, null=True,
                                  blank=True)
-
-    class Meta:
-        # Ordering
-        ordering = ["created_on"]
+    body = models.TextField()
+    created_on = models.DateTimeField(auto_now_add=True)
+    active = models.BooleanField(default=False)
 
     def __str__(self):
-        return f"Review {self.body} by {self.name}"
+        return 'Comment {} by {}'.format(self.body, self.user)
