@@ -94,28 +94,29 @@
                     {% endif %}
                 </div>
             </div>
-            <hr>
+<hr>
             <div class="container text-left">
                 <div class="row">
                   <div class="col">
-                    <!-- Leave a review form  -->
-                    <h2 class="fw-light">
-                        Reviews:
-                    </h2>
-                    <hr>
+                    <!-- Reviews  -->
                     {% for review in reviews %}
-                    <div class="notification" style="padding: 10px;">
-                        {{ user.first_name }} | <span class=" text-muted font-weight-normal">
-                            {{ review.created_on }}
-                          </span>
-                      
-                      <br>  <i class="text-muted">"{{ review.body | linebreaks }}" </i>
-                    </div>
-                    <p class="font-weight-bold">
-                        Rating: {{ review.rating }} / 5.00
-                      </p>
-                    <hr>
-                    {% endfor %}
+                    <div class="card">
+                        <div class="card-header">
+                            {{ user.first_name }} | <span class=" text-muted font-weight-normal">
+                                {{ review.created_on }}
+                              </span>
+                        </div>
+                        <div class="card-body">
+                          <blockquote class="blockquote mb-0">
+                            <p><i class="text-muted">"{{ review.body | linebreaks }}" </i></p>
+                            <footer class="blockquote-footer"><p class="font-weight-bold">
+                                Rating: {{ review.rating }} / 5.00
+                              </p></footer>
+                          </blockquote>
+                        </div>
+                        </div>
+                        <br>
+                      {% endfor %}
                   </div>
                   <div class="col">
                     <h2 class="fw-light"> Leave a Review:</h2>
