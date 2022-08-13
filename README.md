@@ -210,9 +210,9 @@
 <li> It includes the following fields: sku, name, description, size, price, rating, image.</li>
 <br>
 <p> Review (custom model): </p>
-<li> This Comment model will allow users to post comments under the blog post.</li>
-<li> It is used by several users to post comments under the blog post, there for it uses a Foreign Key. </li>
-<li> It includes the following fields: post, name, body, date_added.</li>
+<li> This Review model will allow users to post reviews under the products.</li>
+<li> It is used by several users to post reviews under the products, there for it uses a Foreign Key. </li>
+<li> It includes the following fields: name, body, date_created.</li>
 <br>
 <p> UserProfile: </p>
 <li> This Userprofile model will allow users to add information to their accounts on the site.</li>
@@ -230,6 +230,7 @@
 
 <li>The Site is very simple in design - It includes a home section, - that has a section in the nav bar where a user can view the products, their categories - holding the bulk of the e-commerce functionality - and a contact section. It also holds a link to the testimonials, about us and FAQs link.</li>
 <li>The products are very simply laid out on the homepage in their respective categories. Once clicked in the categories the user can scroll through the section in a list formate to view the products avaiable to buy.</li>
+    <p>The user can also leave a review under the products.</p>
     <p> -- If the user is the site admin they can edit products and delete products in the admin section.</p>
 <li>The login in section is simple as it is restricted to asking for the username and password. The registration form is also simple and easy to follow. Once logged in the user can view their order history and to update their delivery and personal information.</li>
 <li> The recipes section of the site is to allow users to view recipes they can use their newly bought products in.</li>
@@ -387,7 +388,7 @@
 <ul>Reviews and Testimonials:
 <li> As users generally rely on reviews to help decide if they should buy a product the site needs to have a testimonal and reviews section for the products.</li>
 <details><summary>User Stories Used: 6</summary>
-            <img src="docs/features/reviews.png"></details>
+            <img src="docs/features/review.png"></details>
 </ul>
 
 </br>
