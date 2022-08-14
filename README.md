@@ -496,34 +496,74 @@
 ### HTML Validation
 <p> To Validate my HTML I used the WC3 Validator. All HTML code passed its Validation with a few errors as documented below. All errors are due to using the django/python framework.</p>
 
-<details><summary>Home Page</summary>
-<img src="docs/html/home.html.png"></details>
-<details><summary>Add Comment </summary>
-<img src="docs/html/add_comment.html.png"></details>
-<details><summary>Base</summary>
-<img src="docs/html/base.html.png"></details>
-<details><summary>Delete Pose</summary>
-<img src="docs/html/delete-post.png"></details>
-<details><summary>Update Post</summary>
-<img src="docs/html/update-post.html.png"></details>
+<h2> Bag </h2>
+<details><summary>Bag</summary>
+<img src="docs/html-validation/Bag-html.png"></details>
+<br>
+<h2> Checkout </h2>
+<details><summary>Checkout Success</summary>
+<img src="docs/html-validation/checkout-success.png"></details>
+<details><summary>Checkout</summary>
+<img src="docs/html-validation/checkout.png"></details>
 <br>
 
+<h2> Contact </h2>
 <details><summary>Contact</summary>
-<img src="docs/html/contact.html.png"></details>
+<img src="docs/html-validation/contact-html.png"></details>
 <br>
 
-<details><summary>Change Password</summary>
-<img src="docs/html/change-pass.png"></details>
+<h2> Gallery </h2>
+<details><summary>Gallery</summary>
+<img src="docs/html-validation/gallery.png"></details>
+<br>
+
+<h2> Home </h2>
+<details><summary>404</summary>
+<img src="docs/html-validation/page404.png"></details>
+<details><summary>FAQ's</summary>
+<img src="docs/html-validation/faq's.png"></details>
+<details><summary>Index</summary>
+<img src="docs/html-validation/index.png"></details>
+<br>
+
+<h2> Members </h2>
 <details><summary>Edit Profile</summary>
-<img src="docs/html/edit-profile.png"></details>
+<img src="docs/html-validation/edit-profile.png"></details>
 <details><summary>Login</summary>
-<img src="docs/html/login.png"></details>
-<details><summary>Password Success</summary>
-<img src="docs/html/pass_success.png"></details>
+<img src="docs/html-validation/login-html.png"></details>
+<details><summary>Profile</summary>
+<img src="docs/html-validation/profile-html.png"></details>
 <details><summary>Register</summary>
-<img src="docs/html/reg.png"></details>
-<details><summary>User Profile</summary>
-<img src="docs/html/user-prof.png"></details>
+<img src="docs/html-validation/register-html.png"></details>
+<br>
+
+<h2> News </h2>
+<details><summary>Delete Post</summary>
+<img src="docs/html-validation/delete-post.png"></details>
+<details><summary>News List</summary>
+<img src="docs/html-validation/news-list.png"></details>
+<details><summary>Post Detail</summary>
+<img src="docs/html-validation/post-detail.png"></details>
+<details><summary>Update Post</summary>
+<img src="docs/html-validation/update-post.png"></details>
+<br>
+
+<h2> Products </h2>
+<details><summary>Add Product</summary>
+<img src="docs/html-validation/add-product.png"></details>
+<details><summary>Add Review</summary>
+<img src="docs/html-validation/add-review.png"></details>
+<details><summary>Edit Product</summary>
+<img src="docs/html-validation/edite-product.png"></details>
+<details><summary>Product Detail</summary>
+<img src="docs/html-validation/product-detail.png"></details>
+<details><summary>Products</summary>
+<img src="docs/html-validation/base.png"></details>
+<br>
+
+<h2> Base </h2>
+<details><summary>Base</summary>
+<img src="docs/html/contact.html.png"></details>
 <br>
 
 ### CSS Validation
