@@ -126,7 +126,8 @@
 <li>The website consists of a header with fixed navigation menu on top, a body and a footer. It is designed to navigate the e-commerce from the header and footer, having them always available.</li>
 <br>
 
-<li>The metadata in the head tag of the base HTML includes the following keywords to help search engines to find the website: .</li>
+<li>The metadata in the head tag of the base HTML includes the following keywords to help search engines to find the website: 
+" ".</li>
 <br>
 
 <li>The metadata also includes the following description: " ".</li>
@@ -569,7 +570,13 @@
 ### CSS Validation
 <p> To Validate my CSS I used the Jigsaw W3 Validator. All CSS code passed its Validation with no errors or warnings as shown below in the pictures.</p>
 
-<details><summary>CSS Validation</summary>
+<details><summary>Static CSS Validation</summary>
+<img src="docs/validation/css_validation.png"></details>
+
+<details><summary>Static CSS Validation</summary>
+<img src="docs/validation/css_validation.png"></details>
+
+<details><summary>Static CSS Validation</summary>
 <img src="docs/validation/css_validation.png"></details>
 
 ### Accessibility
