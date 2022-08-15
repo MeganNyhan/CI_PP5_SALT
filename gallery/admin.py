@@ -8,7 +8,7 @@ class DescriptionAdmin(admin.ModelAdmin):
 
 
 class PhotoAdmin(admin.ModelAdmin):
-    list_display = ['image']
+    list_display = ['category']
 
 
 admin.site.register(Description, DescriptionAdmin)

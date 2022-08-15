@@ -503,19 +503,108 @@
 
 <h4> Contact (App)</h4>
 <details><summary>admin.py</summary>
-<img src="docs/python-validation/admin.contact.png"></details>
+<img src="docs/python-validation/contact/contact-admin.png"></details>
+
+<details><summary>apps.py</summary>
+<img src="docs/python-validation/contact/contact-apps.png"></details>
 
 <details><summary>forms.py</summary>
-<img src="docs/python-validation/form.contact.png"></details>
+<img src="docs/python-validation/contact/contact-forms.png"></details>
 
 <details><summary>urls.py</summary>
-<img src="docs/python-validation/urls.contact.png"></details>
+<img src="docs/python-validation/contact/contact-urls.png"></details>
 
 <details><summary>views.py</summary>
-<img src="docs/python-validation/views.contact.png"></details>
+<img src="docs/python-validation/contact/contact-views.png"></details>
 
 <details><summary>models.py</summary>
-<img src="docs/python-validation/models.contact.png"></details>
+<img src="docs/python-validation/contact/contact-models.png"></details>
+
+<h4> Gallery (App)</h4>
+<details><summary>admin.py</summary>
+<img src="docs/python-validation/gallery/gallery-admin.png"></details>
+
+<details><summary>apps.py</summary>
+<img src="docs/python-validation/gallery/gallery-apps.png"></details>
+
+<details><summary>urls.py</summary>
+<img src="docs/python-validation/gallery/gallery-urls.png"></details>
+
+<details><summary>views.py</summary>
+<img src="docs/python-validation/gallery/galley-views.png"></details>
+
+<details><summary>models.py</summary>
+<img src="docs/python-validation/gallery/gallery-models.png"></details>
+
+<h4> Home (App)</h4>
+<details><summary>admin.py</summary>
+<img src="docs/python-validation/home/home-admin.png"></details>
+
+<details><summary>apps.py</summary>
+<img src="docs/python-validation/home/home-apps.png"></details>
+
+<details><summary>urls.py</summary>
+<img src="docs/python-validation/home/home-urls.png"></details>
+
+<details><summary>views.py</summary>
+<img src="docs/python-validation/home/home-views.png"></details>
+
+<details><summary>models.py</summary>
+<img src="docs/python-validation/home/home-models.png"></details>
+
+<h4> Memebers (App)</h4>
+
+<details><summary>apps.py</summary>
+<img src="docs/python-validation/members/members-apps.png"></details>
+
+<details><summary>urls.py</summary>
+<img src="docs/python-validation/members/members-urls.png"></details>
+
+<details><summary>views.py</summary>
+<img src="docs/python-validation/members/members-views.png"></details>
+
+<details><summary>forms.py</summary>
+<img src="docs/python-validation/members/members-forms.png"></details>
+
+<details><summary>models.py</summary>
+<img src="docs/python-validation/members/members-modules.png"></details>
+
+<h4> News (App)</h4>
+<details><summary>admin.py</summary>
+<img src="docs/python-validation/news/news-admin.png"></details>
+
+<details><summary>apps.py</summary>
+<img src="docs/python-validation/news/news-apps.png"></details>
+
+<details><summary>urls.py</summary>
+<img src="docs/python-validation/news/news-urls.png"></details>
+
+<details><summary>views.py</summary>
+<img src="docs/python-validation/news/news-views.png"></details>
+
+<details><summary>models.py</summary>
+<img src="docs/python-validation/news/news-models.png"></details>
+
+<details><summary>forms.py</summary>
+<img src="docs/python-validation/news/news-forms.png"></details>
+
+<h4> Products (App)</h4>
+<details><summary>admin.py</summary>
+<img src="docs/python-validation/products/products-admin.png"></details>
+
+<details><summary>urls.py</summary>
+<img src="docs/python-validation/products/products-urls.png"></details>
+
+<details><summary>views.py</summary>
+<img src="docs/python-validation/products/products-views.png"></details>
+
+<details><summary>models.py</summary>
+<img src="docs/python-validation/products/products-models.png"></details>
+
+<details><summary>forms.py</summary>
+<img src="docs/python-validation/products/products-forms.png"></details>
+
+
 
 <br>
 
