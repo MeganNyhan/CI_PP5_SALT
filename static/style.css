@@ -25,7 +25,6 @@ body{
 
 /* Product Section */
 .products{
-    padding-left:8%;
     padding-bottom:3%;
 }
 
@@ -265,5 +264,38 @@ body{
   @media only screen and (max-width: 600px) {
     .header {
       font-size: 12px;
+    }
+
+    /* Gallery */
+
+    .categories{
+        padding-bottom: 20%;
+    }
+
+    .gallery{
+        padding-right: 10%;
+    }
+
+    .head-container img{
+        width: 50%;
+    }
+
+    /* Mail Chimp */
+
+    #mc_embed_signup{
+        max-width: 100%;
+    }
+    
+    /* Header*/
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+    /* Products */
+    .products{
+        top: 50%;
     }
   }

@@ -3,28 +3,31 @@
 {% block content %}
 {% load static %}
 <br>
-<div class="container">
+<div class="container-sm">
 <section>
     <h1 class="fw-light"> View Our Product Gallery</h1>
     <hr>
     <div class="container text-left">
         <div class="row">
-          <div class="col-2">
+          <div class="col-sm">
+            <div class="categories">
                 <ul class="list-group list-group-flush">
                    <a class="btn btn-black" href="{% url 'products' %}" style="text-decoration:none; color:black;">View Products</a> 
                 {% for category in categories %}
                    <a class="btn btn-black" href="{% url 'gallery' %}?category={{category.name}}" style="text-decoration:none; color:black;">{{category.name}}</a> 
                 {% endfor %}
               </ul>
+              </div>
           </div>
-          <div class="col-4">
+          <div class="col">
+            <div class="photos">
             {% for photo in photos %}
             <a href="{% url 'products' %}">
               <div class="card" style="width: 18rem;">
               <img src="{{photo.image.url}}" class="card-img-top" alt="...">
             </a>
             </div>
-            <div>
+          </div>
           </div>
           {% endfor %}
         </div>

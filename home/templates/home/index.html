@@ -5,11 +5,11 @@
 <!-- Header -->
 <div class="head-container">
   <img src="{% static 'img/header.jpg' %}" alt="Family Fishing" style="width:100%;">
-  <div class="centered text-light header">
+  <div class="centered text-light header head-text">
     {% for bodies in bodies %}
-    <h2 class="fs-1 text-right text-justify fw-bold">
+    <h4 class="fs-1 text-right text-justify fw-bold">
       {{bodies.head}}
-    </h2>
+    </h4>
     <br/>
       <p class="fs-3 fw-light text-light fw-bold">
         {{bodies.body}}
