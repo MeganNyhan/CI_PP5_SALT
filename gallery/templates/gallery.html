@@ -12,7 +12,10 @@
           <div class="col-2">
                 <ul class="list-group list-group-flush">
                    <a class="btn btn-black" href="{% url 'products' %}" style="text-decoration:none; color:black;">View Products</a> 
-                </ul>
+                {% for category in categories %}
+                   <a class="btn btn-black" href="{% url 'gallery' %}?category={{category.name}}" style="text-decoration:none; color:black;">{{category.name}}</a> 
+                {% endfor %}
+              </ul>
           </div>
           <div class="col-4">
             {% for photo in photos %}
