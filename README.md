@@ -701,7 +701,7 @@
 
 
 ### Accessibility
-<p> To Validate the Accessibility of the site I used the Wave Web Accessibility Validator.</p>
+<p> To Validate the Accessibility of the site I used the Wave Web Accessibility Validator. The code passed with a few errors mainly surrounding the mailchimp form in the footer, empty buttons linked to the backend and H5 tags that use font awesome icons instead of text.</p>
 
 <details><summary>Home page</summary>
 <img src="docs/accessibility/home-access.png"></details>
@@ -983,10 +983,8 @@ Like a lot of e-commerce platforms I have used social media and email marketing 
 | **Bug** | **Fix** |
 |-------------|------------|
 | I noticed when looking at the site in Heroku, the admin is always signed in. And I am unable to sign myself out via the admin panel| The only way around this was to sign out via the admin panel|
+| The review form when the page is refreshed, will submit the review form again each time. So when when the page is refreshed the review form if filled out, will save and post the review again.| Set the form in the views.py to delete the data once saved to the database when the form is submited.|
 
-<details><summary>Contact Form Validation</summary>
-<img src="docs/validation/form-validation.png"></details>
-</ul>
 <hr>
 
 ## Deployment:
