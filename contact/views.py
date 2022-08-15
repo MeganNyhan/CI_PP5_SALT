@@ -29,7 +29,7 @@ def contactForm(request):
 # If the form is filled out it will save the form's content and the below
 # message will be displayed
 
-        messages.add_message(request, messages.SUCCESS,
-                             'Your message had been sent!')
+        messages.success(request,
+                         'Your message had been sent!')
 
     return render(request, 'contact.html')

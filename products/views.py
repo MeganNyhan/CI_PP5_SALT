@@ -32,7 +32,7 @@ def all_products(request):
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
-                    sortkey = '-{sortkey}'
+                    sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
 
         if 'category' in request.GET:
@@ -49,7 +49,7 @@ def all_products(request):
             queries = Q(name_icontaines=query) | Q(description_icontaines=query)
             products = products.filter(queries)
 
-    current_sorting = '{sort}_{direction}'
+    current_sorting = f'{sort}_{direction}'
 
     context = {
         'products': products,
@@ -133,7 +133,7 @@ def edit_product(request, product_id):
                                      the form is valid.')
     else:
         form = ProductForm(instance=product)
-        messages.info(request, 'You are editing {product.name}')
+        messages.info(request, f'You are editing {product.name}')
 
     template = 'edit-product.html'
     context = {

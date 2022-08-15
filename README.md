@@ -734,31 +734,49 @@
 <p> To Validate the Performance of the site I used the lighthosue tool in the browser'git ps develpoments tools.</p>
 
 <details><summary>Home</summary>
-<img src="docs/performance/home-performance.png"></details>
+<img src="docs/performance/home-page-performance.png"></details>
 
 <details><summary>Contact page</summary>
 <img src="docs/performance/contact-performance.png"></details>
 
 <details><summary>Login page</summary>
-<img src="ddocs/performance/login-performance.png"></details>
+<img src="docs/performance/login-performance.png"></details>
 
 <details><summary>Register</summary>
-<img src="docs/performance/register-performance.png"></details>
+<img src="docs/performance/sign-up-performance.png"></details>
 
-<details><summary>Post Details</summary>
-<img src="docs/performance/post-performance.png"></details>
+<details><summary>Product Details</summary>
+<img src="docs/performance/product-detail-performance.png"></details>
 
-<details><summary>User Profile</summary>
-<img src="docs/performance/user-performance.png"></details>
+<details><summary>Products</summary>
+<img src="docs/performance/products-performance.png"></details>
 
-<details><summary>Comment Form</summary>
-<img src="docs/performance/comment-performance.png"></details>
+<details><summary>Add Product</summary>
+<img src="docs/performance/add-product-performance.png"></details>
 
-<details><summary>Delete Post</summary>
-<img src="docs/performance/delete-performance.png"></details>
-
-<details><summary>Update Post</summary>
+<details><summary>Edit Product</summary>
 <img src="docs/performance/edit-performance.png"></details>
+
+<details><summary>Checkout Form</summary>
+<img src="docs/performance/checkout-form-performance.png"></details>
+
+<details><summary>Checkout</summary>
+<img src="docs/performance/checkout-performance.png"></details>
+
+<details><summary>Checkout Success</summary>
+<img src="docs/performance/checkout-success-performance.png"></details>
+
+<details><summary>Checkout Success</summary>
+<img src="docs/performance/checkout-success-performance.png"></details>
+
+<details><summary>Checkout With No Products</summary>
+<img src="docs/performance/checkout-with-no-products.png"></details>
+
+<details><summary>Gallery</summary>
+<img src="docs/performance/gallery-performance.png"></details>
+
+<details><summary>Recipe</summary>
+<img src="docs/performance/recepies.png"></details>
 <hr>
 
 <hr> 
