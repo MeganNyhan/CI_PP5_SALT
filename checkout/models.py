@@ -12,8 +12,8 @@ from products.models import Product
 
 class Order(models.Model):
     """ Order Model """
-    order_number = models.CharField(max_length=30, null=False, editable=False)
-    user_profile = models.ForeignKey(UserProfile, on_delete=models.SET_NULL, 
+    order_number = models.CharField(max_length=300, null=False, editable=False)
+    user_profile = models.ForeignKey(UserProfile, on_delete=models.SET_NULL,
                                      null=True, blank=True, related_name='orders')
     full_name = models.CharField(max_length=40, null=False, blank=False)
     email = models.EmailField(max_length=240, null=False, blank=False)

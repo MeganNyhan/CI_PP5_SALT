@@ -571,13 +571,10 @@
 <p> To Validate my CSS I used the Jigsaw W3 Validator. All CSS code passed its Validation with no errors or warnings as shown below in the pictures.</p>
 
 <details><summary>Static CSS Validation</summary>
-<img src="docs/validation/css_validation.png"></details>
+<img src="docs/css-validation/css-validation.png"></details>
 
-<details><summary>Static CSS Validation</summary>
-<img src="docs/validation/css_validation.png"></details>
-
-<details><summary>Static CSS Validation</summary>
-<img src="docs/validation/css_validation.png"></details>
+<details><summary>Checkout Static CSS Validation</summary>
+<img src="docs/css-validation/checkout-css.png"></details>
 
 ### Accessibility
 <p> To Validate the Accessibility of the site I used the Wave Web Accessibility Validator.</p>
