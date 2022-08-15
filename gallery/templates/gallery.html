@@ -3,12 +3,11 @@
 {% block content %}
 {% load static %}
 <br>
-<div class="container-sm">
+<div class="container">
 <section>
     <h1 class="fw-light"> View Our Product Gallery</h1>
     <hr>
     <div class="container text-left">
-        <div class="row">
           <div class="col-sm">
             <div class="categories">
                 <ul class="list-group list-group-flush">
@@ -19,17 +18,42 @@
               </ul>
               </div>
           </div>
+          <br>
           <div class="col">
             <div class="photos">
-            {% for photo in photos %}
-            <a href="{% url 'products' %}">
-              <div class="card" style="width: 18rem;">
-              <img src="{{photo.image.url}}" class="card-img-top" alt="...">
-            </a>
+              {% for photo in photos %}
+              <div class="card gallery-photo" style="width:100%; border-color: white;">
+              <a href="{% url 'products' %}">
+                <img src="{{photo.image.url}}" class="card-img-top" alt="Product Images">
+              </a>
+              </div>
+              <br>
+
+              <!-- List view grid styling -->
+              {% if forloop.counter|divisibleby:1 %}
+              <div class="col-12 d-sm-none mb-5">
+                  <hr>
+              </div>
+              {% endif %}                        
+              {% if forloop.counter|divisibleby:2 %}
+              <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+                  <hr>
+              </div>
+              {% endif %}
+              {% if forloop.counter|divisibleby:3 %}
+              <div class="col-12 d-none d-lg-block d-xl-none mb-5">
+                  <hr>
+              </div>
+              {% endif %}
+              {% if forloop.counter|divisibleby:4 %}
+              <div class="col-12 d-none d-xl-block mb-5">
+                  <hr>
+              </div>
+              {% endif %}
+              {% endfor %}
             </div>
           </div>
           </div>
-          {% endfor %}
         </div>
     </div>
 </section>

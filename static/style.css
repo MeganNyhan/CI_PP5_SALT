@@ -232,6 +232,11 @@ body{
     display:flex;
 }
 
+.gallery-photo{
+    display:flex;
+    align-items: center;
+}
+
 .photo_gallery a {
     display: inline-block;
     height: 300px;
