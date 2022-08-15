@@ -704,31 +704,37 @@
 <p> To Validate the Accessibility of the site I used the Wave Web Accessibility Validator.</p>
 
 <details><summary>Home page</summary>
-<img src="docs/accessibility/home.png"></details>
+<img src="docs/accessibility/home-access.png"></details>
 
 <details><summary>Contact page</summary>
 <img src="docs/accessibility/contact-wave.png"></details>
 
 <details><summary>Login page</summary>
-<img src="docs/accessibility/login_access.png"></details>
+<img src="docs/accessibility/login-access.png"></details>
 
 <details><summary>Register</summary>
-<img src="docs/accessibility/register.png"></details>
+<img src="docs/accessibility/register-access.png"></details>
 
-<details><summary>Post Details</summary>
-<img src="docs/accessibility/post_detail.png"></details>
+<details><summary>Product Details</summary>
+<img src="docs/accessibility/product-detail-access.png"></details>
 
-<details><summary>User Profile</summary>
+<details><summary>Edit Product</summary>
 <img src="docs/accessibility/user-profile.png"></details>
 
-<details><summary>Comment Form</summary>
-<img src="docs/accessibility/comment-form.png"></details>
+<details><summary>Products</summary>
+<img src="docs/accessibility/products-access.png"></details>
 
-<details><summary>Delete Post</summary>
-<img src="docs/accessibility/article-delete.png"></details>
+<details><summary>Checkout</summary>
+<img src="docs/accessibility/no-products-in-cart-accessibility.png"></details>
 
-<details><summary>Update Post</summary>
-<img src="docs/accessibility/article-update.png"></details>
+<details><summary>Checkout with Products</summary>
+<img src="docs/accessibility/shopping-cart-access.png"></details>
+
+<details><summary>Gallery</summary>
+<img src="docs/accessibility/gallery-access.png"></details>
+
+<details><summary>Recipes</summary>
+<img src="docs/accessibility/recipe-access.png"></details>
 
 ### Performance
 <p> To Validate the Performance of the site I used the lighthosue tool in the browser'git ps develpoments tools.</p>
