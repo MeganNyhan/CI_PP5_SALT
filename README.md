@@ -871,11 +871,7 @@ Like a lot of e-commerce platforms I have used social media and email marketing 
 
 
 <details><summary>User Testing 2</summary>
-<img src="docs/test-user-stories/content.png">
-</details>
-
-<details><summary>User Testing 2</summary>
-<img src="docs/test-user-stories/read_post.png">
+<img src="docs/user-test/gallery-user-test.png">
 </details>
 <hr>
 
@@ -885,7 +881,7 @@ Like a lot of e-commerce platforms I have used social media and email marketing 
 |Gallery Section orders products within the categories so selected category is on the top| The user can scroll through the products that are then split into certain categorys| The user can browse through products available to buy within categories on the site| Works as expected|
 
 <details><summary>User Testing 3</summary>
-<img src="docs/test-user-stories/view_stories.png">
+<img src="docs/user-test/gallery-user-test.png">
 </details>
 <hr>
 
@@ -929,7 +925,7 @@ Like a lot of e-commerce platforms I have used social media and email marketing 
 
 
 <details><summary>User Testing 6</summary>
-<img src="docs/test-user-stories/post_comment.png">
+<img src="docs/user-test/reviews-user-test.png">
 </details>
 
    7."As a user of the site, I would like to view the products available to buy in a gallery as well as categorised."
@@ -938,7 +934,7 @@ Like a lot of e-commerce platforms I have used social media and email marketing 
 |Gallery Section under product drop down| The user can view images that relate to the products that are available to sell on the site| The user gets to view the porducts available to them | Works as expected|
 
 <details><summary>User Testing 7</summary>
-<img src="docs/test-user-stories/register.png">
+<img src="docs/user-test/gallery-user-test.png">
 </details>
 
 ### Testing Site Owner's Stories

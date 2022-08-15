@@ -5,15 +5,18 @@
 <br>
 <div class="container">
 <section>
-    <h1 class="fw-light"> View Our Product Gallery</h1>
+    <h1 class="fw-ligh text-left"> View Our Product Gallery</h1>
+    <p> All products below are available to buy from our shop!</p>
     <hr>
     <div class="container text-left">
           <div class="col-sm">
             <div class="categories">
-                <ul class="list-group list-group-flush">
                    <a class="btn btn-black" href="{% url 'products' %}" style="text-decoration:none; color:black;">View Products</a> 
+                   <p>Categories:</p>
                 {% for category in categories %}
-                   <a class="btn btn-black" href="{% url 'gallery' %}?category={{category.name}}" style="text-decoration:none; color:black;">{{category.name}}</a> 
+                <ul>
+                  <li><a class="btn btn-black" href="{% url 'gallery' %}?category={{category.name}}" style="text-decoration:none; color:black;">{{category.name}}</a> </li>
+                </ul>
                 {% endfor %}
               </ul>
               </div>
