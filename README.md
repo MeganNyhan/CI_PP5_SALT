@@ -127,10 +127,11 @@
 <br>
 
 <li>The metadata in the head tag of the base HTML includes the following keywords to help search engines to find the website: 
-" ".</li>
+"Irish Sea Salt, Sea Salt, Artisan Salt, Donegal Sea Salt, Deegagh Sea Salt, Home Grown Sea Salt, Plain Salt, 
+        Flavoured Salt, Himalayan Salt, Organic Sea Salt".</li>
 <br>
 
-<li>The metadata also includes the following description: " ".</li>
+<li>The metadata also includes the following description: "Code Institute Portfolio Project 5, an e-commerce application for a sea salt company based in Ireland.".</li>
 <br>
 
 <li>Wireframes were developed at the beginning of the project to have a first structure of the e-commerce site.</li>
@@ -445,36 +446,60 @@
 </ul>
 <br>
 
+### Page 404
+
+<p> I have also made a page 404 page so if the user manages to search a page that doesn't exist they are prompted to go back to the quiz. The button to return to the quiz is at the top left beside the return button.</p>
+<details><summary>page 404</summary>
+<img src="docs/page-404/page404.png"></details>
+
+<br>
+<hr>
+
 ## Testing:
 
 ### Python Validation
 <p> To Validate my Python I used the ExtendsClass Free Online Toolbox for developers (https://extendsclass.com/python-tester.html). All python code passed its Validation with no errors but one warnings as shown below in the pictures.</p>
 
-<h4> Blog (App)</h4>
+<h4> Bag (App)</h4>
 <details><summary>admin.py</summary>
-<img src="docs/python-validation/admin.blog.png"></details>
+<img src="docs/python-validation/bag/admin.png"></details>
+
+<details><summary>context.py</summary>
+<img src="docs/python-validation/bag/context.png"></details>
+
+<details><summary>uls.py</summary>
+<img src="docs/python-validation/bag/urls.png"></details>
+
+<details><summary>views.py</summary>
+<img src="docs/python-validation/bag/views.png"></details>
+
+<h4> Checkout (App)</h4>
+<details><summary>admin.py</summary>
+<img src="docs/python-validation/checkout/check-admin.png"></details>
+
+<details><summary>apps.py</summary>
+<img src="docs/python-validation/checkout/check-apps.png"></details>
 
 <details><summary>forms.py</summary>
-<img src="docs/python-validation/forms.blog.png"></details>
+<img src="docs/python-validation/checkout/check-forms.png"></details>
 
 <details><summary>models.py</summary>
-<img src="docs/python-validation/models.blog.png"></details>
+<img src="docs/python-validation/checkout/check-models.png"></details>
+
+<details><summary>signals.py</summary>
+<img src="docs/python-validation/checkout/check-signals.png"></details>
 
 <details><summary>urls.py</summary>
-<img src="docs/python-validation/urls.blog.png"></details>
+<img src="ddocs/python-validation/checkout/check-urls.png"></details>
 
 <details><summary>views.py</summary>
-<img src="docs/python-validation/views.blog.png"></details>
+<img src="docs/python-validation/checkout/check-views.png"></details>
 
-<h4> Members (App)</h4>
-<details><summary>forms.py</summary>
-<img src="docs/python-validation/forms.members.png"></details>
+<details><summary>webhook_handler.py</summary>
+<img src="docs/python-validation/checkout/check-webhook-handler.png"></details>
 
-<details><summary>urls.py</summary>
-<img src="docs/python-validation/urls.memeber.png"></details>
-
-<details><summary>views.py</summary>
-<img src="docs/python-validation/views.memebers.png"></details>
+<details><summary>webhooks.py</summary>
+<img src="docs/python-validation/checkout/check-webhooks.png"></details>
 
 <h4> Contact (App)</h4>
 <details><summary>admin.py</summary>
@@ -575,6 +600,16 @@
 
 <details><summary>Checkout Static CSS Validation</summary>
 <img src="docs/css-validation/checkout-css.png"></details>
+
+### JS Validation
+<p> To Validate my Java Script, I used the JSHint JS Validation Service. All Java Script passed its Validation with just a few warnings.</p>
+
+<details><summary>cart.js</summary>
+<img src="docs/js-validation/cart.png"></details>
+
+<details><summary>Stripe.js - taken from strip website</summary>
+<img src="docs/js-validation/js-stripe.png"></details>
+
 
 ### Accessibility
 <p> To Validate the Accessibility of the site I used the Wave Web Accessibility Validator.</p>
