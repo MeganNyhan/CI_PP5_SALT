@@ -229,7 +229,7 @@
 <br>
 
 <details><summary>Database Diagram</summary>
-        <img src="docs/database-diagram/database.jpg"></details>
+        <img src="docs/database/database-diagram.jpg"></details>
 <br/>
 
 ### User Manual:
