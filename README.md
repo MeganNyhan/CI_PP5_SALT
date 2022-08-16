@@ -136,6 +136,12 @@
 
 <li>Wireframes were developed at the beginning of the project to have a first structure of the e-commerce site.</li>
 <br>
+
+### Kanban Board:
+<p> I used a kanban board located in the project section of the site to help with sectioning the workload into bit-sized tickets that were devided into headings that were the user stories I created at the start of the project. During the start of using the board the status functionality wouldn't update, so when I was adding a task to the in progress status, it would automatically set the status value to todo. If it was working as I intended the tickets would be updated to an in progress status when I was working on that specific task and then once it was completed it would be changed to done. Below is an image of the kanban board as it. </p>
+
+<details><summary>Kanban Board</summary>
+        <img src="docs/kanban/kanban.png"></details>
 <hr>
 
 ## Technical Design
@@ -850,6 +856,22 @@ Like a lot of e-commerce platforms I have used social media and email marketing 
 
 <details>
     <summary>Deegagh Sea Salt Facebook Page</summary>
+     <img src="docs/marketing/facebook-page.png">
+</details>
+
+<details>
+    <summary>Deegagh Sea Salt Facebook Page</summary>
+     <img src="docs/marketing/facebook-page-2.png">
+</details>
+
+<details>
+    <summary>Mailchimp Newsletter</summary>
+     <img src="docs/marketing/mailchimp1.png">
+</details>
+
+<details>
+    <summary>Mailchimp Newsletter</summary>
+     <img src="docs/marketing/mailchimp2.png">
 </details>
 
 <br>
