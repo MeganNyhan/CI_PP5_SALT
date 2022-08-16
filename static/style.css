@@ -299,6 +299,11 @@ body{
         transform: translate(-50%, -50%);
       }
 
+    .head-text {
+        padding-top: 10%;
+        display: none;
+      }
+
     /* Products */
     .products{
         top: 50%;
