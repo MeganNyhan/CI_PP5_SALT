@@ -138,7 +138,7 @@
 <br>
 
 ### Kanban Board:
-<p> I used a kanban board located in the project section of the site to help with sectioning the workload into bit-sized tickets that were devided into headings that were the user stories I created at the start of the project. During the start of using the board the status functionality wouldn't update, so when I was adding a task to the in progress status, it would automatically set the status value to todo. If it was working as I intended the tickets would be updated to an in progress status when I was working on that specific task and then once it was completed it would be changed to done. Below is an image of the kanban board as it. </p>
+<p> I used a kanban board located in the project section of the site to help with sectioning the workload into bit-sized tickets that were devided into headings that were the user stories I created at the start of the project. During the start of using the board the status functionality wouldn't update, so when I was adding a task to the in progress status, it would automatically set the status value to todo. If it was working as I intended the tickets would be updated to an in progress status when I was working on that specific task and then once it was completed it would be changed to done. Below is an image of the kanban board as it. I did mention this issue to my mentor but we were both unsure with how to fix it.</p>
 
 <details><summary>Kanban Board</summary>
         <img src="docs/kanban/kanban.png"></details>
@@ -615,7 +615,7 @@
 <br>
 
 ### HTML Validation
-<p> To Validate my HTML I used the WC3 Validator. All HTML code passed its Validation with a few errors as documented below. All errors are due to using the django/python framework.</p>
+<p> To Validate my HTML I used the WC3 Validator. All HTML code passed its Validation with a few errors as documented below. All errors are due to using the django/python framework and the html validator not being able to read them.</p>
 
 <h2> Bag </h2>
 <details><summary>Bag</summary>
@@ -707,7 +707,7 @@
 
 
 ### Accessibility
-<p> To Validate the Accessibility of the site I used the Wave Web Accessibility Validator. The code passed with a few errors mainly surrounding the mailchimp form in the footer, empty buttons linked to the backend and H5 tags that use font awesome icons instead of text.</p>
+<p> To Validate the Accessibility of the site I used the Wave Web Accessibility Validator. The code passed with a few errors mainly surrounding the mailchimp form in the footer, empty buttons linked to the backend of the site and H5 tags that use font awesome icons instead of text. The errors I was unsure with how to change.</p>
 
 <details><summary>Home page</summary>
 <img src="docs/accessibility/home-access.png"></details>
