@@ -710,7 +710,7 @@
 <p> To Validate the Accessibility of the site I used the Wave Web Accessibility Validator. The code passed with a few errors mainly surrounding the mailchimp form in the footer, empty buttons linked to the backend of the site and H5 tags that use font awesome icons instead of text. The errors I was unsure with how to change.</p>
 
 <details><summary>Home page</summary>
-<img src="docs/accessibility/home-access.png"></details>
+<img src="docs/accessibility/home-access-2.png"></details>
 
 <details><summary>Contact page</summary>
 <img src="docs/accessibility/contact-wave.png"></details>
@@ -719,16 +719,16 @@
 <img src="docs/accessibility/login-access.png"></details>
 
 <details><summary>Register</summary>
-<img src="docs/accessibility/register-access.png"></details>
+<img src="docs/accessibility/sign-up-access.png"></details>
 
 <details><summary>Product Details</summary>
 <img src="docs/accessibility/product-detail-access.png"></details>
 
 <details><summary>Edit Product</summary>
-<img src="docs/accessibility/user-profile.png"></details>
+<img src="docs/accessibility/edit-access.png"></details>
 
 <details><summary>Products</summary>
-<img src="docs/accessibility/products-access.png"></details>
+<img src="docs/accessibility/product-access.png"></details>
 
 <details><summary>Checkout</summary>
 <img src="docs/accessibility/no-products-in-cart-accessibility.png"></details>
@@ -737,10 +737,10 @@
 <img src="docs/accessibility/shopping-cart-access.png"></details>
 
 <details><summary>Gallery</summary>
-<img src="docs/accessibility/gallery-access.png"></details>
+<img src="docs/accessibility/product-gallery-access.png"></details>
 
 <details><summary>Recipes</summary>
-<img src="docs/accessibility/recipe-access.png"></details>
+<img src="docs/accessibility/recipes-2.png"></details>
 
 ### Performance
 <p> To Validate the Performance of the site I used the lighthosue tool in the browser'git ps develpoments tools.</p>
