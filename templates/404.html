@@ -2,9 +2,16 @@
 {% load static %}
 {% block title %} Deegagh Sea Salt | Page 404 {% endblock %}
 {% block content %}
+<div class="container">
+	<div class="row">
+		<br>
+		<br>
+		<h1 class="text-center fw-light"> I'm sorry this page does not exist! </h1>
 
-<h1 class="text-center fw-light"> I'm sorry this page does not exist! </h1>
-
-<button href="{% url 'home' %}"> Return to the home page?</button>
+		<button href="{% url 'home' %}" class="btn btn-black"> Return to the home page?</button>
+		<br>
+		<br>
+	</div>
+</div>
 
 {% endblock	%}
