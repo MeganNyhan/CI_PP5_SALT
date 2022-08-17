@@ -640,7 +640,7 @@
 
 <h2> Home </h2>
 <details><summary>404</summary>
-<img src="docs/html-validation/page404.png"></details>
+<img src="ddocs/html-validation/page-404.png"></details>
 <details><summary>FAQ's</summary>
 <img src="docs/html-validation/faq's.png"></details>
 <details><summary>Index</summary>
