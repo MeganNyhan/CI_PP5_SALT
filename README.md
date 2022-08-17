@@ -52,8 +52,9 @@
 <p>As I have mentioned, the site has a very large target audience. The age demographics are quite broad and because of this the site has to be easy to use for every age group. I have taken the following approach to make sure that all User Requirements to access and use the site has been covered:</p>
 <ul>
     <li>Have a clear understanding of the layout of the site -> clear navigation.</li>
-    <li>The blog has to be formal and factual, information on the site has to be easily accessibile to the user.</li>
+    <li>The e-commerce site has to be formal and factual, information on the site has to be easily accessibile to the user. Payments must be easily made also for a positive user experience. Once a payment is made the user can then view their order number and order information.</li>
     <li>The option of posting products has to be limited to the admin of the site to prevent scams. A random user of the site can not have permission to post products.</li>
+    <li>The site will also have a section for recipes that users who purchased products can how they use thier purchases in recipes at home.</li>
 </ul>
 
 ### User Stories
@@ -86,7 +87,7 @@
 
 ### UX Design: Strategy:
 
-<p>To develop an e-commerce website (product) that makes purchasing of geophysical data simple and intuitive. </p>
+<p>To develop an e-commerce website (product) that makes purchasing of sea salt products simple. </p>
 <br>
 
 ### UX Design: Structure:
@@ -97,7 +98,7 @@
 <li> A product description page, giving the option to the user to buy the product or changes its quantitiy.</li>
 <li> A shopping cart that holds the information that the user wants to buy.</li>
 <li> A checkout page showing the products the user is about to buy, with the final price to pay, linking with the payment method (Stripe). </li>
-<li> Footer, showing the main structure of the website and giving access to the social networks of the e-commerce and a field for the user to contact the shop, and general FAQs and T's & C's. </li>
+<li> Footer, showing the main structure of the website and giving access to the social networks of the e-commerce, a newsletter form and a field for the user to contact the shop, and general FAQs and T's & C's. </li>
 <li> A profile page, including the option to show the purchase history of the user. </li>
 <li> Contact form page. </li>
 <li> Pop-up messages informing the interaction of the user with the website (purchase, sign in, sign up, errors and success messages as the main ones). </li>
@@ -110,7 +111,7 @@
 <br>
 
 ### UX Design: Surface:
-<p> The website is based on a contrast of different tonalities of black for the header and footer, fonts in strong black and a white for body, separating the fixed navigation menu, the body and the footer.
+<p> The website is based on the same colours for the header and footer, fonts in strong black and a white for body, separating the navigation menu, the body and the footer.
 </p>
 <br>
 
@@ -123,7 +124,7 @@
 </p>
 <br>
 <p> Structure:</p>
-<li>The website consists of a header with fixed navigation menu on top, a body and a footer. It is designed to navigate the e-commerce from the header and footer, having them always available.</li>
+<li>The website consists of a header with navigation menu on top, a body and a footer. It is designed to navigate the e-commerce from the header and footer, having them always available.</li>
 <br>
 
 <li>The metadata in the head tag of the base HTML includes the following keywords to help search engines to find the website: 
@@ -149,14 +150,14 @@
 ### Flow Chart
 <p> I used the flow chart to design a clear map of my site that would help me design the functionality of the site and the logic and guidence for user stories. I did this by using Lucid Chart</p>
 <details><summary>User Flow Chart</summary>
-        <img src="docs/flow-chart/admin-flowchart.png"></details>
-<details><summary>Admin Flow Chart</summary>
         <img src="docs/flow-chart/user-flowchart.png"></details>
+<details><summary>Admin Flow Chart</summary>
+        <img src="ddocs/flow-chart/admin-flowchart.png"></details>
 <hr>
 
 ### Business Model:
 
-<p>The e-commerce business model surrounding the site is designed in such a way that a "user" (who is uniquely identified by an ID) can buy "products" (that are also uniquely identified by an ID and SKU) by requesting an "order" (that is uniquely identified by an ID and individual order number). Then, as an order can have numerous products, and simultaneously a product can be requested by numerous orders, an "order-line-item" is created to uniquely tie a specific product to a specific order. This "order-line-item" divides the many-to-many relation between "order" and "product" in two one-to-many relations ("order-order-line-item" and "order-line-item-product"). "Product reviews" can be added (related) to each product. One-to-many communication is open between the "user" and the business through the contact form that the admin of the site can access through the admin panel.</p>
+<p>The e-commerce business model surrounding the site is designed in such a way that a "user" (who is uniquely identified by an ID) can buy "sea salt products" (that are also uniquely identified by an ID and SKU) by requesting an "order" (that is uniquely identified by an ID and individual order number). Then, as an order can have numerous products, and simultaneously a product can be requested by numerous orders, an "order-line-item" is created to uniquely tie a specific product to a specific order. This "order-line-item" divides the many-to-many relation between "order" and "product" in two one-to-many relations ("order-order-line-item" and "order-line-item-product"). "Product reviews" can be added (related) to each product. One-to-many communication is open between the "user" and the business through the contact form that the admin of the site can access through the admin panel. The site also has a mailchimp form located in the footer for the user to subscribe to the newsletter from the site.</p>
 
 ### Database 
 <p> My Database has eight models:
@@ -209,9 +210,9 @@
 <br>
 <p> Post: </p>
 <li> This Post model will allow me to post onto the site, and create the required variables fields.</li>
-<li> It is used by the admin to post blog posts to the site, there for it uses a Foreign Key as an ID of the admin/ author. </li>
+<li> It is used by the admin to post blog (recipes) post to the site, there for it uses a Foreign Key as an ID of the admin/ author. </li>
 <li> It includes the following fields: title, title_tag, featured_image, snippet, author, body and post_date.</li>
-<p> Post has a many to manny relationship and also uses the imported User class model for username  to help calculate the likes on each blog post.</p>
+<p> Post has a many to manny relationship and also uses the imported User class model for username  to help calculate the likes on each blog post (recipes).</p>
 <br>
 <p> Product: </p>
 <li> This Product model will allow me to supply information for each product added to the site via the admin section of the site.</li>
@@ -340,6 +341,7 @@
 <li> Products list and specified product descriptions </li>
 <li> Account Functionality: login and registration </li>
 <li> Shopping Cart: List of products for sale, products in cart, remove products, continue shopping, and payment</li>
+<li> And finally, a Gallery section. </li>
 </ol>
 </br>
 
@@ -1036,7 +1038,7 @@ The fully deployed program, accessible by anyone, is found here, whose URL is ht
 <p> Follow these steps to deploy the content of this project: </p>
 <ul> 
 <li> Use pip3 freeze > requirements.txt in terminal to save libraries that need to be installed on Heroku as well.</li>
-<li> Create Procfile and add web: gunicorn blog.wsgi.</li>
+<li> Create Procfile and add web: gunicorn salt.wsgi.</li>
 <li> Log in to Heroku.</li>
 <li> Click on the new button in the top right corner and in the drop down menu choose Create New App.</li>
 <li> Choose a name for your app and a region and then click Create App.</li>
@@ -1099,9 +1101,11 @@ The fully deployed program, accessible by anyone, is found here, whose URL is ht
 ## Credits:
 ### Source Code Used in Site
 
-<p> Due to limitations in my knowledge I used youtube tutorials/ stack overflow articles to guide me with creating the blog:</p>
+<p> Due to limitations in my knowledge I used youtube tutorials/ stack overflow articles to guide me with creating the e-commerce site:</p>
 <ul>
-<li></li>
+<li> https://www.youtube.com/watch?v=SZ2yyrDylf0&list=PLYPOAE_4OVHBvbQry6pMK0RKISahPVUG7&index=2 </li>
+<li> https://www.youtube.com/watch?v=OvTs8BMLb7o&list=PLYPOAE_4OVHBvbQry6pMK0RKISahPVUG7&index=3&t=192s </li> 
+<li> https://www.youtube.com/watch?v=Y5vvGQyHtpM&list=PLYPOAE_4OVHBvbQry6pMK0RKISahPVUG7&index=4&t=417s </li> 
 </ul>
 <br>
 <p> Images used on the site:.</p>
