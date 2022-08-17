@@ -52,24 +52,24 @@
 
   <header>
     <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg text-light" style="background-color:darkgrey; border-color: white;">
+    <nav class="navbar navbar-expand-lg text-dark" style="background-color:darkgrey; border-color: white;">
       <div class="container-fluid">
         <a class="navbar-brand" href="{% url 'home' %}"> 
-          <h3 class="text-light"><i class="fa-solid fa-fish-fins"></i>  Deegagh Sea Salt</h3></a>
+          <h3 class="text-dark"><i class="fa-solid fa-fish-fins"></i>  Deegagh Sea Salt</h3></a>
           <button class="navbar-toggler" style="color: white;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon" style="color: white;"></span>
           </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active text-light" aria-current="page" href="{% url 'home' %}">Home</a>
+              <a class="nav-link active text-dark" aria-current="page" href="{% url 'home' %}">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active text-light" aria-current="page" href="{% url 'news-list' %}">Recipes</a>
+              <a class="nav-link active text-dark" aria-current="page" href="{% url 'news-list' %}">Recipes</a>
             </li>
 <!-- Products Dropdown -->
             <div class="dropdown">
-              <button class="btn dropdown-toggle text-light" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+              <button class="btn dropdown-toggle text-dark" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                 Products
               </button>
               <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
@@ -87,7 +87,7 @@
 <!-- Accounts Dropdown -->      
             <div class="dropdown">
               {% if user.is_authenticated %}
-              <button class="btn dropdown-toggle text-light" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+              <button class="btn dropdown-toggle text-dark" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                 Hello, {{ user.first_name }}
               </button>
               <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
@@ -96,7 +96,7 @@
                 <li><a class="dropdown-item text-light" href="{% url 'login' %}">Log out</a></li>
               </ul>
               {% else %}
-              <button class="btn dropdown-toggle text-light" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+              <button class="btn dropdown-toggle text-dark" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                 Account
               </button>
               <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
@@ -110,8 +110,8 @@
           <li class="nav-item">
             <a class="{% if grand_total %} text-info font-weight-bold {% else %} text-black {% endif %} nav-link" href="{% url 'view_bag' %}">
             <div class="text-center">
-              <div><i class="fas fa-shopping-bag fa-lg text-light"></i></div>
-              <p class="my-0 text-light">
+              <div><i class="fas fa-shopping-bag fa-lg text-dark"></i></div>
+              <p class="my-0 text-dark">
                 {% if grand_total %}
                   €{{ grand_total | floatformat:2 }}
                 {% else %}
