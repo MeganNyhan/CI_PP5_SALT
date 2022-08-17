@@ -982,7 +982,19 @@ Like a lot of e-commerce platforms I have used social media and email marketing 
 |Facebook and email marketing| A facebook page and email newsletter has been created to offer marketing strategies to promote the site| More traffic will travel to the site as recognition increases | Works as expected|
 
 <details><summary>User Testing 9</summary>
-<img src="docs/test-user-stories/post_admin.png">
+<img src="docs/marketing/facebook-page.png">
+</details>
+
+<details><summary>User Testing 9</summary>
+<img src="docs/marketing/facebook-page-2.png">
+</details>
+
+<details><summary>User Testing 9</summary>
+<img src="docs/marketing/mailchimp1.png">
+</details>
+
+<details><summary>User Testing 9</summary>
+<img src="docs/marketing/mailchimp2.png">
 </details>
 <hr>
 
