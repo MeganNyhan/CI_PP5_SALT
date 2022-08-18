@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Introduction
+from .models import Introduction, Profile
 from django.template import RequestContext
 
 
@@ -11,7 +11,8 @@ from django.template import RequestContext
 def index(request):
     """ A view to return the index page """
     bodies = Introduction.objects.all()
-    context = {'bodies': bodies}
+    profile = Profile.objects.all()
+    context = {'bodies': bodies, 'profile': profile}
     return render(request, 'home/index.html', context)
 
 
