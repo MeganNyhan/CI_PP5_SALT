@@ -741,9 +741,6 @@
 <details><summary>Product Details</summary>
 <img src="docs/accessibility/product-detail-access.png"></details>
 
-<details><summary>Edit Product</summary>
-<img src="docs/accessibility/edit-access.png"></details>
-
 <details><summary>Products</summary>
 <img src="docs/accessibility/product-access.png"></details>
 
