@@ -466,15 +466,15 @@
 </br>
 <ul>Gallery Page:
 <li> The site offers the user to view the gallery of products on sale on the shop.</li>
-<details><summary>User Stories Used:1, 3 </summary>
-            <img src="docs/wireframes/wireframe-4.png"></details>
+<details><summary>User Stories Used:2, 3 </summary>
+            <img src="docs/features/gallery-feature.png"></details>
 </ul>
 
 ### Page 404
 
 <p> I have also made a page 404 page so if the user manages to search a page that doesn't exist they are prompted to go back to the quiz. The button to return to the quiz is at the top left beside the return button.</p>
 <details><summary>page 404</summary>
-<img src="docs/page-404/page404.png"></details>
+<img src="docs/features/page-404-feature.png"></details>
 
 <br>
 <hr>
@@ -514,7 +514,7 @@
 <img src="docs/python-validation/checkout/check-signals.png"></details>
 
 <details><summary>urls.py</summary>
-<img src="ddocs/python-validation/checkout/check-urls.png"></details>
+<img src="docs/python-validation/checkout/check-urls.png"></details>
 
 <details><summary>views.py</summary>
 <img src="docs/python-validation/checkout/check-views.png"></details>
@@ -638,18 +638,19 @@
 <h2> Bag </h2>
 <details><summary>Bag</summary>
 <img src="docs/html-validation/Bag-html.png"></details>
-<br>
+
 <h2> Checkout </h2>
+
 <details><summary>Checkout Success</summary>
 <img src="docs/html-validation/checkout-success.png"></details>
+
 <details><summary>Checkout</summary>
 <img src="docs/html-validation/checkout.png"></details>
-<br>
 
 <h2> Contact </h2>
 <details><summary>Contact</summary>
 <img src="docs/html-validation/contact-html.png"></details>
-<br>
+
 
 <h2> Gallery </h2>
 <details><summary>Gallery</summary>
@@ -657,13 +658,14 @@
 <br>
 
 <h2> Home </h2>
+
 <details><summary>404</summary>
-<img src="ddocs/html-validation/page-404.png"></details>
+<img src="docs/html-validation/page-404.png"></details>
 <details><summary>FAQ's</summary>
 <img src="docs/html-validation/faq's.png"></details>
 <details><summary>Index</summary>
 <img src="docs/html-validation/index.png"></details>
-<br>
+
 
 <h2> Members </h2>
 <details><summary>Edit Profile</summary>
@@ -674,7 +676,6 @@
 <img src="docs/html-validation/profile-html.png"></details>
 <details><summary>Register</summary>
 <img src="docs/html-validation/register-html.png"></details>
-<br>
 
 <h2> News </h2>
 <details><summary>Delete Post</summary>
@@ -685,7 +686,6 @@
 <img src="docs/html-validation/post-detail.png"></details>
 <details><summary>Update Post</summary>
 <img src="docs/html-validation/update-post.png"></details>
-<br>
 
 <h2> Products </h2>
 <details><summary>Add Product</summary>
@@ -698,12 +698,11 @@
 <img src="docs/html-validation/product-detail.png"></details>
 <details><summary>Products</summary>
 <img src="docs/html-validation/base.png"></details>
-<br>
 
 <h2> Base </h2>
 <details><summary>Base</summary>
-<img src="docs/html/contact.html.png"></details>
-<br>
+<img src="docs/html-validation/base.png"></details>
+
 
 ### CSS Validation
 <p> To Validate my CSS I used the Jigsaw W3 Validator. All CSS code passed its Validation with no errors or warnings as shown below in the pictures.</p>
@@ -731,7 +730,7 @@
 <img src="docs/accessibility/home-access-2.png"></details>
 
 <details><summary>Contact page</summary>
-<img src="docs/accessibility/contact-wave.png"></details>
+<img src="docs/accessibility/contact-acces1.png"></details>
 
 <details><summary>Login page</summary>
 <img src="docs/accessibility/login-access.png"></details>
@@ -761,7 +760,7 @@
 <img src="docs/accessibility/recipes-2.png"></details>
 
 ### Performance
-<p> To Validate the Performance of the site I used the lighthosue tool in the browser'git ps develpoments tools.</p>
+<p> To Validate the Performance of the site I used the lighthosue tool in the browser's develpoments tools.</p>
 
 <details><summary>Home</summary>
 <img src="docs/performance/home-page-performance.png"></details>
@@ -807,9 +806,7 @@
 
 <details><summary>Recipe</summary>
 <img src="docs/performance/recepies.png"></details>
-<hr>
-
-<hr> 
+<br>
 
 ### SEO Analysis
 
@@ -817,7 +814,7 @@ The search engine optimization is focused on Google search engine as it is the m
 
 SEO, which stands for search engine optimization is defined as, "Search engine optimization is the process of improving the quality and quantity of website traffic to a website or a web page from search engines. SEO targets unpaid traffic rather than direct traffic or paid traffic."- Wikepedia
 
-The aim is to have your site at the top of the search results that refers to the type of site you own.For example I have a e-commerce site selling Donegal Sea Salt, I would aim to have that category show my site at the top of the search results list in google. You do this through using short tail - short tail keywords 1 or 2 words in length, then long tail keywordswhich are more words.
+The aim is to have your site at the top of the search results that refers to the type of site you own. For example I have a e-commerce site selling Donegal Sea Salt, I would aim to have that category show my site at the top of the search results list in google. You do this through using short tail - short tail keywords 1 or 2 words in length, then long tail keywordswhich are more words.
 
 
 (Info from August 5th, 2022)
