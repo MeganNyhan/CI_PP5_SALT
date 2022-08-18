@@ -52,9 +52,8 @@
 <p>As I have mentioned, the site has a very large target audience. The age demographics are quite broad and because of this the site has to be easy to use for every age group. I have taken the following approach to make sure that all User Requirements to access and use the site has been covered:</p>
 <ul>
     <li>Have a clear understanding of the layout of the site -> clear navigation.</li>
-    <li>The e-commerce site has to be formal and factual, information on the site has to be easily accessibile to the user. Payments must be easily made also for a positive user experience. Once a payment is made the user can then view their order number and order information.</li>
-    <li>The option of posting products has to be limited to the admin of the site to prevent scams. A random user of the site can not have permission to post products.</li>
-    <li>The site will also have a section for recipes that users who purchased products can how they use thier purchases in recipes at home.</li>
+    <li>The e-commerce site has to be functional so the site is easily accessibile to the user. Payments must be easily made also for a positive user experience. Once a payment is made the user can then view their order number and order information.</li>
+    <li>The site needs to also have a clear authorized/ non-authorized functionality ie. posting products needs to be limited to the superuser, not all users to prevent false information on the site.</li>
 </ul>
 
 ### User Stories
@@ -82,7 +81,7 @@
 <li>A main navigation menu where, along with a footer, gives access to the main parts of the website, including registration and sign-in for users. The footer includes FAQs and Contact link, and social networks.</li>
 <li>Images and the products with their associated price for purchasing.</li>
 <li>A method to pay the products, specifically stripe.</li>
-<li>A database that accounts for all the data in the website and allows interaction of the users with the products (purchase) and their accounts.</li>
+<li>A database that accounts for all the data in the website and allows interaction of the users with the products (to purchase) and their accounts.</li>
 <br>
 
 ### UX Design: Strategy:
@@ -120,7 +119,7 @@
 <br>
 
 <p> Colours:</p>
-<p> Colours are beased on a modern e-commerce website, so taking advantage of white and black (balck fixed navigation menu) and balck footer, contrasting with a white background for the body (where products and all other content appear). 
+<p> Colours are beased on a modern e-commerce website, so taking advantage of white and black. A black footer, contrasting with a white background for the body (where products and all other content appear). 
 </p>
 <br>
 <p> Structure:</p>
@@ -152,7 +151,7 @@
 <details><summary>User Flow Chart</summary>
         <img src="docs/flow-chart/user-flowchart.png"></details>
 <details><summary>Admin Flow Chart</summary>
-        <img src="ddocs/flow-chart/admin-flowchart.png"></details>
+        <img src="docs/flow-chart/admin-flowchart.png"></details>
 <hr>
 
 ### Business Model:
@@ -173,6 +172,7 @@
 <li><strong>Photo (custom)</strong></li>
 <li> Post </li>
 <li> Product </li>
+<li> Profile </li>
 <li><strong>Review (custom)</strong></li>
 <li> UserProfile </li>
 
@@ -193,7 +193,7 @@
 <li> It includes the following fields: name</li>
 <br>
 <p> Introduction (custom model): </p>
-<li> This gives the admin of the site the opition of changing the Introduction of the site in the main header of the index page.</li>
+<li> This gives the admin of the site the opition of changing the call to action of the site in the main header of the index page.</li>
 <li> It includes the following fields: Head, Body</li>
 <br>
 <p> Order: </p>
@@ -218,6 +218,11 @@
 <li> This Product model will allow me to supply information for each product added to the site via the admin section of the site.</li>
 <li> It includes the following fields: sku, name, description, size, price, rating, image.</li>
 <br>
+<p> Profile: </p>
+<li> This Profile model will allow me add social networks, websites and general information about the owners 'profile' to the site.</li>
+<li> It is used in this site to display the facebook link in the footer </li>
+<li> It includes the following fields: user, bio, profile_pic, website_url, facebook_url, twitter_url, instagram_url,  pinterest_url, it also includes a OneToOneField.</li>
+<br>
 <p> Review (custom model): </p>
 <li> This Review model will allow users to post reviews under the products.</li>
 <li> It is used by several users to post reviews under the products, there for it uses a Foreign Key. </li>
@@ -235,12 +240,13 @@
 
 ### User Manual:
 <ol>
-<li>The site admin username is admin (lowercase) and the password is Pass123!.</li> 
+<li>The site admin username is admin2 (lowercase) and the password is Pass123!.</li> 
 
 <li>The Site is very simple in design - It includes a home section, - that has a section in the nav bar where a user can view the products, their categories - holding the bulk of the e-commerce functionality - and a contact section. It also holds a link to the testimonials, about us and FAQs link.</li>
-<li>The products are very simply laid out on the homepage in their respective categories. Once clicked in the categories the user can scroll through the section in a list formate to view the products avaiable to buy.</li>
-    <p>The user can also leave a review under the products.</p>
-    <p> -- If the user is the site admin they can edit products and delete products in the admin section.</p>
+<li>The products are very simply laid out on the product page. The user can scroll through the section in a list format to view the products avaiable to buy.</li>
+    <p>A logged in user can also leave a review under the products.</p>
+    <p> -- If the user is the site admin they can edit products and delete products in the admin section or on the site itself.</p>
+    <p> There is also a product gallery the user can view products on before being directed to the product section</p>
 <li>The login in section is simple as it is restricted to asking for the username and password. The registration form is also simple and easy to follow. Once logged in the user can view their order history and to update their delivery and personal information.</li>
 <li> The recipes section of the site is to allow users to view recipes they can use their newly bought products in.</li>
 <li> The contact Page allows the user to simply message the admin of the site to get more information or to leave a comment. The address and phone number are also on the page.</li>
@@ -294,6 +300,9 @@
 <details><summary>Gallery</summary>
         <img src="docs/wireframes/wireframe-14.png"></details>
 
+<details><summary>Page404</summary>
+        <img src="docs/wireframes/wireframe15.png"></details>
+
 <hr>
 
 ### Technology:
@@ -321,7 +330,7 @@
 <li> Ajax</li>
 <li> Font Awesome </li>
 <li> Favicon </li>
-<li> Cloudinary </li>
+<li> Owl Carosuel </li>
 </ul>
 <hr>
 
@@ -453,6 +462,13 @@
             <img src="docs/features/stripe.png"></details>
 </ul>
 <br>
+
+</br>
+<ul>Gallery Page:
+<li> The site offers the user to view the gallery of products on sale on the shop.</li>
+<details><summary>User Stories Used:1, 3 </summary>
+            <img src="docs/wireframes/wireframe-4.png"></details>
+</ul>
 
 ### Page 404
 
@@ -1020,6 +1036,7 @@ Like a lot of e-commerce platforms I have used social media and email marketing 
 |-------------|------------|
 | I noticed when looking at the site in Heroku, the admin is always signed in. And I am unable to sign myself out via the admin panel| The only way around this was to sign out via the admin panel|
 | The review form when the page is refreshed, will submit the review form again each time. So when when the page is refreshed the review form if filled out, will save and post the review again.| Set the form in the views.py to delete the data once saved to the database when the form is submited.|
+| The site when an order is placed doesn't send an email | Set up an email functionality in checkout success page to have the site send an email including the order details to the person who made the order |
 
 <hr>
 
